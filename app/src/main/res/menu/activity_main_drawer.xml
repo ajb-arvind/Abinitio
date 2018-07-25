@@ -6,6 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
             android:title="Home"/>
     </group>
 
@@ -47,6 +48,7 @@
         </item>
     </group>
 
+
     <item android:title="Communicate">
         <menu>
             <item
@@ -57,6 +59,11 @@
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Send" />
+
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_phone_contact_us"
+                android:title="Contact Us" />
         </menu>
     </item>
 

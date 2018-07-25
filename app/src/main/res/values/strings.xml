@@ -6,4 +6,8 @@
     <string name="nav_header_subtitle">Government College of Engineering and Research Awasri</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="contentDescription">the logo of Abinitio</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank Auto</string>
 </resources>
