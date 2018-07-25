@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".SplashActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,6 +20,12 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".event.automobile" />
+        <activity android:name=".event.computer" />
+        <activity android:name=".event.civil" />
+        <activity android:name=".event.entc" />
+        <activity android:name=".event.instru" />
+        <activity android:name=".event.mechanical"></activity>
     </application>
 
 </manifest>

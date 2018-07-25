@@ -6,9 +6,6 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -24,12 +21,9 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.official19.ajb.abinitio.event.automobileFragment;
-import com.official19.ajb.abinitio.event.civilFragment;
-import com.official19.ajb.abinitio.event.computerFragment;
-import com.official19.ajb.abinitio.event.entcFragment;
-import com.official19.ajb.abinitio.event.instrumetionFragment;
-import com.official19.ajb.abinitio.event.mechanicalFragment;
+import com.official19.ajb.abinitio.event.automobile;
+import com.official19.ajb.abinitio.event.computer;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -107,51 +101,39 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        Fragment fragment = null;
-
         switch (id){
             case R.id.nav_home:
                 startActivity(new Intent(this, MainActivity.class));
                 finish();
                 break;
 
-            case R.id.nav_auto:
-                fragment = new automobileFragment();
+            case R.id.nav_auto:             startActivity(new Intent(this, automobile.class));
+
                 break;
 
-            case R.id.nav_comp:
-                fragment = new computerFragment();
+            case R.id.nav_comp:             startActivity(new Intent(this, computer.class));
                 break;
 
-            case R.id.nav_civil:
-                fragment = new civilFragment();
+            case R.id.nav_civil:             startActivity(new Intent(this, automobile.class));
                 break;
 
-            case R.id.nav_entc:
-                fragment = new entcFragment();
+            case R.id.nav_entc:             startActivity(new Intent(this, automobile.class));
                 break;
 
-            case R.id.nav_instru:
-                fragment = new instrumetionFragment();
+            case R.id.nav_instru:             startActivity(new Intent(this, automobile.class));
                 break;
 
-            case R.id.nav_mech:
-                fragment = new mechanicalFragment();
+            case R.id.nav_mech:             startActivity(new Intent(this, automobile.class));
                 break;
 
-            case R.id.nav_share:
+            case R.id.nav_share:             startActivity(new Intent(this, automobile.class));
                 break;
 
-            case R.id.nav_send:
+            case R.id.nav_send:             startActivity(new Intent(this, automobile.class));
                 break;
         }
 
-        if(fragment != null){
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.content_fragment, fragment);
-            fragmentTransaction.commit();
-        }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
