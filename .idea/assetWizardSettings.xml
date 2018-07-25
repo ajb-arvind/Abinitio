@@ -34,7 +34,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/AB Logo S.png" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/a.jpg" />
                                       <entry key="outputName" value="wallpaer" />
                                       <entry key="theme" value="CUSTOM" />
                                       <entry key="themeColor" value="000000" />
@@ -64,13 +64,31 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="$USER_HOME$/Downloads/Abinitio Logo.jpg" />
-                                      <entry key="previewDensity" value="XXXHIGH" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Downloads/AB Logo S.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
+                            <entry key="launcherLegacy">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="backgroundColor" value="000000" />
+                                      <entry key="iconShape" value="CIRCLE" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/AB Logo S.png" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>
@@ -96,7 +114,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/media/dhanashri/New%20Volume/Ubuntu/android-studio-ide-171.4443003-linux/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_phone_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/media/dhanashri/New%20Volume/Ubuntu/android-studio-ide-171.4443003-linux/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_settings_remote_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -107,7 +125,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="999999" />
-                            <entry key="outputName" value="ic_phone_contact_us" />
+                            <entry key="outputName" value="ic_instru" />
                             <entry key="sourceFile" value="$USER_HOME$" />
                           </map>
                         </option>

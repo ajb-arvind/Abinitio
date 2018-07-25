@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/app_bar_main"
+    android:background="@color/black">
 
     <FrameLayout
         android:id="@+id/content_fragment"
@@ -14,7 +15,23 @@
         android:layout_height="match_parent">
     </FrameLayout>
 
-    <!-- //TODO: For imran khan -->
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvMain"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:dividerHeight="10dp"
+            android:divider="@null">
+        </ListView>
+
+
+    <!-- //TODO: For imran khan -->>
+
 
 
 </android.support.constraint.ConstraintLayout>

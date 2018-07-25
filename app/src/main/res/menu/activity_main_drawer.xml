@@ -10,43 +10,48 @@
             android:title="Home"/>
     </group>
 
-    <item android:title="Event">
+    <group>
+        <item android:title="Event">
+            <menu>
+                <item
+                    android:id="@+id/nav_auto"
+                    android:icon="@drawable/ic_auto"
+                    android:title="Automobile">
+                </item>
+                <item
+                    android:id="@+id/nav_comp"
+                    android:icon="@drawable/ic_comp"
+                    android:title="Computer" />
+                <item
+                    android:id="@+id/nav_civil"
+                    android:icon="@drawable/ic_civil"
+                    android:title="Civil" />
+                <item
+                    android:id="@+id/nav_entc"
+                    android:icon="@drawable/ic_entc"
+                    android:title="EnTc" />
+                <item
+                    android:id="@+id/nav_instru"
+                    android:icon="@drawable/ic_instru"
+                    android:title="Instrumental" />
+                <item
+                    android:id="@+id/nav_mech"
+                    android:icon="@drawable/ic_mech"
+                    android:title="Mechanical" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Other">
         <menu>
             <item
-                android:id="@+id/nav_auto"
-                android:title="Automobile">
-            </item>
+                android:title="Co-Ordinator"
+                android:icon="@drawable/ic_co_ordinator"/>
             <item
-                android:id="@+id/nav_comp"
-                android:title="Computer" />
-            <item
-                android:id="@+id/nav_civil"
-                android:title="Civil" />
-            <item
-                android:id="@+id/nav_entc"
-                android:title="EnTc" />
-            <item
-                android:id="@+id/nav_instru"
-                android:title="Instrumental" />
-            <item
-                android:id="@+id/nav_mech"
-                android:title="Mechanical" />
+                android:title="Gallery"
+                android:icon="@drawable/ic_gallery"/>
         </menu>
     </item>
-
-    <group>
-        <item
-            android:id="@+id/nav_co_odinator"
-            android:title="Co-Ordinator">
-        </item>
-    </group>
-
-    <group>
-        <item
-            android:id="@+id/nav_gallary"
-            android:title="Gallary">
-        </item>
-    </group>
 
 
     <item android:title="Communicate">

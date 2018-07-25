@@ -8,6 +8,20 @@
     <string name="action_settings">Settings</string>
     <string name="contentDescription">the logo of Abinitio</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank Auto</string>
+
+    <string-array name="Title">
+        <item>Timetable</item>
+        <item>Departments</item>
+        <item>Coordinators</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string-array name="Description">
+        <item>Description one</item>
+        <item>Description two</item>
+        <item>Description three</item>
+        <item>Description four</item>
+    </string-array>
+
 </resources>
