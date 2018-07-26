@@ -45,9 +45,11 @@
     <item android:title="Other">
         <menu>
             <item
+                android:id="@+id/nav_co_ordinator"
                 android:title="Co-Ordinator"
                 android:icon="@drawable/ic_co_ordinator"/>
             <item
+                android:id="@+id/nav_gallry"
                 android:title="Gallery"
                 android:icon="@drawable/ic_gallery"/>
         </menu>

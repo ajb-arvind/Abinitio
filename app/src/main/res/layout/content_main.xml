@@ -9,13 +9,6 @@
     tools:showIn="@layout/app_bar_main"
     android:background="@color/black">
 
-    <FrameLayout
-        android:id="@+id/content_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </FrameLayout>
-
-
 
         <ListView
             android:layout_width="match_parent"

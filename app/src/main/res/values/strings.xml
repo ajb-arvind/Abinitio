@@ -12,7 +12,7 @@
 
     <string-array name="Title">
         <item>Timetable</item>
-        <item>Departments</item>
+        <item>Events</item>
         <item>Coordinators</item>
         <item>Settings</item>
     </string-array>
@@ -23,5 +23,15 @@
         <item>Description three</item>
         <item>Description four</item>
     </string-array>
+
+    <string-array name="Departments">
+        <item> Automobile </item>
+        <item> Civil </item>
+        <item> Computer </item>
+        <item> EnTC </item>
+        <item> Instrumentation </item>
+        <item> Mechanical </item>
+    </string-array>
+
 
 </resources>

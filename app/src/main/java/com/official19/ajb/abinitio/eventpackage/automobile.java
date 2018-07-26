@@ -1,4 +1,4 @@
-package com.official19.ajb.abinitio.event;
+package com.official19.ajb.abinitio.eventpackage;
 
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.official19.ajb.abinitio.MainActivity;
 import com.official19.ajb.abinitio.R;
 
 public class automobile extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
@@ -46,6 +47,10 @@ public class automobile extends AppCompatActivity  implements NavigationView.OnN
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        MainActivity.navigation(this ,id);
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

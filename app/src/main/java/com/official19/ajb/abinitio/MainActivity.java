@@ -1,5 +1,6 @@
 package com.official19.ajb.abinitio;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,25 +11,36 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.official19.ajb.abinitio.event.automobile;
-import com.official19.ajb.abinitio.event.computer;
+import com.official19.ajb.abinitio.eventpackage.automobile;
+import com.official19.ajb.abinitio.eventpackage.civil;
+import com.official19.ajb.abinitio.eventpackage.computer;
+import com.official19.ajb.abinitio.eventpackage.entc;
+import com.official19.ajb.abinitio.eventpackage.instru;
+import com.official19.ajb.abinitio.eventpackage.mechanical;
+import com.official19.ajb.abinitio.other.co_ordinator;
+import com.official19.ajb.abinitio.other.gallary;
+import com.official19.ajb.abinitio.communication.contact;
 
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private ListView listView;
+    private CardView cardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +48,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         listView=(ListView)findViewById(R.id.lvMain);
-
+        cardView = (CardView)findViewById(R.id.cv_main);
 
         setSupportActionBar(toolbar);
         setTitle("Home");
@@ -101,39 +113,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        switch (id){
-            case R.id.nav_home:
-                startActivity(new Intent(this, MainActivity.class));
-                finish();
-                break;
-
-            case R.id.nav_auto:             startActivity(new Intent(this, automobile.class));
-
-                break;
-
-            case R.id.nav_comp:             startActivity(new Intent(this, computer.class));
-                break;
-
-            case R.id.nav_civil:             startActivity(new Intent(this, automobile.class));
-                break;
-
-            case R.id.nav_entc:             startActivity(new Intent(this, automobile.class));
-                break;
-
-            case R.id.nav_instru:             startActivity(new Intent(this, automobile.class));
-                break;
-
-            case R.id.nav_mech:             startActivity(new Intent(this, automobile.class));
-                break;
-
-            case R.id.nav_share:             startActivity(new Intent(this, automobile.class));
-                break;
-
-            case R.id.nav_send:             startActivity(new Intent(this, automobile.class));
-                break;
-        }
-
-
+        navigation(this,id);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -143,11 +123,15 @@ public class MainActivity extends AppCompatActivity
 
     private void setupListView()
     {
+
         String[] title = getResources().getStringArray(R.array.Title);
         String[] description  = getResources().getStringArray(R.array.Description);
 
         SimpleAdapter simpleAdapter = new SimpleAdapter(MainActivity.this,title,description);
         listView.setAdapter(simpleAdapter);
+
+
+
 
     }
 
@@ -200,8 +184,8 @@ public class MainActivity extends AppCompatActivity
                 title.setText("Timetable");
                 description.setText("Description 1");
                 imageView.setImageResource(R.drawable.calender);
-            }else if (titlearray[i].equalsIgnoreCase("Departments")){
-                title.setText("Departments");
+            }else if (titlearray[i].equalsIgnoreCase("Events")){
+                title.setText("Events");
                 description.setText("Description 2");
                 imageView.setImageResource(R.drawable.book);
             }else if (titlearray[i].equalsIgnoreCase("Coordinators")){
@@ -215,6 +199,48 @@ public class MainActivity extends AppCompatActivity
             }
 
             return view;
+        }
+    }
+
+    public static void navigation(Activity activity, int id){
+        switch (id){
+            case R.id.nav_home:
+                activity.startActivity(new Intent(activity, MainActivity.class));
+                activity.finish();
+                break;
+
+            case R.id.nav_auto:             activity.startActivity(new Intent(activity, automobile.class));
+                break;
+
+            case R.id.nav_comp:             activity.startActivity(new Intent(activity, computer.class));
+                break;
+
+            case R.id.nav_civil:             activity.startActivity(new Intent(activity, civil.class));
+                break;
+
+            case R.id.nav_entc:             activity.startActivity(new Intent(activity, entc.class));
+                break;
+
+            case R.id.nav_instru:             activity.startActivity(new Intent(activity, instru.class));
+                break;
+
+            case R.id.nav_mech:             activity.startActivity(new Intent(activity, mechanical.class));
+                break;
+
+            case R.id.nav_co_ordinator:             activity.startActivity(new Intent(activity, co_ordinator.class));
+                break;
+
+            case R.id.nav_gallry:             activity.startActivity(new Intent(activity, gallary.class));
+                break;
+
+            case R.id.nav_share:             //activity.startActivity(new Intent(this, automobile.class));
+                break;
+
+            case R.id.nav_send:             //activity.startActivity(new Intent(this, automobile.class));
+                break;
+
+            case R.id.nav_contact:             activity.startActivity(new Intent(activity, contact.class));
+                break;
         }
     }
 
