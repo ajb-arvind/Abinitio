@@ -20,16 +20,26 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".eventpackage.automobile" />
-        <activity android:name=".eventpackage.computer" />
-        <activity android:name=".eventpackage.civil" />
-        <activity android:name=".eventpackage.entc" />
-        <activity android:name=".eventpackage.instru" />
-        <activity android:name=".eventpackage.mechanical" />
-        <activity android:name=".other.co_ordinator" />
-        <activity android:name=".other.gallary" />
-        <activity android:name=".communication.contact" />
-        <activity android:name=".event"></activity>
+        <activity android:name=".eventpackage.automobile"
+            android:parentActivityName=".event"/>
+        <activity android:name=".eventpackage.computer"
+            android:parentActivityName=".event"/>
+        <activity android:name=".eventpackage.civil"
+            android:parentActivityName=".event"/>
+        <activity android:name=".eventpackage.entc"
+            android:parentActivityName=".event"/>
+        <activity android:name=".eventpackage.instru"
+            android:parentActivityName=".event"/>
+        <activity android:name=".eventpackage.mechanical"
+            android:parentActivityName=".event"/>
+        <activity android:name=".other.co_ordinator"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".other.gallary"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".communication.contact"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".event"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

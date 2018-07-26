@@ -7,4 +7,9 @@
     <color name="dark_green">#124f3b</color>
     <color name="grey">#292929</color>
     <color name="black">#000000</color>
+
+    <color name="day_color">#F2C42614</color>
+    <color name="hrs_color">#f2c49514</color>
+    <color name="min_color">#f240c414</color>
+    <color name="sec_color">#f21460c4</color>
 </resources>

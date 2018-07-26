@@ -1,5 +1,6 @@
 package com.official19.ajb.abinitio.eventpackage;
 
+import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -11,6 +12,7 @@ import android.view.MenuItem;
 
 import com.official19.ajb.abinitio.MainActivity;
 import com.official19.ajb.abinitio.R;
+import com.official19.ajb.abinitio.event;
 
 public class automobile extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -40,7 +42,7 @@ public class automobile extends AppCompatActivity  implements NavigationView.OnN
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            startActivity(new Intent(automobile.this,event.class));
         }
     }
 

@@ -3,7 +3,6 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     app:cardCornerRadius="10dp"
-    android:padding="3dp"
     android:elevation="4dp"
 
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/ivMain"
+            android:id="@+id/ivEventMain"
             android:layout_width="80dp"
             android:layout_height="105dp"
             android:layout_alignParentLeft="true"
@@ -24,29 +23,19 @@
             android:layout_marginStart="10dp" />
 
         <TextView
-            android:id="@+id/tvTitle"
+            android:id="@+id/tvEventTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="6dp"
             android:layout_marginTop="6dp"
             android:text="Timetable"
-            android:layout_toRightOf="@+id/ivMain"
+            android:layout_toRightOf="@+id/ivEventMain"
             android:textSize="24sp"
             android:textStyle="bold" />
 
 
         <TextView
-            android:id="@+id/tvDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/tvTitle"
-            android:layout_centerVertical="true"
-            android:text="Description"
-            android:textSize="16dp" />
-
-
-        <TextView
-            android:id="@+id/tvClick"
+            android:id="@+id/tvEventClick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/ivMain"

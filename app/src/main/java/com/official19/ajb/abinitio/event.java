@@ -1,16 +1,26 @@
 package com.official19.ajb.abinitio;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.official19.ajb.abinitio.eventpackage.automobile;
+import com.official19.ajb.abinitio.eventpackage.civil;
+import com.official19.ajb.abinitio.eventpackage.computer;
+import com.official19.ajb.abinitio.eventpackage.entc;
+import com.official19.ajb.abinitio.eventpackage.instru;
+import com.official19.ajb.abinitio.eventpackage.mechanical;
 
 public class event extends AppCompatActivity {
 
@@ -21,17 +31,47 @@ public class event extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
+
         toolbar=(Toolbar)findViewById(R.id.toolbar);
-        listView=(ListView)findViewById(R.id.lvMain);
+        listView=(ListView)findViewById(R.id.lvDepartments);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Events");
+
         setupListView();
     }
 
     public void setupListView()
     {
         String[] title = getResources().getStringArray(R.array.Departments);
-
         SimpleAdapter simpleAdapter = new SimpleAdapter(event.this,title);
         listView.setAdapter(simpleAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                switch (i){
+                    case 0:
+                        startActivity(new Intent(getApplicationContext(),automobile.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(getApplicationContext(),civil.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(getApplicationContext(),computer.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(getApplicationContext(),entc.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(getApplicationContext(),instru.class));
+                        break;
+                    case 5:
+                        startActivity(new Intent(getApplicationContext(),mechanical.class));
+                        break;
+                }
+            }
+        });
 
     }
 
@@ -45,9 +85,9 @@ public class event extends AppCompatActivity {
 
         public SimpleAdapter(Context context,String[] title)
         {
-            mcontext = context;
+            this.mcontext = context;
             titlearray = title;
-            layoutInflater = LayoutInflater.from(context);
+            layoutInflater = LayoutInflater.from(mcontext);
         }
 
         @Override
@@ -75,7 +115,7 @@ public class event extends AppCompatActivity {
 
             title=(TextView)view.findViewById(R.id.tvTitle);
             click=(TextView)view.findViewById(R.id.tvClick);
-            imageView=(ImageView)view.findViewById(R.id.tvDescription);
+            imageView=(ImageView)view.findViewById(R.id.ivMain);
 
             switch (titlearray[i])
             {
