@@ -97,8 +97,8 @@ public class MainActivity extends AppCompatActivity
 
                                 days = ABINITIO_DAY - Integer.parseInt(day);
 
-                                if(Integer.parseInt(hrs) < 24 && Integer.parseInt(hrs) > 11){
-                                    hrss = 24 - Integer.parseInt(hrs) + ABINITIO_HRS;   //pm
+                                if(Integer.parseInt(hrs) < 24 && Integer.parseInt(hrs) >= 11){
+                                    hrss = 24 - Integer.parseInt(hrs) + ABINITIO_HRS-1;   //pm
                                 }
                                 else
                                     hrss = ABINITIO_HRS - Integer.parseInt(hrs) - 1;        //am
@@ -121,7 +121,6 @@ public class MainActivity extends AppCompatActivity
             }
         };
         t.start();
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -157,19 +156,16 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
@@ -180,7 +176,7 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+
         int id = item.getItemId();
         navigation(this,id);
 
@@ -229,71 +225,7 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-    public class SimpleAdapter extends BaseAdapter {
 
-        private Context mcontext;
-        private LayoutInflater layoutInflater;
-        private TextView title,description,click;
-        private String[] titlearray,descriptionarray;
-        private ImageView imageView;
-
-        public SimpleAdapter(Context context,String[] title,String[] description)
-        {
-            mcontext = context;
-            titlearray = title;
-            descriptionarray = description;
-            layoutInflater = LayoutInflater.from(context);
-        }
-
-        @Override
-        public int getCount() {
-            return titlearray.length;
-        }
-
-        @Override
-        public Object getItem(int i) {
-            return titlearray[i];
-        }
-
-        @Override
-        public long getItemId(int i) {
-            return i;
-        }
-
-        @Override
-        public View getView(int i, View view, ViewGroup viewGroup) {
-
-            if (view ==null)
-            {
-                view = layoutInflater.inflate(R.layout.list_content_main,null);
-            }
-
-            title=(TextView)view.findViewById(R.id.tvTitle);
-            imageView=(ImageView)view.findViewById(R.id.ivMain);
-            description=(TextView)view.findViewById(R.id.tvDescription);
-            click=(TextView)view.findViewById(R.id.tvClick);
-
-            if (titlearray[i].equalsIgnoreCase("Timetable")){
-                title.setText("Timetable");
-                description.setText("Description 1");
-                imageView.setImageResource(R.drawable.calender);
-            }else if (titlearray[i].equalsIgnoreCase("Events")){
-                title.setText("Events");
-                description.setText("Description 2");
-                imageView.setImageResource(R.drawable.book);
-            }else if (titlearray[i].equalsIgnoreCase("Coordinators")){
-                title.setText("Coodinators");
-                description.setText("Description 3");
-                imageView.setImageResource(R.drawable.contact);
-            }else if (titlearray[i].equalsIgnoreCase("Settings")){
-                title.setText("Settings");
-                description.setText("Description 4");
-                imageView.setImageResource(R.drawable.settings);
-            }
-
-            return view;
-        }
-    }
 
     public static void navigation(Activity activity, int id){
         switch (id){

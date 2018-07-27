@@ -40,6 +40,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/day_color"
+                    app:cardElevation="20in"
                     app:cardCornerRadius="10dp" >
 
                         <TextView
@@ -49,6 +50,7 @@
                             android:gravity="center"
                             android:text="DD"
                             android:textStyle="bold"
+                            android:elevation="20dp"
                             android:textSize="32sp"
                             android:textColor="@color/white"/>
                 </android.support.v7.widget.CardView>
@@ -62,6 +64,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="2dp"
                     app:cardCornerRadius="10dp"
+                    app:cardElevation="20in"
                     app:cardBackgroundColor="@color/hrs_color">
 
                         <TextView
@@ -72,6 +75,7 @@
                             android:textColor="@color/white"
                             android:text="HH"
                             android:textStyle="bold"
+                            android:elevation="20dp"
                             android:textSize="32sp" />
                 </android.support.v7.widget.CardView>
 
@@ -84,6 +88,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="2dp"
                     app:cardCornerRadius="10dp"
+                    app:cardElevation="20in"
                     app:cardBackgroundColor="@color/min_color">
 
                         <TextView
@@ -94,6 +99,7 @@
                             android:text="MM"
                             android:textStyle="bold"
                             android:textSize="32sp"
+                            android:elevation="20dp"
                             android:textColor="@color/white" />
                 </android.support.v7.widget.CardView>
 
@@ -106,6 +112,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="2dp"
                     app:cardCornerRadius="10dp"
+                    app:cardElevation="20in"
                     app:cardBackgroundColor="@color/sec_color">
 
                         <TextView
@@ -115,6 +122,7 @@
                             android:gravity="center"
                             android:text="SS"
                             android:textStyle="bold"
+                            android:elevation="20dp"
                             android:textSize="32sp"
                             android:textColor="@color/white" />
                 </android.support.v7.widget.CardView>
