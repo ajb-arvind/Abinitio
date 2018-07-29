@@ -6,6 +6,7 @@
     <string name="nav_header_subtitle">Government College of Engineering and Research Awasri</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="action_co_ordinator">Login</string>
     <string name="contentDescription">the logo of Abinitio</string>
 
     <string name="hello_blank_fragment">Hello blank Auto</string>
@@ -31,6 +32,48 @@
         <item> EnTC </item>
         <item> Instrumentation </item>
         <item> Mechanical </item>
+    </string-array>
+
+    <string-array name="Auto_Event">
+        <item>Auto_1</item>
+        <item>Auto_2</item>
+        <item>Auto_3</item>
+        <item>Auto_4</item>
+    </string-array>
+
+    <string-array name="Civil_Event">
+        <item>Civil_1</item>
+        <item>Civil_2</item>
+        <item>Civil_3</item>
+        <item>Civil_4</item>
+    </string-array>
+
+    <string-array name="Comp_Event">
+        <item>Comp_1</item>
+        <item>Comp_2</item>
+        <item>Comp_3</item>
+        <item>Comp_4</item>
+    </string-array>
+
+    <string-array name="Entc_Event">
+        <item>Entc_1</item>
+        <item>Entc_2</item>
+        <item>Entc_3</item>
+        <item>Entc_4</item>
+    </string-array>
+
+    <string-array name="Instru_Event">
+        <item>Instru_1</item>
+        <item>Instru_2</item>
+        <item>Instru_3</item>
+        <item>Instru_4</item>
+    </string-array>
+
+    <string-array name="Mech_Event">
+        <item>Mech_1</item>
+        <item>Mech_2</item>
+        <item>Mech_3</item>
+        <item>Mech_4</item>
     </string-array>
 
 

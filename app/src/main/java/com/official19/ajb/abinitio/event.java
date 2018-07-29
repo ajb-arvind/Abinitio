@@ -1,6 +1,5 @@
 package com.official19.ajb.abinitio;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -9,16 +8,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.official19.ajb.abinitio.eventpackage.automobile;
 import com.official19.ajb.abinitio.eventpackage.civil;
@@ -55,6 +48,16 @@ public class event extends AppCompatActivity implements NavigationView.OnNavigat
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            startActivity(new Intent(this, MainActivity.class));
+        }
+    }
+
     public boolean onNavigationItemSelected(MenuItem item) {
 
         int id = item.getItemId();
@@ -76,7 +79,6 @@ public class event extends AppCompatActivity implements NavigationView.OnNavigat
                 switch (i) {
                     case 0:
                         startActivity(new Intent(getApplicationContext(), automobile.class));
-                        finish();
                         break;
                     case 1:
                         startActivity(new Intent(getApplicationContext(), civil.class));
@@ -98,5 +100,8 @@ public class event extends AppCompatActivity implements NavigationView.OnNavigat
         });
 
     }
+
+
+
 
 }

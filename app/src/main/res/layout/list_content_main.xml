@@ -3,6 +3,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     app:cardCornerRadius="10dp"
+    android:foreground="?android:attr/selectableItemBackground"
     android:padding="3dp"
     android:elevation="4dp"
 

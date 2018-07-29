@@ -27,6 +27,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.official19.ajb.abinitio.allevent.GameActivity;
 import com.official19.ajb.abinitio.eventpackage.automobile;
 import com.official19.ajb.abinitio.eventpackage.civil;
 import com.official19.ajb.abinitio.eventpackage.computer;
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private ListView listView;
-    private CardView cardView;
+    public CardView cardView1, cardView2, cardView3, cardView4;
     private TextView Day, Hrs, Min, Sec;
     int days = 0, hrss = 0, mins = 0, secs = 0;
     public static int ABINITIO_DAY = 31 , ABINITIO_HRS = 11, ABINITIO_MIN = 60;
@@ -57,9 +58,9 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         listView=(ListView)findViewById(R.id.lvMain);
-        cardView = (CardView)findViewById(R.id.cv_main);
 
         setUIViews();
+        newActivity();
 
         setSupportActionBar(toolbar);
         setTitle("Home");
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        setupListView();
+        //setupListView();
 
         Thread t = new Thread() {
             @Override
@@ -98,7 +99,7 @@ public class MainActivity extends AppCompatActivity
                                 days = ABINITIO_DAY - Integer.parseInt(day);
 
                                 if(Integer.parseInt(hrs) < 24 && Integer.parseInt(hrs) >= 11){
-                                    hrss = 24 - Integer.parseInt(hrs) + ABINITIO_HRS-1;   //pm
+                                    hrss = 23 - Integer.parseInt(hrs) + ABINITIO_HRS -1;   //pm
                                 }
                                 else
                                     hrss = ABINITIO_HRS - Integer.parseInt(hrs) - 1;        //am
@@ -190,10 +191,45 @@ public class MainActivity extends AppCompatActivity
         Hrs = (TextView)findViewById(R.id.tvHrs);
         Min = (TextView)findViewById(R.id.tvMin);
         Sec = (TextView)findViewById(R.id.tvSec);
+
+        cardView1 = (CardView)findViewById(R.id.card1);
+        cardView2 = (CardView)findViewById(R.id.card2);
+        cardView3 = (CardView)findViewById(R.id.card3);
+        cardView4 = (CardView)findViewById(R.id.card4);
+    }
+
+    public void newActivity(){
+        cardView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Timetable is Not Created", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        cardView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), event.class));
+            }
+        });
+
+        cardView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Co-Ordinator is Not Created", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        cardView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Setting is Not Created", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 
-    private void setupListView()
+    /*private void setupListView()
     {
 
         final String[] title = getResources().getStringArray(R.array.Title);
@@ -214,6 +250,7 @@ public class MainActivity extends AppCompatActivity
                         startActivity(new Intent(MainActivity.this,event.class));
                         break;
                     case 2:
+                        startActivity(new Intent(MainActivity.this,collapse.class));
                         break;
                     case 3:
                         break;
@@ -222,7 +259,7 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-    }
+    }*/
 
 
 
