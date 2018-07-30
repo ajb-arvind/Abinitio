@@ -73,8 +73,30 @@
         <item>Mech_1</item>
         <item>Mech_2</item>
         <item>Mech_3</item>
-        <item>Mech_4</item>
+        <item>Mech_4</item>s
     </string-array>
 
+
+    <string-array name="Name">
+        <item>Arvind</item>
+        <item>Dheeraj</item>
+        <item>Laraib</item>
+        <item>Kiran</item>
+        <item>Digambar</item>
+        <item>Devesh</item>
+        <item>Swapnil</item>
+        <item>Rushi</item>
+    </string-array>
+
+    <string-array name="Contact">
+        <item>Contact:9370088262</item>
+        <item>Contact:9284705198</item>
+        <item>Contact:7889592130</item>
+        <item>Contact:7709958841</item>
+        <item>Contact:7218506834</item>
+        <item>Contact:9850316611</item>
+        <item>Contact:9156981726</item>
+        <item>Contact:7768937511</item>
+    </string-array>
 
 </resources>

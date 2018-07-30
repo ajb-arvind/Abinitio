@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity
         cardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Co-Ordinator is Not Created", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), contact.class));
             }
         });
 
