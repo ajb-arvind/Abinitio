@@ -54,13 +54,15 @@
                 android:icon="@drawable/ic_gallery"/>
             <item
                 android:id="@+id/nav_principal_desk"
-                android:title="Principal Desk"/>
+                android:title="Principal Desk"
+                android:icon="@drawable/ic_phone_contact_us"/>
             <item
                 android:id="@+id/nav_about_gcoeara"
                 android:title="About GCOEARA"/>
             <item
                 android:id="@+id/nav_about_us"
-                android:title="About Us"/>
+                android:title="About Us"
+                android:icon="@drawable/ic_auto"/>
         </menu>
     </item>
 

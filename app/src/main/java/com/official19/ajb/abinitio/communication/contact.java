@@ -8,11 +8,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.ListView;
 
 import com.official19.ajb.abinitio.MainActivity;
 import com.official19.ajb.abinitio.R;
+import com.official19.ajb.abinitio.SimpleAdapter;
+import com.official19.ajb.abinitio.event;
 
 public class contact extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
+
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +32,8 @@ public class contact extends AppCompatActivity  implements NavigationView.OnNavi
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        setListView();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -50,5 +57,14 @@ public class contact extends AppCompatActivity  implements NavigationView.OnNavi
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void setListView()
+    {
+        listView=(ListView)findViewById(R.id.lvFaculty);
+        String[] title = getResources().getStringArray(R.array.Name);
+        String[] description = getResources().getStringArray(R.array.Contact);
+        FacultyAdapter facultyAdapter = new FacultyAdapter(contact.this, title,description);
+        listView.setAdapter(facultyAdapter);
     }
 }
