@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.official19.ajb.abinitio">
 
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -54,7 +54,10 @@
             android:name=".communication.contact"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".collapse" />
-        <activity android:name=".allevent.GameActivity"></activity>
+        <activity android:name=".allevent.GameActivity" />
+        <activity android:name=".co_ordinatorlogin.loginScreen" />
+        <activity android:name=".co_ordinatorlogin.RegistrationActivity" />
+        <activity android:name=".co_ordinatorlogin.Co_OrdinatorProfileActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1056391524444",
+    "firebase_url": "https://abinitio-2k19.firebaseio.com",
+    "project_id": "abinitio-2k19",
+    "storage_bucket": "abinitio-2k19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056391524444:android:4318c754ee15152e",
+        "android_client_info": {
+          "package_name": "com.official19.ajb.abinitio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056391524444-ntljuor6hifh385caajbog17hl3eadj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcxw7nBseS6UUhU60l_K2Hio2_RCxZa5U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

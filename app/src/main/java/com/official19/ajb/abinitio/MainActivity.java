@@ -37,6 +37,7 @@ import com.official19.ajb.abinitio.eventpackage.mechanical;
 import com.official19.ajb.abinitio.other.co_ordinator;
 import com.official19.ajb.abinitio.other.gallary;
 import com.official19.ajb.abinitio.communication.contact;
+import com.official19.ajb.abinitio.co_ordinatorlogin.loginScreen;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -223,7 +224,7 @@ public class MainActivity extends AppCompatActivity
         cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Setting is Not Created", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), loginScreen.class));
             }
         });
     }

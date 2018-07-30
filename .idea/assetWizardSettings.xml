@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/media/dhanashri/New%20Volume/Ubuntu/android-studio-ide-171.4443003-linux/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/hardware/ic_keyboard_arrow_down_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/media/dhanashri/New%20Volume/Ubuntu/android-studio-ide-171.4443003-linux/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/social/ic_person_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -33,7 +33,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="down_arrow" />
+                                      <entry key="outputName" value="login" />
                                     </map>
                                   </option>
                                 </PersistentState>
