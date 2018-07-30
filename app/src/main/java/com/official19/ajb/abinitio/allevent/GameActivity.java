@@ -1,7 +1,13 @@
 package com.official19.ajb.abinitio.allevent;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -21,6 +27,8 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
 
     CardView RulesCard, PrizeCard, Co_OrdinatorCard;
     TextView RulesCardHidden, PrizeCardHidden, Co_OrdinatorCardHidden;
+    FloatingActionButton makeCall;
+    private static final int REQUEST_PHONE_CALL = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +41,8 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
         setTitle("Game");
 
         ExpandCard();
+
+        setMakeCall();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -76,6 +86,8 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
         PrizeCardHidden = (TextView) findViewById(R.id.tvPrizeHidden);
         Co_OrdinatorCardHidden = (TextView) findViewById(R.id.tvCo_ordinatorHidden);
 
+        makeCall = findViewById(R.id.call);
+
     }
 
     void ExpandCard(){
@@ -116,5 +128,22 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
             }
         });
 
+    }
+
+    void setMakeCall(){
+        makeCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent callIntent = new Intent(Intent.ACTION_CALL);//USE ACTION_DIAL
+                callIntent.setData(Uri.parse("tel:9370088262"));
+                if (ContextCompat.checkSelfPermission(GameActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(GameActivity.this, new String[]{Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
+                }
+                else
+                {
+                    startActivity(callIntent);
+                }
+            }
+        });
     }
 }

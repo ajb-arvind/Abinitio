@@ -300,9 +300,6 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_share:             //activity.startActivity(new Intent(this, automobile.class));
                 break;
 
-            case R.id.nav_send:             //activity.startActivity(new Intent(this, automobile.class));
-                break;
-
             case R.id.nav_contact:             activity.startActivity(new Intent(activity, contact.class));
                 break;
         }

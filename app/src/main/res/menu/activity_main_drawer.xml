@@ -52,6 +52,15 @@
                 android:id="@+id/nav_gallry"
                 android:title="Gallery"
                 android:icon="@drawable/ic_gallery"/>
+            <item
+                android:id="@+id/nav_principal_desk"
+                android:title="Principal Desk"/>
+            <item
+                android:id="@+id/nav_about_gcoeara"
+                android:title="About GCOEARA"/>
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="About Us"/>
         </menu>
     </item>
 
@@ -62,10 +71,6 @@
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
                 android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
 
             <item
                 android:id="@+id/nav_contact"
