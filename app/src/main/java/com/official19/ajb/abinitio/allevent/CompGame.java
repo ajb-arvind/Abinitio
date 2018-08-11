@@ -22,13 +22,13 @@ import android.widget.TextView;
 
 import com.official19.ajb.abinitio.MainActivity;
 import com.official19.ajb.abinitio.R;
-import com.official19.ajb.abinitio.event;
 import com.official19.ajb.abinitio.eventpackage.automobile;
+import com.official19.ajb.abinitio.eventpackage.computer;
 
-public class GameActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class CompGame extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     CardView RulesCard, PrizeCard, Co_OrdinatorCard;
-    TextView Description,RulesCardHidden, PrizeCardHidden, Co_OrdinatorCardHidden;
+    TextView RulesCardHidden, PrizeCardHidden, Co_OrdinatorCardHidden;
     ImageView RulesArrow,PrizeArrow,Co_OrdinatorArrow;
     FloatingActionButton makeCall;
     String cordintor_no;
@@ -46,40 +46,44 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
 
         Intent intent =getIntent();
-        String event = intent.getStringExtra("Auto_Event");
+        String event = intent.getStringExtra("Comp_Event");
 
         getSupportActionBar().setTitle(event);
 
         switch (event)
         {
-            case "Lathe War":
-                Description.setText("1.Lathe war is very fantastic game\n" +
-                        "2.Anybody can participate\n" +
-                        "3.i Love you bro");
-                RulesCardHidden.setText("Auto_1 Rules");
-                PrizeCardHidden.setText("Auto_1 prize");
-                Co_OrdinatorCardHidden.setText("Auto_Cordinators Auto_1");
+            case "C60":
+                RulesCardHidden.setText("Comp_1 Rules");
+                PrizeCardHidden.setText("Comp_1 prize");
+                Co_OrdinatorCardHidden.setText("Auto_Cordinators Comp_1");
                 cordintor_no="tel:9370088262";
                 break;
 
-            case "Vehicle Troubleshooting":
-                RulesCardHidden.setText("Auto_2 Rules");
-                PrizeCardHidden.setText("Auto_2 prize");
-                Co_OrdinatorCardHidden.setText("Auto_Cordinators Auto_1");
+            case "Algorix":
+                RulesCardHidden.setText("Comp_2 Rules");
+                PrizeCardHidden.setText("Comp_2 prize");
+                Co_OrdinatorCardHidden.setText("Auto_Cordinators Comp_2");
                 cordintor_no="tel:9284705198";
                 break;
 
-            case "Mock Placement":
-                RulesCardHidden.setText("Auto_3 Rules");
-                PrizeCardHidden.setText("Auto_3 prize");
-                Co_OrdinatorCardHidden.setText("Auto_Cordinators Auto_1");
+            case "Search Master":
+                RulesCardHidden.setText("Comp_3 Rules");
+                PrizeCardHidden.setText("Comp_3 prize");
+                Co_OrdinatorCardHidden.setText("Auto_Cordinators Comp_3");
                 cordintor_no="tel:8830678511";
                 break;
 
-            case "Model Making":
-                RulesCardHidden.setText("Auto_4 Rules");
-                PrizeCardHidden.setText("Auto_4 prize");
-                Co_OrdinatorCardHidden.setText("Auto_Cordinators Auto_1");
+            case "Data Geeks":
+                RulesCardHidden.setText("Comp_4 Rules");
+                PrizeCardHidden.setText("Comp_4 prize");
+                Co_OrdinatorCardHidden.setText("Auto_Cordinators Comp_4");
+                cordintor_no="tel:9370088262";
+                break;
+
+            case "Counter Strike":
+                RulesCardHidden.setText("Comp_5 Rules");
+                PrizeCardHidden.setText("Comp_5 prize");
+                Co_OrdinatorCardHidden.setText("Auto_Cordinators Comp_5");
                 cordintor_no="tel:9370088262";
                 break;
 
@@ -107,7 +111,7 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            startActivity(new Intent(this, automobile.class));
+            startActivity(new Intent(this, computer.class));
         }
     }
 
@@ -128,7 +132,6 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
         PrizeCard = (CardView)findViewById(R.id.cvPrizeCard);
         Co_OrdinatorCard = (CardView)findViewById(R.id.cvCo_ordinatorCard);
 
-        Description=(TextView)findViewById(R.id.tvDescriptionGame);
         RulesCardHidden = (TextView) findViewById(R.id.tvRulesHidden);
         PrizeCardHidden = (TextView) findViewById(R.id.tvPrizeHidden);
         Co_OrdinatorCardHidden = (TextView) findViewById(R.id.tvCo_ordinatorHidden);
@@ -195,8 +198,8 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
             public void onClick(View view) {
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);//USE ACTION_DIAL
                 callIntent.setData(Uri.parse(cordintor_no));
-                if (ContextCompat.checkSelfPermission(GameActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                    ActivityCompat.requestPermissions(GameActivity.this, new String[]{Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
+                if (ContextCompat.checkSelfPermission(CompGame.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(CompGame.this, new String[]{Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
                 }
                 else
                 {

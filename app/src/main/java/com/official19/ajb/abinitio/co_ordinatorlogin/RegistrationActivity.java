@@ -162,7 +162,6 @@ public class RegistrationActivity extends AppCompatActivity
         databaseReference.setValue(userProfile);
 
 
-
     }
 
     @Override

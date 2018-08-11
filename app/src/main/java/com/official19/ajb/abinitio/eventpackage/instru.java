@@ -36,7 +36,7 @@ public class instru extends AppCompatActivity   implements NavigationView.OnNavi
         sliderDot=(LinearLayout)findViewById(R.id.lldots);
 
         setSupportActionBar(toolbar);
-        setTitle("Instrumentation");
+        setTitle("Niyantrana");
 
         setupListView();
 

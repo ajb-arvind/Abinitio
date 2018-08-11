@@ -73,32 +73,32 @@ public class SimpleAdapter extends BaseAdapter {
 
         switch (titlearray[i]) {
             case "Automobile":
-                title.setText(titlearray[i]);
+                title.setText("Aftokinitio");
                 imageView.setImageResource(R.drawable.automobile);
                 break;
 
             case "Civil":
-                title.setText(titlearray[i]);
+                title.setText("Civiclan");
                 imageView.setImageResource(R.drawable.civil2);
                 break;
 
             case "Computer":
-                title.setText(titlearray[i]);
+                title.setText("Codegenesis");
                 imageView.setImageResource(R.drawable.comp);
                 break;
 
             case "EnTC":
-                title.setText(titlearray[i]);
+                title.setText("Technolite");
                 imageView.setImageResource(R.drawable.entc2);
                 break;
 
             case "Instrumentation":
-                title.setText(titlearray[i]);
+                title.setText("Niyantrana");
                 imageView.setImageResource(R.drawable.instrumentation);
                 break;
 
             case "Mechanical":
-                title.setText(titlearray[i]);
+                title.setText("Mechtrix");
                 imageView.setImageResource(R.drawable.mechanical);
                 break;
         }

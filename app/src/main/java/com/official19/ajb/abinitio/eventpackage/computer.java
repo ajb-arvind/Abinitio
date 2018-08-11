@@ -36,7 +36,7 @@ public class computer extends AppCompatActivity implements NavigationView.OnNavi
         sliderDot=(LinearLayout)findViewById(R.id.lldots);
 
         setSupportActionBar(toolbar);
-        setTitle("Computer");
+        setTitle("Codegenesis");
 
         setupListView();
 

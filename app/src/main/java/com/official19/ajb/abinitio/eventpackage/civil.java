@@ -36,7 +36,7 @@ public class civil extends AppCompatActivity   implements NavigationView.OnNavig
         sliderDot=(LinearLayout)findViewById(R.id.lldots);
 
         setSupportActionBar(toolbar);
-        setTitle("Civil");
+        setTitle("Civiclan");
 
         setupListView();
 
