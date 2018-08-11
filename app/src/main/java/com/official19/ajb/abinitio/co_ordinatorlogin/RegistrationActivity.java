@@ -39,7 +39,7 @@ public class RegistrationActivity extends AppCompatActivity
     private TextView Signup2;
     private ArrayAdapter arrayAdapter;
     private FirebaseAuth firebaseAuth;
-    String name, email, department, event, password;
+    String name, email, department, event;
     int DepartmentID;
     String[] Branches={"Automobile","Civil","Computer","EnTC","Instrumentation","Mechnical"};
 
@@ -88,10 +88,8 @@ public class RegistrationActivity extends AppCompatActivity
                                 //  sendEmailVerification();
                                 sendUserData();
                                 Toast.makeText(RegistrationActivity.this, "Registration successfull your data has been stored", Toast.LENGTH_SHORT).show();
-                                firebaseAuth.signOut();
                                 finish();
                                 startActivity(new Intent(RegistrationActivity.this, loginScreen.class));
-
                             } else {
                                 Toast.makeText(RegistrationActivity.this, "registration UnSuccessful", Toast.LENGTH_SHORT).show();
                             }
@@ -158,11 +156,8 @@ public class RegistrationActivity extends AppCompatActivity
     {
         FirebaseDatabase firebaseDatabase= FirebaseDatabase.getInstance();
         DatabaseReference databaseReference=firebaseDatabase.getReference(firebaseAuth.getUid());
-        UserProfile userProfile=new UserProfile(name,email,department,event);
+        UserProfile userProfile=new UserProfile(name,email,department,event, "", "", "");
         databaseReference.setValue(userProfile);
-
-
-
     }
 
     @Override

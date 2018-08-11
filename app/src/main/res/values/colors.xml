@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#00ACC1</color>
     <color name="white">#ffffff</color>
     <color name="dark_green">#124f3b</color>
     <color name="grey">#292929</color>
@@ -12,4 +12,6 @@
     <color name="hrs_color">#f2c49514</color>
     <color name="min_color">#f240c414</color>
     <color name="sec_color">#f21460c4</color>
+    <color name="dheeraj_bakground">#455A64</color>
+    <color name="dheeraj_foreground">#00ACC1</color>
 </resources>
