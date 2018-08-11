@@ -57,7 +57,12 @@
         <activity android:name=".allevent.GameActivity" />
         <activity android:name=".co_ordinatorlogin.loginScreen" />
         <activity android:name=".co_ordinatorlogin.RegistrationActivity" />
-        <activity android:name=".co_ordinatorlogin.Co_OrdinatorProfileActivity"></activity>
+        <activity android:name=".co_ordinatorlogin.Co_OrdinatorProfileActivity" />
+        <activity android:name=".allevent.CompGame" />
+        <activity android:name=".allevent.CivilGame" />
+        <activity android:name=".allevent.EnTCGame" />
+        <activity android:name=".allevent.InstruGame" />
+        <activity android:name=".allevent.MechGame"></activity>
     </application>
 
 </manifest>

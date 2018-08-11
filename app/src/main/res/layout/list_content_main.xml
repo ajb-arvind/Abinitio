@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     app:cardCornerRadius="10dp"
     android:foreground="?android:attr/selectableItemBackground"
-    android:padding="3dp"
+    android:padding="15dp"
     android:elevation="4dp"
 
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -28,8 +28,9 @@
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="6dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="6dp"
+            android:layout_centerVertical="true"
             android:text="Timetable"
             android:layout_toRightOf="@+id/ivMain"
             android:textSize="24sp"
@@ -42,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/tvTitle"
             android:layout_centerVertical="true"
-            android:text="Description"
+            android:text=""
             android:textSize="16dp" />
 
 

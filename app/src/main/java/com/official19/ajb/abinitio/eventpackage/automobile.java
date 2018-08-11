@@ -43,7 +43,7 @@ public class automobile extends AppCompatActivity  implements NavigationView.OnN
         sliderDot=(LinearLayout)findViewById(R.id.lldots);
 
         setSupportActionBar(toolbar);
-        setTitle("Automobile");
+        setTitle("Aftokinitio");
 
         setupListView();
 

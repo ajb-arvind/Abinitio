@@ -36,7 +36,7 @@ public class entc extends AppCompatActivity   implements NavigationView.OnNaviga
         sliderDot=(LinearLayout)findViewById(R.id.lldots);
 
         setSupportActionBar(toolbar);
-        setTitle("EnTC");
+        setTitle("Technolite");
 
         setupListView();
 

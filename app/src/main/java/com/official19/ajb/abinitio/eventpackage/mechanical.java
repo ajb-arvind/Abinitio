@@ -35,7 +35,7 @@ public class mechanical extends AppCompatActivity implements NavigationView.OnNa
         sliderDot=(LinearLayout)findViewById(R.id.lldots);
 
         setSupportActionBar(toolbar);
-        setTitle("Mechanical");
+        setTitle("Mechtrix");
 
         setupListView();
 
