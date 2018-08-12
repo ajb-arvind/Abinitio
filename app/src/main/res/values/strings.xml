@@ -101,4 +101,42 @@
         <item>Contact:7768937511</item>
     </string-array>
 
+    <string-array name="auto_descibe">
+        <item>Participants are required to perform set of operations on the job using lathe machine.</item>
+        <item></item>
+        <item>This event is specially design to improve communication skills as well as personality of the participants</item>
+        <item>participants have to make a vehicle model from given material in given time period.</item>
+    </string-array>
+
+    <string-array name="civil_descibe">
+        <item>Participant's will have to design and fabricate their own frames and test them for maximum load.</item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="comp_descibe">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="entc_descibe">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="instru_descibe">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="mech_descibe">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
 </resources>

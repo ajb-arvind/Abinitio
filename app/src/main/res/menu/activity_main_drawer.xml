@@ -16,28 +16,28 @@
                 <item
                     android:id="@+id/nav_auto"
                     android:icon="@drawable/ic_auto"
-                    android:title="Automobile">
+                    android:title="Aftokinitio">
                 </item>
-                <item
-                    android:id="@+id/nav_comp"
-                    android:icon="@drawable/ic_comp"
-                    android:title="Computer" />
                 <item
                     android:id="@+id/nav_civil"
                     android:icon="@drawable/ic_civil"
-                    android:title="Civil" />
+                    android:title="Civiclan" />
+                <item
+                    android:id="@+id/nav_comp"
+                    android:icon="@drawable/ic_comp"
+                    android:title="Codegenesis" />
                 <item
                     android:id="@+id/nav_entc"
                     android:icon="@drawable/ic_entc"
-                    android:title="EnTc" />
+                    android:title="Technolite" />
                 <item
                     android:id="@+id/nav_instru"
                     android:icon="@drawable/ic_instru"
-                    android:title="Instrumental" />
+                    android:title="Niyantrana" />
                 <item
                     android:id="@+id/nav_mech"
                     android:icon="@drawable/ic_mech"
-                    android:title="Mechanical" />
+                    android:title="Mechtrix" />
             </menu>
         </item>
     </group>

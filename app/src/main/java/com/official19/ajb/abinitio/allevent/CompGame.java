@@ -28,10 +28,13 @@ import com.official19.ajb.abinitio.eventpackage.computer;
 public class CompGame extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     CardView RulesCard, PrizeCard, Co_OrdinatorCard;
-    TextView RulesCardHidden, PrizeCardHidden, Co_OrdinatorCardHidden;
+    TextView Description,RulesCardHidden, PrizeCardHidden, Co_OrdinatorCardHidden;
     ImageView RulesArrow,PrizeArrow,Co_OrdinatorArrow;
     FloatingActionButton makeCall;
-    String cordintor_no;
+    String cordintor_no, descb0, descb1, descb2, descb3, descb4,
+            rulesCardHidden0, rulesCardHidden1, rulesCardHidden2, rulesCardHidden3, rulesCardHidden4,
+            prizeCardHidden0, prizeCardHidden1, prizeCardHidden2, prizeCardHidden3, prizeCardHidden4,
+            co_OrdinatorCardHidden0, co_OrdinatorCardHidden1, co_OrdinatorCardHidden2, co_OrdinatorCardHidden3, co_OrdinatorCardHidden4;
     ImageView event_logo;
 
     private static final int REQUEST_PHONE_CALL = 1;
@@ -50,40 +53,47 @@ public class CompGame extends AppCompatActivity implements NavigationView.OnNavi
 
         getSupportActionBar().setTitle(event);
 
+        completeMechanical();
+
         switch (event)
         {
             case "C60":
-                RulesCardHidden.setText("Comp_1 Rules");
-                PrizeCardHidden.setText("Comp_1 prize");
-                Co_OrdinatorCardHidden.setText("Auto_Cordinators Comp_1");
+                Description.setText(descb0);
+                RulesCardHidden.setText(rulesCardHidden0);
+                PrizeCardHidden.setText(prizeCardHidden0);
+                Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden0);
                 cordintor_no="tel:9370088262";
                 break;
 
             case "Algorix":
-                RulesCardHidden.setText("Comp_2 Rules");
-                PrizeCardHidden.setText("Comp_2 prize");
-                Co_OrdinatorCardHidden.setText("Auto_Cordinators Comp_2");
+                Description.setText(descb1);
+                RulesCardHidden.setText(rulesCardHidden1);
+                PrizeCardHidden.setText(prizeCardHidden1);
+                Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden1);
                 cordintor_no="tel:9284705198";
                 break;
 
             case "Search Master":
-                RulesCardHidden.setText("Comp_3 Rules");
-                PrizeCardHidden.setText("Comp_3 prize");
-                Co_OrdinatorCardHidden.setText("Auto_Cordinators Comp_3");
+                Description.setText(descb2);
+                RulesCardHidden.setText(rulesCardHidden2);
+                PrizeCardHidden.setText(prizeCardHidden2);
+                Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden2);
                 cordintor_no="tel:8830678511";
                 break;
 
             case "Data Geeks":
-                RulesCardHidden.setText("Comp_4 Rules");
-                PrizeCardHidden.setText("Comp_4 prize");
-                Co_OrdinatorCardHidden.setText("Auto_Cordinators Comp_4");
+                Description.setText(descb3);
+                RulesCardHidden.setText(rulesCardHidden3);
+                PrizeCardHidden.setText(prizeCardHidden3);
+                Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden3);
                 cordintor_no="tel:9370088262";
                 break;
 
             case "Counter Strike":
-                RulesCardHidden.setText("Comp_5 Rules");
-                PrizeCardHidden.setText("Comp_5 prize");
-                Co_OrdinatorCardHidden.setText("Auto_Cordinators Comp_5");
+                Description.setText(descb4);
+                RulesCardHidden.setText(rulesCardHidden4);
+                PrizeCardHidden.setText(prizeCardHidden4);
+                Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden4);
                 cordintor_no="tel:9370088262";
                 break;
 
@@ -132,6 +142,7 @@ public class CompGame extends AppCompatActivity implements NavigationView.OnNavi
         PrizeCard = (CardView)findViewById(R.id.cvPrizeCard);
         Co_OrdinatorCard = (CardView)findViewById(R.id.cvCo_ordinatorCard);
 
+        Description=(TextView)findViewById(R.id.tvDescriptionGame);
         RulesCardHidden = (TextView) findViewById(R.id.tvRulesHidden);
         PrizeCardHidden = (TextView) findViewById(R.id.tvPrizeHidden);
         Co_OrdinatorCardHidden = (TextView) findViewById(R.id.tvCo_ordinatorHidden);
@@ -207,5 +218,35 @@ public class CompGame extends AppCompatActivity implements NavigationView.OnNavi
                 }
             }
         });
+    }
+
+    void completeMechanical(){
+        //
+        descb0 = "";
+
+        descb1 = "";
+
+        descb2= "";
+
+        descb3= "";
+
+        //
+        rulesCardHidden0 = "";
+
+        rulesCardHidden1 = "";
+
+        rulesCardHidden2 = "";
+
+        rulesCardHidden3 = "";
+
+        prizeCardHidden0 = "";
+        prizeCardHidden1 = "";
+        prizeCardHidden2 = "";
+        prizeCardHidden3 = "";
+
+        co_OrdinatorCardHidden0 = "";
+        co_OrdinatorCardHidden1 = "";
+        co_OrdinatorCardHidden2 = "";
+        co_OrdinatorCardHidden3 = "";
     }
 }
