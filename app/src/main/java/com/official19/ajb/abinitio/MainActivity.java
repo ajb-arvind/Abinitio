@@ -40,6 +40,7 @@ import com.official19.ajb.abinitio.other.gallary;
 import com.official19.ajb.abinitio.other.gcoearaActivity;
 import com.official19.ajb.abinitio.communication.contact;
 import com.official19.ajb.abinitio.co_ordinatorlogin.loginScreen;
+import com.official19.ajb.abinitio.timetablepackage.TimetableActivity;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -225,7 +226,7 @@ public class MainActivity extends AppCompatActivity
         cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Timetable is Not Created", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), TimetableActivity.class));
             }
         });
 

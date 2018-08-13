@@ -64,6 +64,7 @@
         <activity android:name=".allevent.InstruGame" />
         <activity android:name=".allevent.MechGame" />
         <activity android:name=".other.gcoearaActivity" />
+        <activity android:name=".timetablepackage.TimetableActivity" />
     </application>
 
 </manifest>
