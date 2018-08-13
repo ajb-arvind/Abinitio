@@ -62,7 +62,7 @@ public class CompGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden0);
                 PrizeCardHidden.setText(prizeCardHidden0);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden0);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:7028313579";
                 break;
 
             case "Algorix":
@@ -70,7 +70,7 @@ public class CompGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden1);
                 PrizeCardHidden.setText(prizeCardHidden1);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden1);
-                cordintor_no="tel:9284705198";
+                cordintor_no="tel:9561580114";
                 break;
 
             case "Search Master":
@@ -78,7 +78,7 @@ public class CompGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden2);
                 PrizeCardHidden.setText(prizeCardHidden2);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden2);
-                cordintor_no="tel:8830678511";
+                cordintor_no="tel:7889592130";
                 break;
 
             case "Data Geeks":
@@ -86,7 +86,7 @@ public class CompGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden3);
                 PrizeCardHidden.setText(prizeCardHidden3);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden3);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:9767189564";
                 break;
 
             case "Counter Strike":
@@ -94,7 +94,7 @@ public class CompGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden4);
                 PrizeCardHidden.setText(prizeCardHidden4);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden4);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:9403371495";
                 break;
 
         }
@@ -360,22 +360,34 @@ public class CompGame extends AppCompatActivity implements NavigationView.OnNavi
                 "\n" +
                 "REGISTRATION FEE:- 250 Rs /- (PER TEAM)\n";
 
-        prizeCardHidden0 = "";
-        prizeCardHidden1 = "";
-        prizeCardHidden2 = "";
-        prizeCardHidden3 = "";
-        prizeCardHidden4 = "";
+        prizeCardHidden0 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden1 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden2 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden3 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden4 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
 
 
-        co_OrdinatorCardHidden0 = "Shrutika Karande (T.E. Computer )\n" +
-                "Mobile no :- 9139330893\n";
-        co_OrdinatorCardHidden1 = "Harshal Ingle(T.E. Computer )\n" +
-                "Mobile no :- 9561580114\n";
-        co_OrdinatorCardHidden2 = "Laraib Mushtaq(T.E COMPUTER)\n" +
-                "Mobile no :- 7889592130\n";
-        co_OrdinatorCardHidden3 = "Pratik Patil (B.E. Computer )\n" +
-                "Mobile no :- 9767189564";
-        co_OrdinatorCardHidden4 = "Sofia Shaikh (T.E. Computer )\n" +
-                "Mobile no :- 9403371495\n";
+        co_OrdinatorCardHidden0 = "Shrutika Karande\n" +
+                "\tspkarande98@gmail.com\n"+
+                "\tMobile no :- 9139330893\n"+
+                "Anjali Hande\n" +
+                "\tanjalihande98@gmail.com\n"+
+                "\tMobile no :- 7028313579\n";
+
+        co_OrdinatorCardHidden1 = "Harshal Ingle\n" +
+                "\tharshalingle517@gmail.com\n"+
+                "\tMobile no :- 9561580114\n";
+
+        co_OrdinatorCardHidden2 = "Laraib Mushtaq\n" +
+                "\tlmushtaq10@gmail.com\n"+
+                "\tMobile no :- 7889592130\n";
+
+        co_OrdinatorCardHidden3 = "Pratik Patil\n" +
+                "\tspkarande98@gmail.com\n"+
+                "\tMobile no :- 9767189564\n";
+
+        co_OrdinatorCardHidden4 = "Sofia Shaikh\n" +
+                "\tsofia23sy@gmail.com\n"+
+                "\tMobile no :- 9403371495\n";
     }
 }

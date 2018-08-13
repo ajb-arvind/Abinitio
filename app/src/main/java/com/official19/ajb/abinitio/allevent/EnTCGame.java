@@ -62,7 +62,7 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden0);
                 PrizeCardHidden.setText(prizeCardHidden0);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden0);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:9403846521";
                 break;
 
             case "Electro-Spark":
@@ -70,7 +70,7 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden1);
                 PrizeCardHidden.setText(prizeCardHidden1);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden1);
-                cordintor_no="tel:9284705198";
+                cordintor_no="tel:9130535990";
                 break;
 
             case "Utrix":
@@ -78,7 +78,7 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden2);
                 PrizeCardHidden.setText(prizeCardHidden2);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden2);
-                cordintor_no="tel:8830678511";
+                cordintor_no="tel:7218552510";
                 break;
 
             case "Robox":
@@ -86,7 +86,7 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden3);
                 PrizeCardHidden.setText(prizeCardHidden3);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden3);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:7038222736";
                 break;
 
         }
@@ -388,29 +388,25 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
                 "ENTRY FEE:\n" +
                 "₹ 200 per Team (Max. 4 members)";
 
-        prizeCardHidden0 = "";
-        prizeCardHidden1 = "";
-        prizeCardHidden2 = "";
-        prizeCardHidden3 = "";
+        prizeCardHidden0 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden1 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden2 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden3 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
 
         co_OrdinatorCardHidden0 = "AJABE CHAITANYA SANJAY\n" +
-                "(COORDINATOR)\n" +
-                "9403846521 / 8975471181\n" +
-                "cak00798@gmail.com";
+                "\tcak00798@gmail.com\n"+
+                "\tMobile no:-9403846521\n";
 
         co_OrdinatorCardHidden1 = "BORATE AADESH RAMBHAU\n" +
-                "(COORDINATOR)\n" +
-                "9130535990 / 9834147918\n" +
-                "aadeshborate5@gmail.com";
+                "\taadeshborate5@gmail.com\n" +
+                "\tMobile no:-9130535990\n";
 
         co_OrdinatorCardHidden2 = "KULKARNI REVATI ANAND\n" +
-                "(COORDINATOR)\n" +
-                "7218552510 / 8459963828\n" +
-                "kulkarnirevati988@gmail.com";
+                "\tkulkarnirevti988@gmail.com\n" +
+                "\tMobile no:-7218552510\n";
 
         co_OrdinatorCardHidden3 = "BORADE ASHLESHA MARUTI\n" +
-                "(COORDINATOR)\n" +
-                "7038222736 / 9834803168\n" +
-                "ashlesha14061998@gmail.com";
+                "\tashlesha14061998@gmail.com\n" +
+                "\tMobile no:-7038222736\n";
     }
 }

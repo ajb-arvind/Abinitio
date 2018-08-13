@@ -63,7 +63,7 @@ public class MechGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden0);
                 PrizeCardHidden.setText(prizeCardHidden0);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden0);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:9139461465";
                 break;
 
             case "Consilio":
@@ -71,7 +71,7 @@ public class MechGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden1);
                 PrizeCardHidden.setText(prizeCardHidden1);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden1);
-                cordintor_no="tel:9284705198";
+                cordintor_no="tel:9834358970";
                 break;
 
             case "The Catapult":
@@ -79,7 +79,7 @@ public class MechGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden2);
                 PrizeCardHidden.setText(prizeCardHidden2);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden2);
-                cordintor_no="tel:8830678511";
+                cordintor_no="tel:7083109795";
                 break;
 
             case "Linkage and Gear":
@@ -87,7 +87,7 @@ public class MechGame extends AppCompatActivity implements NavigationView.OnNavi
                 RulesCardHidden.setText(rulesCardHidden3);
                 PrizeCardHidden.setText(prizeCardHidden3);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden3);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:8888052448r";
                 break;
 
         }
@@ -368,14 +368,25 @@ public class MechGame extends AppCompatActivity implements NavigationView.OnNavi
                 "\t-Round 2 will be judged on the basis of accuracy, optimization and space utilization. Judgement will not take place on the basis of time.\n" +
                 "\t-Round 3 will be judged on the basis of the end result of the three rounds and the time taken by teams to complete the round 3 problem statement.\n";
 
-        prizeCardHidden0 = "";
-        prizeCardHidden1 = "";
-        prizeCardHidden2 = "";
-        prizeCardHidden3 = "";
+        prizeCardHidden0 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden1 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden2 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden3 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
 
-        co_OrdinatorCardHidden0 = "";
-        co_OrdinatorCardHidden1 = "";
-        co_OrdinatorCardHidden2 = "";
-        co_OrdinatorCardHidden3 = "";
+        co_OrdinatorCardHidden0 = "Samruddhi Kamble\n" +
+                "\tsamukamble0610@gmail.com\n" +
+                "\tMobile no:-9139461465\n";
+
+        co_OrdinatorCardHidden1 = "Dadasaheb Kasal\n" +
+                "\tdadasahebkasal123@gmail.com\n" +
+                "\tMobile no:-9834358970\n";
+
+        co_OrdinatorCardHidden2 = "Sumit Gaikwad\n" +
+                "\tsumitgaikwad218@gmail.com\n" +
+                "\tMobile no:-7083109795\n";
+
+        co_OrdinatorCardHidden3 = "Rohit Chavan\n" +
+                "\trohitchavanrc7@gmail.com\n" +
+                "\tMobile no:-8888052448\n";
     }
 }

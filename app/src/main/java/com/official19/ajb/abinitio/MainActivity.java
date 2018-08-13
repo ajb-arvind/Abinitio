@@ -29,6 +29,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.official19.ajb.abinitio.allevent.GameActivity;
+import com.official19.ajb.abinitio.communication.AllContact;
 import com.official19.ajb.abinitio.eventpackage.automobile;
 import com.official19.ajb.abinitio.eventpackage.civil;
 import com.official19.ajb.abinitio.eventpackage.computer;
@@ -386,7 +387,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_share:             //activity.startActivity(new Intent(this, automobile.class));
                 break;
 
-            case R.id.nav_contact:             activity.startActivity(new Intent(activity, contact.class));
+            case R.id.nav_contact:             activity.startActivity(new Intent(activity, AllContact.class));
                 break;
         }
     }

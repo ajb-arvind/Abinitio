@@ -51,7 +51,11 @@ public class FacultyAdapter extends BaseAdapter {
         Contact=(TextView)view.findViewById(R.id.tvFacultyContact);
         imageView=(ImageView)view.findViewById(R.id.ivFaculty);
 
-        switch (Namearray[i]) {
+        Name.setText(Namearray[i]);
+        Contact.setText(Contactarray[i]);
+        imageView.setImageResource(R.drawable.laraib);
+
+        /*switch (Namearray[i]) {
             case "Arvind":
                 Name.setText(Namearray[i]);
                 Contact.setText(Contactarray[i]);
@@ -99,7 +103,7 @@ public class FacultyAdapter extends BaseAdapter {
                 Contact.setText(Contactarray[i]);
                 imageView.setImageResource(R.drawable.rushi);
                 break;
-        }
+        }*/
 
 
         return view;

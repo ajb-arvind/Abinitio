@@ -62,7 +62,7 @@ public class InstruGame extends AppCompatActivity implements NavigationView.OnNa
                 RulesCardHidden.setText(rulesCardHidden0);
                 PrizeCardHidden.setText(prizeCardHidden0);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden0);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:7719896954";
                 break;
 
             case "PLC Master":
@@ -70,7 +70,7 @@ public class InstruGame extends AppCompatActivity implements NavigationView.OnNa
                 RulesCardHidden.setText(rulesCardHidden1);
                 PrizeCardHidden.setText(prizeCardHidden1);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden1);
-                cordintor_no="tel:9284705198";
+                cordintor_no="tel:8796540953";
                 break;
 
             case "Quiz":
@@ -78,7 +78,7 @@ public class InstruGame extends AppCompatActivity implements NavigationView.OnNa
                 RulesCardHidden.setText(rulesCardHidden2);
                 PrizeCardHidden.setText(prizeCardHidden2);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden2);
-                cordintor_no="tel:8830678511";
+                cordintor_no="tel:7028573584";
                 break;
 
             case "Block Warrior":
@@ -86,7 +86,7 @@ public class InstruGame extends AppCompatActivity implements NavigationView.OnNa
                 RulesCardHidden.setText(rulesCardHidden3);
                 PrizeCardHidden.setText(prizeCardHidden3);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden3);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:9405902883";
                 break;
 
         }
@@ -338,15 +338,25 @@ public class InstruGame extends AppCompatActivity implements NavigationView.OnNa
                 "ENTRY FEE:\n" +
                 "₹ 100 Per Team(Max 2 members)";
 
-        prizeCardHidden0 = "";
-        prizeCardHidden1 = "";
-        prizeCardHidden2 = "";
-        prizeCardHidden3 = "";
+        prizeCardHidden0 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden1 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden2 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden3 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
 
-        co_OrdinatorCardHidden0 = "";
-        co_OrdinatorCardHidden1 = "Yadav Pratik Sunil(Co-Ordinator)\n8796540953/8806548634\n" +
-                "Yadavpratik702@gmail.com";
-        co_OrdinatorCardHidden2 = "";
-        co_OrdinatorCardHidden3 = "";
+        co_OrdinatorCardHidden0 = "Rohit Sirsat\n" +
+                "\trohitshirsat29@gmail.com\n" +
+                "\tMobile no:-7719896954\n";
+
+        co_OrdinatorCardHidden1 = "Pratik Yadav\n" +
+                "\tyadavpratik702@gmail.com\n" +
+                "\tMobile no:-8796540953\n";
+
+        co_OrdinatorCardHidden2 = "Pooja Gaikwad\n" +
+                "\tpoojagaikwad5757@gmail.com\n" +
+                "\tMobile no:-7028573584\n";
+
+        co_OrdinatorCardHidden3 = "Ashutosh Kamble\n" +
+                "\tav.kamble27@gmail.com\n" +
+                "\tMobile no:-9405902883\n";
     }
 }

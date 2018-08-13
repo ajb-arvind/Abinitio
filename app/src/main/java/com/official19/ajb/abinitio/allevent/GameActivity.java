@@ -62,7 +62,7 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
                 RulesCardHidden.setText(rulesCardHidden0);
                 PrizeCardHidden.setText(prizeCardHidden0);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden0);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:";
                 break;
 
             case "Vehicle Troubleshooting":
@@ -70,7 +70,7 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
                 RulesCardHidden.setText(rulesCardHidden1);
                 PrizeCardHidden.setText(prizeCardHidden1);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden1);
-                cordintor_no="tel:9284705198";
+                cordintor_no="tel:";
                 break;
 
             case "Mock Placement":
@@ -78,7 +78,7 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
                 RulesCardHidden.setText(rulesCardHidden2);
                 PrizeCardHidden.setText(prizeCardHidden2);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden2);
-                cordintor_no="tel:8830678511";
+                cordintor_no="tel:";
                 break;
 
             case "Model Making":
@@ -86,7 +86,7 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
                 RulesCardHidden.setText(rulesCardHidden3);
                 PrizeCardHidden.setText(prizeCardHidden3);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden3);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:";
                 break;
 
         }
@@ -359,9 +359,20 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
                 "2nd   -Rs. 1500/-\n" +
                 "3rd    -Rs. 1000/-";
 
-        co_OrdinatorCardHidden0 = "";
-        co_OrdinatorCardHidden1 = "";
-        co_OrdinatorCardHidden2 = "";
-        co_OrdinatorCardHidden3 = "";
+        co_OrdinatorCardHidden0 = "LALIT CHAUDHARI\n" +
+                    "\tlalitchaudhari1898@gmail.com\n" +
+                    "\tMobile no:-\n";
+
+        co_OrdinatorCardHidden1 = "Omkar Pure\n" +
+                "\tomkarnarayanpure005@gmail.com\n" +
+                "\tMobile no:-\n";
+
+        co_OrdinatorCardHidden2 ="Prasad Bugade\n" +
+                "\tprasad.bugade.1@gmail.com\n" +
+                "\tMobile no:-\n";
+
+        co_OrdinatorCardHidden3 = "Vinita Bhansali\n" +
+                "\tbhansalivinita22@gmail.com\n" +
+                "\tMobile no:-\n";
     }
 }

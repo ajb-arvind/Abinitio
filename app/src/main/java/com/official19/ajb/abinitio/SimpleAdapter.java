@@ -52,6 +52,9 @@ public class SimpleAdapter extends BaseAdapter {
         description=(TextView)view.findViewById(R.id.tvDescription);
         click=(TextView)view.findViewById(R.id.tvClick);
 
+        title.setText(titlearray[i]);
+        imageView.setImageResource(R.drawable.automobile);
+
         if (titlearray[i].equalsIgnoreCase("Timetable")){
             title.setText("Timetable");
             description.setText("Description 1");

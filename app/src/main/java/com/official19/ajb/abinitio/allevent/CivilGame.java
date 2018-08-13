@@ -62,7 +62,7 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
                 RulesCardHidden.setText(rulesCardHidden0);
                 PrizeCardHidden.setText(prizeCardHidden0);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden0);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:9860449876";
                 break;
 
             case "Poster Presentation":
@@ -70,7 +70,7 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
                 RulesCardHidden.setText(rulesCardHidden1);
                 PrizeCardHidden.setText(prizeCardHidden1);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden1);
-                cordintor_no="tel:9284705198";
+                cordintor_no="tel:7038519854";
                 break;
 
             case "Clad Clash":
@@ -78,7 +78,7 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
                 RulesCardHidden.setText(rulesCardHidden2);
                 PrizeCardHidden.setText(prizeCardHidden2);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden2);
-                cordintor_no="tel:8830678511";
+                cordintor_no="tel:7038034377";
                 break;
 
             case "Treasure Hunt":
@@ -86,7 +86,7 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
                 RulesCardHidden.setText(rulesCardHidden3);
                 PrizeCardHidden.setText(prizeCardHidden3);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden3);
-                cordintor_no="tel:9370088262";
+                cordintor_no="tel:7028777972";
                 break;
 
         }
@@ -330,25 +330,25 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
                 "\n" +
                 "    • All the puzzles/clues included in this event will be totally based on the basic engineering knowledge of students of all branches.";
 
-        prizeCardHidden0 = "";
-        prizeCardHidden1 = "";
-        prizeCardHidden2 = "";
-        prizeCardHidden3 = "";
+        prizeCardHidden0 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden1 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden2 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden3 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
 
         co_OrdinatorCardHidden0 = "Akshay Kandle\n" +
                 "\tkandleakshay751@gmail.com\n" +
-                "\tMobile no.-986044987\n" +
-                "\t9284066582";
+                "\tMobile no:-9860449876\n" ;
+
         co_OrdinatorCardHidden1 = "RAJTILAK  PRAMOD  RAUT\n" +
-                "\t7038519854\n" +
-                "\t(COORDINATOR)\n" +
-                "\trajtilakraut@gmail.com";
+                "\trajtilakraut@gmail.com\n"+
+                "\tMobile no:-7038519854\n";
 
         co_OrdinatorCardHidden2 = "Akashada Kale\n" +
-                "kaleakashada@gmail.com\n" +
-                "Mobile No: 7038034377";
+                "\tkaleakashada@gmail.com\n" +
+                "\tMobile No:-7038034377\n";
+
         co_OrdinatorCardHidden3 = "Pooja Hariram Chauhan\n" +
-                "\tCONTACT NO.:7028777972\n" +
-                "\tEMAIL ADDRESS: pooja28chavan@gmail.com";
+                "\tpooja28chavan@gmail.com\n"+
+                "\tMobile No:-7028777972\n";
     }
 }
