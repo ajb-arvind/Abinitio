@@ -73,7 +73,7 @@ public class entc extends AppCompatActivity   implements NavigationView.OnNaviga
     private void setupListView() {
 
         String[] title = getResources().getStringArray(R.array.Entc_Event);
-        String[] description = getResources().getStringArray(R.array.Description);
+        String[] description = getResources().getStringArray(R.array.entc_descibe);
         String[] department = getResources().getStringArray(R.array.Departments);
 
         ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "EnTC");

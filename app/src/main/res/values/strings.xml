@@ -110,33 +110,34 @@
 
     <string-array name="civil_descibe">
         <item>Participant's will have to design and fabricate their own frames and test them for maximum load.</item>
-        <item></item>
-        <item></item>
+        <item>Put down your brain and present something innovative ideas which are simple and effective. Complete the given task within time and the victory is yours.</item>
+        <item>This event will test participants designing abilities and civil and AutoCAD based knowledge.</item>
         <item></item>
     </string-array>
     <string-array name="comp_descibe">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>An astonishing event of the geeks, for the geeks, by the geeks. C60 provides you a platform to elevate your skills of C and C++ programming languages.</item>
+        <item>Participants should be given problem statements and they have to solve problem statements efficiently in given time period using suitable algorithms and programming language knowledge</item>
+        <item>Search Master gives you an opportunity to prove your abilities of exploring Internet skills.</item>
+        <item>the platform for showcasing talents of young minds in the field of Machine Learning.</item>
+        <item>Make your team and come up to fight with our best.: Counter Strike</item>
     </string-array>
     <string-array name="entc_descibe">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>MATLAB AND SIMULINK’ is a platform to create a real world and time responses virtually.</item>
+        <item>"If Electronics lives in you, then ABINITIO 2K18:19 is inviting you to release your potentials in the way of battle ground.</item>
+        <item>"Microcontroller acts as brain of any embedded system. In this participants will gain an in-depth knowledge and experience in programming and applications of μC."</item>
+        <item>The platform for representing various models of robots and creating the technical environment and sharing of knowledge among upcoming engineers. Here is an opportunity to show and upgrade your skills through competition.";</item>
     </string-array>
     <string-array name="instru_descibe">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Now try this out in the real world by creating your own robot and score as much as you can.</item>
+        <item> Quiz competition is a pursuit of trivial knowledge, encourage students to improve their knowledge and their awareness of the world around them.</item>
+        <item>Manual bot has to clear the way by transferring the block into specific zone. But need to tackle other obstacle.</item>
+        <item>PLC is the main controller in process industries in the participants will gain in-depth knowledge and experience in programming and application of PLC.</item>
     </string-array>
 
     <string-array name="mech_descibe">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Accelerate the speed of piston for thinking to have a journey of obstacle full life with lot of kinetic energy full of thriller experience.</item>
+        <item>-The participants have to put forth the skills of designing in 3D to bring out the technical design on CATIA.</item>
+        <item>The catapult is a ballistic device used to launch a projectile to a great distance.</item>
+        <item>The event aims to test the knowledge and understanding of participants about gears and linkages and their interrelationship.</item>
     </string-array>
 </resources>

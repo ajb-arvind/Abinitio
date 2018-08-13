@@ -1,6 +1,6 @@
 package com.official19.ajb.abinitio.co_ordinatorlogin;
 
-class UserProfile {
+public class UserProfile {
     public String name;
 
     public String email;

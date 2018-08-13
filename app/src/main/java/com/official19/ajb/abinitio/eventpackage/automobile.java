@@ -82,7 +82,7 @@ public class automobile extends AppCompatActivity  implements NavigationView.OnN
     private void setupListView() {
 
         String[] title = getResources().getStringArray(R.array.Auto_Event);
-        String[] description = getResources().getStringArray(R.array.Description);
+        String[] description = getResources().getStringArray(R.array.auto_descibe);
         String[] department = getResources().getStringArray(R.array.Departments);
 
         ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Automobile");

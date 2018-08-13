@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -36,6 +37,7 @@ import com.official19.ajb.abinitio.eventpackage.instru;
 import com.official19.ajb.abinitio.eventpackage.mechanical;
 import com.official19.ajb.abinitio.other.co_ordinator;
 import com.official19.ajb.abinitio.other.gallary;
+import com.official19.ajb.abinitio.other.gcoearaActivity;
 import com.official19.ajb.abinitio.communication.contact;
 import com.official19.ajb.abinitio.co_ordinatorlogin.loginScreen;
 
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity
     private ListView listView;
     public CardView cardView1, cardView2, cardView3, cardView4;
     private TextView Day, Hrs, Min, Sec;
+    public FloatingActionButton Float1,Float2,Float3,Float4;
     int days = 0, hrss = 0, mins = 0, secs = 0;
     public static int ABINITIO_DAY = 31 , ABINITIO_HRS = 11, ABINITIO_MIN = 60;
 
@@ -66,12 +69,26 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         setTitle("Home");
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        ExpandFloat();
+
+        Float2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(openFacebook(MainActivity.this)));
+            }
+        });
+
+        Float3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(openInstagram(MainActivity.this)));
+            }
+        });
+
+        Float4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(openWebsite(MainActivity.this)));
             }
         });
 
@@ -197,6 +214,11 @@ public class MainActivity extends AppCompatActivity
         cardView2 = (CardView)findViewById(R.id.card2);
         cardView3 = (CardView)findViewById(R.id.card3);
         cardView4 = (CardView)findViewById(R.id.card4);
+
+        Float1 = findViewById(R.id.fab1);
+        Float2 = findViewById(R.id.fab2);
+        Float3 = findViewById(R.id.fab3);
+        Float4 = findViewById(R.id.fab4);
     }
 
     public void newActivity(){
@@ -230,6 +252,25 @@ public class MainActivity extends AppCompatActivity
     }
 
 
+    void ExpandFloat(){
+        Float1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(Float2.getVisibility() == view.VISIBLE){
+                    Float1.setImageResource(R.drawable.ic_float1);
+                    Float2.setVisibility(view.GONE);
+                    Float3.setVisibility(view.GONE);
+                    Float4.setVisibility(view.GONE);
+                }
+                else{
+                    Float1.setImageResource(R.drawable.ic_float1_close);
+                    Float2.setVisibility(view.VISIBLE);
+                    Float3.setVisibility(view.VISIBLE);
+                    Float4.setVisibility(view.VISIBLE);
+                }
+            }
+        });
+    }
     /*private void setupListView()
     {
 
@@ -262,6 +303,34 @@ public class MainActivity extends AppCompatActivity
 
     }*/
 
+    public static Intent openFacebook(Context context){
+        try{
+            context.getPackageManager().
+                    getPackageInfo("com.facebook.katana",0);
+            return new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/184421188766720"));
+        }catch (Exception e){
+            return new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/Abinitio2017"));
+        }
+    }
+
+    public static Intent openInstagram(Context context){
+        Uri uri = Uri.parse("https://www.instagram.com/abinitio_2k18/");
+        Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
+
+        likeIng.setPackage("com.instagram.android");
+
+        try {
+            return likeIng;
+        } catch (Exception e) {
+            return  new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://www.instagram.com/abinitio_2k18/"));
+        }
+    }
+
+    public static Intent openWebsite(Context context){
+        return  new Intent(Intent.ACTION_VIEW,
+                Uri.parse("http://gcoeara.ac.in"));
+    }
 
 
 
@@ -296,6 +365,21 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_gallry:             activity.startActivity(new Intent(activity, gallary.class));
+                break;
+
+            case R.id.nav_principal_desk:           Intent intent0= new Intent(activity, gcoearaActivity.class);
+                                                    intent0.putExtra("Gcoeara","0");
+                                                    activity.startActivity(intent0);
+                break;
+
+            case R.id.nav_about_gcoeara:            Intent intent1= new Intent(activity, gcoearaActivity.class);
+                                                    intent1.putExtra("Gcoeara","1");
+                                                    activity.startActivity(intent1);
+                break;
+
+            case R.id.nav_about_us:             Intent intent2= new Intent(activity, gcoearaActivity.class);
+                                                    intent2.putExtra("Gcoeara","2");
+                                                    activity.startActivity(intent2);
                 break;
 
             case R.id.nav_share:             //activity.startActivity(new Intent(this, automobile.class));

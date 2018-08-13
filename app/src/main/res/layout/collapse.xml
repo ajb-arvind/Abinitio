@@ -2,7 +2,7 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
+    android:background="@color/dheeraj_bakground"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.design.widget.AppBarLayout
@@ -17,7 +17,8 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleTextAppearance="@android:color/transparent"
-            android:fitsSystemWindows="true">
+            android:fitsSystemWindows="true"
+            android:background="@color/dheeraj_bakground">
 
             <LinearLayout
                 android:id="@+id/timer"
@@ -25,12 +26,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginBottom="10dp"
+                android:background="@color/dheeraj_bakground"
                 android:layout_marginTop="?attr/actionBarSize">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:orientation="horizontal"
-                    android:weightSum="4">
+                    android:weightSum="4"
+                    android:background="@color/dheeraj_bakground">
 
                     <android.support.v7.widget.CardView
                         android:layout_width="match_parent"
@@ -255,7 +258,7 @@
                 android:layout_marginRight="5dp"
                 android:fitsSystemWindows="true"
                 android:contentDescription="@string/app_name"
-                app:layout_collapseMode="parallax"/>
+                app:layout_collapseMode="parallax" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbarCollapsse"
@@ -275,7 +278,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
-        android:background="@color/grey"
+        android:background="@color/dheeraj_bakground"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
@@ -292,10 +295,11 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:padding="3dp"
                 android:elevation="4dp"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/dheeraj_foreground">
                 <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                     <ImageView
                         android:id="@+id/ivMainCard1"
@@ -312,34 +316,13 @@
                         android:id="@+id/tvTitleCard1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="6dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/ivMainCard1"
+                        android:layout_marginLeft="40dp"
                         android:text="Timetable"
-                        android:layout_toRightOf="@+id/ivMainCard1"
+                        android:textColor="@color/white"
                         android:textSize="24sp"
                         android:textStyle="bold" />
-
-
-                    <TextView
-                        android:id="@+id/tvDescriptionCard1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignStart="@+id/tvTitleCard1"
-                        android:layout_centerVertical="true"
-                        android:text="Description"
-                        android:textSize="16dp" />
-
-
-                    <TextView
-                        android:id="@+id/tvClickCard1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/ivMainCard1"
-                        android:layout_alignParentRight="true"
-                        android:layout_below="@+id/tvDescriptionCard1"
-                        android:layout_marginTop="42dp"
-                        android:text="Click here for more"
-                        android:textSize="12dp" />
 
                 </RelativeLayout>
 
@@ -353,10 +336,11 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:padding="3dp"
                 android:elevation="4dp"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/dheeraj_foreground">
                 <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                     <ImageView
                         android:id="@+id/ivMaincard2"
@@ -373,37 +357,15 @@
                         android:id="@+id/tvTitlecard2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="6dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/ivMaincard2"
+                        android:layout_marginLeft="40dp"
                         android:text="Events"
-                        android:layout_toRightOf="@+id/ivMaincard2"
+                        android:textColor="@color/white"
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
-
-                    <TextView
-                        android:id="@+id/tvDescriptioncard2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignStart="@+id/tvTitlecard2"
-                        android:layout_centerVertical="true"
-                        android:text="Description"
-                        android:textSize="16dp" />
-
-
-                    <TextView
-                        android:id="@+id/tvClickcard2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/ivMaincard2"
-                        android:layout_alignParentRight="true"
-                        android:layout_below="@+id/tvDescriptioncard2"
-                        android:layout_marginTop="42dp"
-                        android:text="Click here for more"
-                        android:textSize="12dp" />
-
                 </RelativeLayout>
-
 
             </android.support.v7.widget.CardView>
 
@@ -414,10 +376,11 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:padding="3dp"
                 android:elevation="4dp"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/dheeraj_foreground">
                 <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                     <ImageView
                         android:id="@+id/ivMaincard3"
@@ -434,34 +397,13 @@
                         android:id="@+id/tvTitlecard3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="6dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/ivMaincard3"
+                        android:layout_marginLeft="40dp"
                         android:text="Co-Ordinator"
-                        android:layout_toRightOf="@+id/ivMaincard3"
+                        android:textColor="@color/white"
                         android:textSize="24sp"
                         android:textStyle="bold" />
-
-
-                    <TextView
-                        android:id="@+id/tvDescriptioncard3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignStart="@+id/tvTitlecard3"
-                        android:layout_centerVertical="true"
-                        android:text="Description"
-                        android:textSize="16dp" />
-
-
-                    <TextView
-                        android:id="@+id/tvClickcard3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/ivMaincard3"
-                        android:layout_alignParentRight="true"
-                        android:layout_below="@+id/tvDescriptioncard3"
-                        android:layout_marginTop="42dp"
-                        android:text="Click here for more"
-                        android:textSize="12dp" />
 
                 </RelativeLayout>
 
@@ -475,10 +417,11 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:padding="3dp"
                 android:elevation="4dp"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/dheeraj_foreground">
                 <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                     <ImageView
                         android:id="@+id/ivMaincard4"
@@ -496,34 +439,13 @@
                         android:id="@+id/tvTitlecard4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="6dp"
                         android:text="Setting"
-                        android:layout_toRightOf="@+id/ivMaincard4"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/ivMaincard4"
+                        android:layout_marginLeft="40dp"
                         android:textSize="24sp"
                         android:textStyle="bold" />
-
-
-                    <TextView
-                        android:id="@+id/tvDescriptioncard4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignStart="@+id/tvTitlecard4"
-                        android:layout_centerVertical="true"
-                        android:text="Description"
-                        android:textSize="16dp" />
-
-
-                    <TextView
-                        android:id="@+id/tvClickcard4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/ivMaincard4"
-                        android:layout_alignParentRight="true"
-                        android:layout_below="@+id/tvDescriptioncard4"
-                        android:layout_marginTop="42dp"
-                        android:text="Click here for more"
-                        android:textSize="12dp" />
 
                 </RelativeLayout>
 

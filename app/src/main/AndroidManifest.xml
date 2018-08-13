@@ -62,7 +62,8 @@
         <activity android:name=".allevent.CivilGame" />
         <activity android:name=".allevent.EnTCGame" />
         <activity android:name=".allevent.InstruGame" />
-        <activity android:name=".allevent.MechGame"></activity>
+        <activity android:name=".allevent.MechGame" />
+        <activity android:name=".other.gcoearaActivity" />
     </application>
 
 </manifest>

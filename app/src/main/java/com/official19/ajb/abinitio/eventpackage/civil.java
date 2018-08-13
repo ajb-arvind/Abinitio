@@ -73,7 +73,7 @@ public class civil extends AppCompatActivity   implements NavigationView.OnNavig
     private void setupListView() {
 
         String[] title = getResources().getStringArray(R.array.Civil_Event);
-        String[] description = getResources().getStringArray(R.array.Description);
+        String[] description = getResources().getStringArray(R.array.civil_descibe);
 
         ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Civil");
         viewPagerAuto.setAdapter(viewpagerAdapter);

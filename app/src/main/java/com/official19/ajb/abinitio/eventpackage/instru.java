@@ -73,7 +73,7 @@ public class instru extends AppCompatActivity   implements NavigationView.OnNavi
     private void setupListView() {
 
         String[] title = getResources().getStringArray(R.array.Instru_Event);
-        String[] description = getResources().getStringArray(R.array.Description);
+        String[] description = getResources().getStringArray(R.array.instru_descibe);
         String[] department = getResources().getStringArray(R.array.Departments);
 
         ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Instrumentation");
