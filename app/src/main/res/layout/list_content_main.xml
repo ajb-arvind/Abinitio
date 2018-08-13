@@ -13,7 +13,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
@@ -30,10 +30,10 @@
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="6dp"
+            android:layout_marginLeft="30dp"
             android:layout_centerVertical="true"
             android:text="Timetable"
+            android:textColor="@color/white"
             android:layout_toRightOf="@+id/ivMain"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -49,16 +49,7 @@
             android:textSize="16dp" />
 
 
-        <TextView
-            android:id="@+id/tvClick"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/ivMain"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/tvDescription"
-            android:layout_marginTop="42dp"
-            android:text="Click here for more"
-            android:textSize="12dp" />
+
 
     </RelativeLayout>
 

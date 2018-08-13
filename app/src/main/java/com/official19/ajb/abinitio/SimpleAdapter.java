@@ -50,7 +50,7 @@ public class SimpleAdapter extends BaseAdapter {
         title=(TextView)view.findViewById(R.id.tvTitle);
         imageView=(ImageView)view.findViewById(R.id.ivMain);
         description=(TextView)view.findViewById(R.id.tvDescription);
-        click=(TextView)view.findViewById(R.id.tvClick);
+        //click=(TextView)view.findViewById(R.id.tvClick);
 
         if (titlearray[i].equalsIgnoreCase("Timetable")){
             title.setText("Timetable");
