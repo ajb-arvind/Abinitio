@@ -32,7 +32,8 @@ import com.official19.ajb.abinitio.R;
 public class RegistrationActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener ,AdapterView.OnItemSelectedListener {
 
-    private EditText Name, Email, Password;
+    private Spinner Name, Email;
+    TextView Password;
     public Spinner Department, Event;
     private ImageView Logo;
     private Button SignUp;
@@ -43,13 +44,14 @@ public class RegistrationActivity extends AppCompatActivity
     int DepartmentID;
     String[] Branches={"Automobile","Civil","Computer","EnTC","Instrumentation","Mechnical"};
 
-    String[] Automobile={"Automobile 1","Automobile 2","Automobile 3","Automobile 4"};
+    String[] Automobile={"Lathe War","Vehicle Troubleshooting","Mock Placement","Model Making"};
     String[] Civil={"civil 1","civil 2","civil 3","civil 4"};
     String[] Computer={"Computer 1","Computer 2","Computer 3","Computer 4"};
     String[] EnTC={"EnTC 1","EnTC 2","EnTC 3","EnTC 4"};
     String[] Instrumentation={"Instrumentation 1","Instrumentation 2","Instrumentation 3","Instrumentation 4"};
     String[] Mechanical={"Mechanical 1","Mechanical 2","Mechanical 3","Mechanica 4"};
 
+    String[] UIDarray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,9 +61,9 @@ public class RegistrationActivity extends AppCompatActivity
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        Name = findViewById(R.id.etName);
-        Email = findViewById(R.id.etEmail);
-        Password = findViewById(R.id.etPassword);
+        Name = (Spinner)findViewById(R.id.etName);
+        Email = (Spinner)findViewById(R.id.etEmail);
+        Password = (TextView) findViewById(R.id.etPassword);
         SignUp = findViewById(R.id.btnSignUp);
         Signup2 = findViewById(R.id.tvSignUp);
         Department = (Spinner) findViewById(R.id.spDepartments);
@@ -77,8 +79,8 @@ public class RegistrationActivity extends AppCompatActivity
             public void onClick(View view) {
                 // Toast.makeText(Registration.this,"SignUp clicked",Toast.LENGTH_SHORT).show();
                 if (validate()) {
-                    String useremail = Email.getText().toString().trim();
-                    String password = Password.getText().toString().trim();
+                    String useremail = Email.getSelectedItem().toString();
+                    String password = Password.getText().toString();
 //                    Toast.makeText(Registration.this,"SignUp clicked",Toast.LENGTH_SHORT).show();
 
                     firebaseAuth.createUserWithEmailAndPassword(useremail, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -90,7 +92,7 @@ public class RegistrationActivity extends AppCompatActivity
                                 Toast.makeText(RegistrationActivity.this, "Registration successfull your data has been stored", Toast.LENGTH_SHORT).show();
                                 firebaseAuth.signOut();
                                 finish();
-                                startActivity(new Intent(RegistrationActivity.this, loginScreen.class));
+                                //startActivity(new Intent(RegistrationActivity.this, loginScreen.class));
 
                             } else {
                                 Toast.makeText(RegistrationActivity.this, "registration UnSuccessful", Toast.LENGTH_SHORT).show();
@@ -137,8 +139,8 @@ public class RegistrationActivity extends AppCompatActivity
     {
 
         Boolean result=false;
-        name=Name.getText().toString();
-        email=Email.getText().toString();
+        name=Name.getSelectedItem().toString();
+        email=Email.getSelectedItem().toString();
 
         if (name.isEmpty() || email.isEmpty() ||department.isEmpty() ||event.isEmpty())
         {
@@ -174,27 +176,27 @@ public class RegistrationActivity extends AppCompatActivity
                 switch(DepartmentID)
                 {
                     case 0:
-                        arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,Automobile);
+                        arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.Auto_Event));
                         break;
 
                     case 1:
-                        arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,Civil);
+                        arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.Civil_Event));
                         break;
 
                     case 2:
-                        arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,Computer);
+                        arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.Comp_Event));
                         break;
 
                     case 3:
-                        arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,EnTC);
+                        arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.Entc_Event));
                         break;
 
                     case 4:
-                        arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,Instrumentation);
+                        arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.Instru_Event));
                         break;
 
                     case 5:
-                        arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,Mechanical);
+                        arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.Mech_Event));
                         break;
                 }
 

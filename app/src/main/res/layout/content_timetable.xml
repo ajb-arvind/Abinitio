@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".timetablepackage.TimetableActivity"
+    android:background="@color/dheeraj_bakground">'
+
+    <RelativeLayout
+        android:id="@+id/relative_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_marginTop="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAutoGames"
+                android:layout_width="match_parent"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Automobile"
+                android:textColor="@color/white" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvListAutoGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:id="@+id/tvCivilGames"
+                android:layout_width="match_parent"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Civil"
+                android:textColor="@color/white"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvListCivilGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvCompGames"
+                android:layout_width="match_parent"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Computer"
+                android:textColor="@color/white"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvListCompGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"/>
+            <TextView
+                android:id="@+id/tvEnTCGames"
+                android:layout_width="match_parent"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="EnTC"
+                android:textColor="@color/white"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvListEnTCGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:id="@+id/tvInstruGames"
+                android:layout_width="match_parent"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Instrumentation"
+                android:textColor="@color/white"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvListInstruGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:id="@+id/tvMechGames"
+                android:layout_width="match_parent"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Mechnical"
+                android:textColor="@color/white"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvListMechGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

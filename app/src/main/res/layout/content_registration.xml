@@ -58,13 +58,13 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.01" />
 
-        <EditText
+        <Spinner
             android:id="@+id/etEmail"
             android:layout_width="300dp"
             android:layout_height="35dp"
             android:background="#37474F"
             android:ems="10"
-            android:hint="Email Address"
+            android:entries="@array/email"
             android:inputType="textPersonName"
             android:textColor="#ffffff"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -74,16 +74,15 @@
             app:layout_constraintTop_toBottomOf="@+id/etName"
             app:layout_constraintVertical_bias="0.04" />
 
-        <EditText
+        <Spinner
             android:id="@+id/etName"
             android:layout_width="300dp"
             android:layout_height="35dp"
             android:background="#37474F"
             android:ems="10"
-            android:hint="Full-name"
-
             android:inputType="textPersonName"
             android:textColor="#ffffff"
+            android:entries="@array/name"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -91,13 +90,13 @@
             app:layout_constraintTop_toBottomOf="@+id/ivLogo"
             app:layout_constraintVertical_bias="0.1" />
 
-        <EditText
+        <TextView
             android:id="@+id/etPassword"
             android:layout_width="300dp"
             android:layout_height="35dp"
             android:background="#37474F"
             android:ems="10"
-            android:hint="Password"
+            android:text="abinitio"
             android:inputType="textPersonName"
             android:textColor="#ffffff"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -113,7 +112,6 @@
             android:layout_height="35dp"
             android:background="#37474F"
             android:entries="@array/Departments"
-            android:spinnerMode="dialog"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -127,7 +125,6 @@
             android:layout_width="300dp"
             android:layout_height="35dp"
             android:background="#37474F"
-            android:spinnerMode="dialog"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

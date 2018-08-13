@@ -78,6 +78,71 @@
         <item>Linkage and Gear</item>s
     </string-array>
 
+    <string-array name="name">
+        <item>Lalit chaudhari</item>
+        <item>omkar narayanpure</item>
+        <item>Prasad Bugade</item>
+        <item>Vinita Bhansali</item>
+
+        <item>KANDLE AKSHAY</item>
+        <item>RAJTILAK RAUT</item>
+        <item>KALE AKSHADA</item>
+        <item>POOJA CHAVAN</item>
+
+        <item>Shrutika Karande</item>
+        <item>harshal ingle</item>
+        <item>Laraib Mushtaq</item>
+        <item>Sofia Shaikh</item>
+
+        <item>AJABE CHAITANYA</item>
+        <item>Borate Aadesh </item>
+        <item>Kulkarni Revati</item>
+        <item>Borade Ashlesha</item>
+
+        <item>Rohit Sirsat</item>
+        <item>Pratik S Yadav</item>
+        <item>Ashutosh kamble</item>
+        <item>Pooja S Gaikwad</item>
+
+        <item>Samruddhi Kamble</item>
+        <item>Dadasaheb Kasal</item>
+        <item>Sumit Gaikwad</item>
+        <item>Rohit Chavan</item>
+    </string-array>
+
+    <string-array name="email">
+        <item>lalitchaudhari1898@gmail.com</item>
+        <item>omkarnarayanpure005@gmail.com</item>
+        <item>prasad.bugade1@gmail.com</item>
+        <item>bhansalivinita22@gmail.com</item>
+
+        <item>kandleakshay751@gmail.com</item>
+        <item>rajtilakraut@gmail.com</item>
+        <item>kaleakashada@gmail.com</item>
+        <item>pooja28chavan@gmail.com</item>
+
+        <item>spkarande98@gmail.com</item>
+        <item>harshalingle517@gmail.com</item>
+        <item>lmushtaq10@gmail.com</item>
+        <item></item>
+        <item>Sofia23sy@gmail.com</item>
+
+        <item>cak00798@gmail.com</item>
+        <item>aadeshborate5@gmail.com </item>
+        <item>kulkarnirevati988@gmail.com</item>
+        <item>ashlesha14061998@gmail.com</item>
+
+        <item>rohitshirsat29@gmail.com</item>
+        <item>yadavpratik702@gmail.com</item>
+        <item>av.kamble27@gmail.com</item>
+        <item>poojagaikwad5757@gmail.com </item>
+
+        <item>samukamble0610@gmail.com</item>
+        <item>dadasahebkasal123@gmail.com</item>
+        <item>sumitgaikwad218@gmail.com</item>
+        <item>rohitchavanrc7@gmail.com</item>
+    </string-array>
+
 
     <string-array name="Name">
         <item>Arvind</item>
@@ -140,4 +205,6 @@
         <item>The catapult is a ballistic device used to launch a projectile to a great distance.</item>
         <item>The event aims to test the knowledge and understanding of participants about gears and linkages and their interrelationship.</item>
     </string-array>
+
+
 </resources>

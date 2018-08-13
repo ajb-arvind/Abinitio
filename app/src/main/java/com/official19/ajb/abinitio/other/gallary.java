@@ -18,6 +18,9 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
+import android.widget.Gallery;
 import android.widget.ImageView;
 
 import com.official19.ajb.abinitio.MainActivity;
@@ -27,7 +30,85 @@ import java.util.ArrayList;
 
 public class gallary extends AppCompatActivity {
 
-    public ViewPager viewPager;
+    Gallery simpleGallery;
+    CustomGalleryAdapter customGalleryAdapter;
+    ImageView selectedImageView;
+    // array of images
+    int[] images = {R.drawable.ab1, R.drawable.ab2, R.drawable.ab3, R.drawable.ab4, R.drawable.ab5,
+            R.drawable.ab6, R.drawable.ab7, R.drawable.ab8};
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.content_gallery);
+        simpleGallery = (Gallery) findViewById(R.id.simpleGallery); // get the reference of Gallery
+        selectedImageView = (ImageView) findViewById(R.id.selectedImageView); // get the reference of ImageView
+        customGalleryAdapter = new CustomGalleryAdapter(getApplicationContext(), images); // initialize the adapter
+        simpleGallery.setAdapter(customGalleryAdapter); // set the adapter
+        simpleGallery.setSpacing(10);
+        selectedImageView.setImageResource(images[0]);
+        // perform setOnItemClickListener event on the Gallery
+        simpleGallery.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // set the selected image in the ImageView
+                selectedImageView.setImageResource(images[position]);
+
+            }
+        });
+
+        selectedImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(simpleGallery.getVisibility()==view.VISIBLE) {
+                    simpleGallery.setVisibility(view.GONE);
+                    //startActivity(new Intent(context,TimetableActivity.class));
+                }
+                else {
+                    simpleGallery.setVisibility(view.VISIBLE);
+                }
+            }
+        });
+    }
+
+    public class CustomGalleryAdapter extends BaseAdapter {
+
+        private Context context;
+        private int[] images;
+
+        public CustomGalleryAdapter(Context c, int[] images) {
+            context = c;
+            this.images = images;
+        }
+
+        // returns the number of images
+        public int getCount() {
+            return images.length;
+        }
+
+        // returns the ID of an item
+        public Object getItem(int position) {
+            return position;
+        }
+
+        // returns the
+        // ID of an item
+        public long getItemId(int position) {
+            return position;
+        }
+
+        // returns an ImageView view
+        public View getView(int position, View convertView, ViewGroup parent) {
+
+            // create a ImageView programmatically
+            ImageView imageView = new ImageView(context);
+            imageView.setImageResource(images[position]); // set image in ImageView
+            imageView.setLayoutParams(new Gallery.LayoutParams(200, 200)); // set ImageView param
+            return imageView;
+        }
+    }
+
+    /*public ViewPager viewPager;
     RecyclerView recyclerView;
     ArrayList<Integer> images =new ArrayList<>();
 
@@ -169,7 +250,7 @@ public class gallary extends AppCompatActivity {
                 imageList=(ImageView)itemView.findViewById(R.id.ivGallery);
             }
         }
-    }
+    }*/
 
     @Override
     public void onBackPressed() {

@@ -47,6 +47,7 @@ public class loginScreen extends AppCompatActivity implements NavigationView.OnN
         if (user!=null)
         {
             finish();
+
             startActivity(new Intent(loginScreen.this,Co_OrdinatorProfileActivity.class));
         }
 
@@ -109,7 +110,7 @@ public class loginScreen extends AppCompatActivity implements NavigationView.OnN
 
     }
 
-    private void validate(String userEmail,String userPassword) {
+    private void validate(final String userEmail, final String userPassword) {
 
         if (userEmail.isEmpty() || userPassword.isEmpty()) {
             Toast.makeText(loginScreen.this, "Please Enter the data", Toast.LENGTH_SHORT).show();
@@ -121,9 +122,7 @@ public class loginScreen extends AppCompatActivity implements NavigationView.OnN
 
                     if (task.isSuccessful()) {
                         Toast.makeText(loginScreen.this, "Login Successfull", Toast.LENGTH_SHORT).show();
-
-                        startActivity(new Intent(loginScreen.this, Co_OrdinatorProfileActivity.class));
-
+                         startActivity(new Intent(loginScreen.this, Co_OrdinatorProfileActivity.class));
                     } else {
                         Toast.makeText(loginScreen.this, "Login Failed", Toast.LENGTH_SHORT).show();
                     }
