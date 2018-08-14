@@ -227,32 +227,25 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
 
         //
         rulesCardHidden0 = "Round 1:\n" +
-                "\n" +
-                "Will be of dimensions marking and profile cutting, which is to be completed in 40-45mins.\n" +
-                "(If the no of participants will increase than 30 then the Apti. round will be taken.)\n" +
+                "This Round will be of dimension marking and profile cutting, which is to be completed in 40-45 mins. (If the no of participants will be more than 30 then the Aptitude round will be taken.)\n" +
                 "Participants will be shortlisted after Round 1 for Round 2.\n" +
-                "\n" +
                 "Round 2:\n" +
-                "\n" +
-                "Will also be of profile cutting, which is to be completed in 50-55mins.\n" +
-                "After this round final 3 winners will be selected.\n" +
-                "\n" +
+                "This round will also be of profile cutting, which is to be completed in 50-55 mins.\n" +
                 "Rules:\n" +
+                "    •   All participants should carry workshop aprons and wear leather shoes\n" +
+                "    •   Participants should carry their current 2018-19 college ID-card\n" +
+                "    •   Experience of working with a lathe machine\n" +
+                "    •   Only one member in a team (Open for all branch students)\n" +
+                "    •   Not more than 2 tools would be provided\n" +
+                "    •   Fine will be levied if any damage to Tool, Lathe Machine or Surroundings occur during operation\n" +
+                "    •   Any kind of malpractices like use of cell phone during the competition is completely banned\n" +
+                "    •   Anyone found so will be disqualified\n" +
+                "    •   Judge’s decision will be final\n" +
+                "    •   No extra work piece will be provided and carrying of any extra material is banned\n" +
+                "    •   After the completion of the task all the accessories must be returned\n" +
+                "    •   For any query, contact the event coordinator\n" +
                 "\n" +
-                "    • All participants should carry workshop aprons and wear leather shoes.\n" +
-                "    • Participants should carry their college ID-card.\n" +
-                "    • Experience of working with a lathe machine.\n" +
-                "    • Only one member in a team (Open for all branch students).\n" +
-                "    • Not more than 2 tools would be provided.\n" +
-                "    • Fine will be levied if any damages to Tool, Lathe Machine or Surroundings occur during Operation.\n" +
-                "    • Any kind of malpractices like use of cell phone during the competition is completely banned.\n" +
-                "    • Anyone found so will be disqualified.\n" +
-                "    • Judge’s decision will be final.\n" +
-                "    • No extra work piece will be provided and carrying of any extra material is banned.\n" +
-                "    • After the completion of the task all the accessories must be returned.\n" +
-                "    • For any query, contact the event co-ordinator\n" +
-                "\n" +
-                "      Entry Fee: Rs. 100/-";
+                "Entry Fee: Rs. 100/-";
 
         rulesCardHidden1 = "Round 1:\n" +
                 "\n" +

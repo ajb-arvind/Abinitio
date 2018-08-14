@@ -48,10 +48,10 @@
                 android:id="@+id/nav_gallry"
                 android:title="Gallery"
                 android:icon="@drawable/ic_gallery"/>
-            <item
+            <!--<item
                 android:id="@+id/nav_principal_desk"
                 android:title="Principal Desk"
-                android:icon="@drawable/ic_principal_desk"/>
+                android:icon="@drawable/ic_principal_desk"/> -->
             <item
                 android:id="@+id/nav_about_gcoeara"
                 android:title="About GCOEARA"

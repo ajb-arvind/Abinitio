@@ -110,7 +110,7 @@
                 android:textColor="#000001"
                 android:textSize="25dp" />
         </android.support.v7.widget.CardView>
-
+    <!---
         <TextView
             android:id="@+id/tvSignUp"
             android:layout_width="wrap_content"
@@ -128,6 +128,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/card" />
+            -->
     </android.support.constraint.ConstraintLayout>
 
 </RelativeLayout>
