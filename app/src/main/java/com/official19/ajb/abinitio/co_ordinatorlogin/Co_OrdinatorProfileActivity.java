@@ -180,7 +180,7 @@ public class Co_OrdinatorProfileActivity extends AppCompatActivity implements Na
                         else
                             setAmPm = "AM";
 
-                        Time = "Round 1 "+i+" : "+i1+" "+setAmPm;
+                        Time = i+" : "+i1+" "+setAmPm;
                         round1Text.setText(Time);
                     }
                 }, hour_x, minute_x, false);
@@ -199,7 +199,7 @@ public class Co_OrdinatorProfileActivity extends AppCompatActivity implements Na
                         else
                             setAmPm = "AM";
 
-                        Time = "Round 2 "+i+" : "+i1+" "+setAmPm;
+                        Time = i+" : "+i1+" "+setAmPm;
                         round2Text.setText(Time);
                     }
                 }, hour_x, minute_x, false);
@@ -218,7 +218,7 @@ public class Co_OrdinatorProfileActivity extends AppCompatActivity implements Na
                         else
                             setAmPm = "AM";
 
-                        Time = "Round 3 "+i+" : "+i1+" "+setAmPm;
+                        Time = i+" : "+i1+" "+setAmPm;
                         round3Text.setText(Time);
                     }
                 }, hour_x, minute_x, false);

@@ -41,11 +41,33 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
     LinearLayoutManager linearLayoutManager,linearLayoutManager1,linearLayoutManager2,
     linearLayoutManager3,linearLayoutManager4,linearLayoutManager5;
     private Toolbar toolbar;
+    public int ptrUID;
 
-    private FirebaseAuth firebaseAuth;
-    private FirebaseDatabase firebaseDatabase;
+    FirebaseAuth firebaseAuth;
+    FirebaseDatabase firebaseDatabase;
 
+    String[] UIDAuto={"l6rtWi2hhMQXkoLohqnmWxnD3kq1","wkeujkUfLAb6DTt9nfp3uJ0nXYt2","CTMfjSf1rQUHZPwx4h5Xz1PUy5t1","GvD5WWyt00UbUgKWl60vzrUM0Wv2"};
+    String[] UIDCivil={"nsrzV56qcoRBtrvT3TkeGw47rXz1","IW0AOJTLjpYoqPJ2XzngLBCo0o33","pNNVhofKIFXJIuxnMUkS57vnxar2","aTcPY0ufzAbnjhJwtf2f6Wmvaij2"};
+    String[] UIDComp={"BoXFB7qBgyaHnu6kW1bJTH46qA22","1HLNVIUl53WqIpe5JvADky8yhES2","pVEwefICKLhnMsBhf8YN2tyLw1n1","GUGdvxGM7qd3DXo6G29UC1stGtM2","TMpKViU2wtZ0uu3XYjJUdsfVTLJ2"};
+    String[] UIDEntc={"prHN5ZCMTVb3HDPj15Frh7WvkLJ3","dTo29VTUgZTZe4CrIVwU9cupNnF2","3ltheje9OHO84wfKUubONwoebMi1","9XuCuO5JpiTn9lPbeXFKRNmQi5k1"};
+    String[] UIDInstru={"oJ4kQ9G5tlXfUpm5i4h6LEHJ0bk1","8ddP488U3Bg830ILueBasnnzdv22","Gzyq6tcv0rNcOP4KN9MmzHXROf33","mT1rgfdWg9WazPu0PnmIUmhawHs1"};
+    String[] UIDMEch={"S06tKohHcITdy4ogZxebdyEaNW52","0ZrUvnDtOnWMPf6R7zGOvLU1i8k1","SDOHF70ERhXRshbVRYw30AjTOCs2","40Ew25SN3zZQCqAu9YKKlMiQ2zl1"};
 
+    /*String[] UIDarray = {
+    "l6rtWi2hhMQXkoLohqnmWxnD3kq1","wkeujkUfLAb6DTt9nfp3uJ0nXYt2","CTMfjSf1rQUHZPwx4h5Xz1PUy5t1","GvD5WWyt00UbUgKWl60vzrUM0Wv2",
+    "nsrzV56qcoRBtrvT3TkeGw47rXz1","IW0AOJTLjpYoqPJ2XzngLBCo0o33","pNNVhofKIFXJIuxnMUkS57vnxar2","aTcPY0ufzAbnjhJwtf2f6Wmvaij2",
+    "BoXFB7qBgyaHnu6kW1bJTH46qA22","1HLNVIUl53WqIpe5JvADky8yhES2","pVEwefICKLhnMsBhf8YN2tyLw1n1","GUGdvxGM7qd3DXo6G29UC1stGtM2","TMpKViU2wtZ0uu3XYjJUdsfVTLJ2",
+    "prHN5ZCMTVb3HDPj15Frh7WvkLJ3","dTo29VTUgZTZe4CrIVwU9cupNnF2","3ltheje9OHO84wfKUubONwoebMi1","9XuCuO5JpiTn9lPbeXFKRNmQi5k1",
+    "oJ4kQ9G5tlXfUpm5i4h6LEHJ0bk1","8ddP488U3Bg830ILueBasnnzdv22","Gzyq6tcv0rNcOP4KN9MmzHXROf33","mT1rgfdWg9WazPu0PnmIUmhawHs1",
+    "S06tKohHcITdy4ogZxebdyEaNW52","0ZrUvnDtOnWMPf6R7zGOvLU1i8k1","SDOHF70ERhXRshbVRYw30AjTOCs2","40Ew25SN3zZQCqAu9YKKlMiQ2zl1"};
+
+*/
+    UserProfile[] userProfileAuto = new UserProfile[UIDAuto.length];
+    UserProfile[] userProfileCivil = new UserProfile[UIDCivil.length];
+    UserProfile[] userProfileComp = new UserProfile[UIDComp.length];
+    UserProfile[] userProfileEntc = new UserProfile[UIDEntc.length];
+    UserProfile[] userProfileInstru = new UserProfile[UIDInstru.length];
+    UserProfile[] userProfileMech = new UserProfile[UIDMEch.length];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +90,7 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
         layoutMan();
         setadap();
 
-        getUserData();
+        //getUserData();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -101,22 +123,23 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
         return true;
     }
 
-    void getUserData(){
-        DatabaseReference databaseReference = firebaseDatabase.getReference("3I8Mo3V28ERNSdua1harUQIP86a2");
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                UserProfile userProfile = dataSnapshot.getValue(UserProfile.class);
-                String profile = userProfile.getName()+" "+userProfile.email;
-                Toast.makeText(getApplicationContext(), profile, Toast.LENGTH_SHORT).show();
-            }
+    /*void getUserData(){
+            for(i=0; i<UIDarray.length; i++){
+                DatabaseReference databaseReference = firebaseDatabase.getReference(UIDarray[i]);
+                databaseReference.addValueEventListener(new ValueEventListener() {
+                    final int j = i;
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        userProfile[j] = dataSnapshot.getValue(UserProfile.class);
+                    }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
-            }
-        });
-    }
+                    }
+                });
+        }
+    }*/
 
 
     public void addImages()
@@ -126,9 +149,6 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
         images.add(R.drawable.ab3);
         images.add(R.drawable.ab4);
         images.add(R.drawable.ab5);
-        images.add(R.drawable.ab6);
-        images.add(R.drawable.ab7);
-        images.add(R.drawable.ab8);
 
     }
 
@@ -166,26 +186,44 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
 
     public void setadap()
     {
-        RecyclerViewAdapter recyclerViewAdapter =new RecyclerViewAdapter(this,images);
+        String[] Auto_event=getResources().getStringArray(R.array.Auto_Event);
+        String[] Civil_event=getResources().getStringArray(R.array.Civil_Event);
+        String[] Comp_event=getResources().getStringArray(R.array.Comp_Event);
+        String[] EnTC_event=getResources().getStringArray(R.array.Entc_Event);
+        String[] Instru_event=getResources().getStringArray(R.array.Instru_Event);
+        String[] Mech_event=getResources().getStringArray(R.array.Mech_Event);
+
+
+
+        RecyclerViewAdapter recyclerViewAdapter =new RecyclerViewAdapter(this,images,Auto_event, "auto");
         recyclerView.setAdapter(recyclerViewAdapter);
-        recyclerView1.setAdapter(recyclerViewAdapter);
-        recyclerView2.setAdapter(recyclerViewAdapter);
-        recyclerView3.setAdapter(recyclerViewAdapter);
-        recyclerView4.setAdapter(recyclerViewAdapter);
-        recyclerView5.setAdapter(recyclerViewAdapter);
+        RecyclerViewAdapter recyclerViewAdapter1 =new RecyclerViewAdapter(this,images,Civil_event,"civil");
+        recyclerView1.setAdapter(recyclerViewAdapter1);
+        RecyclerViewAdapter recyclerViewAdapter2 =new RecyclerViewAdapter(this,images,Comp_event,"comp");
+        recyclerView2.setAdapter(recyclerViewAdapter2);
+        RecyclerViewAdapter recyclerViewAdapter3 =new RecyclerViewAdapter(this,images,EnTC_event,"entc");
+        recyclerView3.setAdapter(recyclerViewAdapter3);
+        RecyclerViewAdapter recyclerViewAdapter4 =new RecyclerViewAdapter(this,images,Instru_event,"instru");
+        recyclerView4.setAdapter(recyclerViewAdapter4);
+        RecyclerViewAdapter recyclerViewAdapter5 =new RecyclerViewAdapter(this,images,Mech_event,"mech");
+        recyclerView5.setAdapter(recyclerViewAdapter5);
 
     }
 
     public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
     {
         Context mcontext;
+        String[] EventNames;
+        String department;
         ArrayList<Integer> images ;
         LayoutInflater layoutInflater;
 
-        public RecyclerViewAdapter(Context context,ArrayList<Integer> images )
+        public RecyclerViewAdapter(Context context,ArrayList<Integer> images, String[] EventNames, String department )
         {
             this.mcontext=context;
             this.images=images;
+            this.EventNames=EventNames;
+            this.department = department;
             layoutInflater =LayoutInflater.from(mcontext);
         }
 
@@ -201,25 +239,611 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
         public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
 
             holder.imageList.setImageResource(images.get(position));
+            holder.Title.setText(EventNames[position]);
+
+            /*for(i=0; i<UIDarray.length; i++) {
+                DatabaseReference databaseReference = firebaseDatabase.getReference(UIDarray[i]);
+                databaseReference.addValueEventListener(new ValueEventListener() {
+                    final int j = i;
+
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        userProfile[j] = dataSnapshot.getValue(UserProfile.class);
+
+                            holder.RoundTime1.setText(userProfile[j].getRound1());
+                            holder.RoundTime2.setText(userProfile[j].getRound2());
+                            holder.RoundTime3.setText(userProfile[j].getRound3());
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+            }*/
+
+            switch (department){
+                case "auto":
+                        switchAuto(position, holder);
+                    break;
+
+
+                case "civil":
+                    switchCivil(position, holder);
+                    break;
+
+
+                case "comp":
+                    switchComp(position, holder);
+                    break;
+
+                case "entc":
+                    switchEntc(position, holder);
+                    break;
+
+
+                case "instru":
+                    switchInstru(position, holder);
+                    break;
+
+
+                case "mech":
+                    switchMech(position, holder);
+                    break;
+
+            }
+
+
+
+
         }
 
         @Override
         public int getItemCount() {
-            return images.size();
+            return EventNames.length;
+        }
+
+        public void switchAuto(int i, final ViewHolder holder){
+                /*for(ptrUID=0; i<UIDAuto.length; ptrUID++) {
+                    DatabaseReference databaseReference = firebaseDatabase.getReference(UIDAuto[ptrUID]);
+                    databaseReference.addValueEventListener(new ValueEventListener() {
+                        final int j = ptrUID;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileAuto[j] = dataSnapshot.getValue(UserProfile.class);
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                }*/
+
+            switch (i){
+                case 0:
+                    DatabaseReference databaseReference = firebaseDatabase.getReference(UIDAuto[0]);
+                    databaseReference.addValueEventListener(new ValueEventListener() {
+                        final int j = 0;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileAuto[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileAuto[0].getRound1());
+                            holder.RoundTime2.setText(userProfileAuto[0].getRound2());
+                            holder.RoundTime3.setText(userProfileAuto[0].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+
+                    break;
+                case 1:
+                    DatabaseReference databaseReference1 = firebaseDatabase.getReference(UIDAuto[1]);
+                    databaseReference1.addValueEventListener(new ValueEventListener() {
+                        final int j = 1;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileAuto[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileAuto[1].getRound1());
+                            holder.RoundTime2.setText(userProfileAuto[1].getRound2());
+                            holder.RoundTime3.setText(userProfileAuto[1].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+                case 2:
+                    DatabaseReference databaseReference2 = firebaseDatabase.getReference(UIDAuto[2]);
+                    databaseReference2.addValueEventListener(new ValueEventListener() {
+                        final int j = 2;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileAuto[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileAuto[2].getRound1());
+                            holder.RoundTime2.setText(userProfileAuto[2].getRound2());
+                            holder.RoundTime3.setText(userProfileAuto[2].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+                case 3:
+                    DatabaseReference databaseReference3 = firebaseDatabase.getReference(UIDAuto[3]);
+                    databaseReference3.addValueEventListener(new ValueEventListener() {
+                        final int j = 3;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileAuto[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileAuto[3].getRound1());
+                            holder.RoundTime2.setText(userProfileAuto[3].getRound2());
+                            holder.RoundTime3.setText(userProfileAuto[3].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+            }
+        }
+
+        public void switchCivil(int i, final ViewHolder holder){
+            switch (i){
+                case 0:
+                    DatabaseReference databaseReference = firebaseDatabase.getReference(UIDCivil[0]);
+                    databaseReference.addValueEventListener(new ValueEventListener() {
+                        final int j = 0;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileCivil[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileCivil[0].getRound1());
+                            holder.RoundTime2.setText(userProfileCivil[0].getRound2());
+                            holder.RoundTime3.setText(userProfileCivil[0].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+
+                    break;
+                case 1:
+                    DatabaseReference databaseReference1 = firebaseDatabase.getReference(UIDCivil[1]);
+                    databaseReference1.addValueEventListener(new ValueEventListener() {
+                        final int j = 1;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileCivil[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileCivil[1].getRound1());
+                            holder.RoundTime2.setText(userProfileCivil[1].getRound2());
+                            holder.RoundTime3.setText(userProfileCivil[1].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+                case 2:
+                    DatabaseReference databaseReference2 = firebaseDatabase.getReference(UIDCivil[2]);
+                    databaseReference2.addValueEventListener(new ValueEventListener() {
+                        final int j = 2;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileCivil[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileCivil[2].getRound1());
+                            holder.RoundTime2.setText(userProfileCivil[2].getRound2());
+                            holder.RoundTime3.setText(userProfileCivil[2].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+                case 3:
+                    DatabaseReference databaseReference3 = firebaseDatabase.getReference(UIDCivil[3]);
+                    databaseReference3.addValueEventListener(new ValueEventListener() {
+                        final int j = 3;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileCivil[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileCivil[3].getRound1());
+                            holder.RoundTime2.setText(userProfileCivil[3].getRound2());
+                            holder.RoundTime3.setText(userProfileCivil[3].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+            }
+        }
+
+        public void switchComp(int i, final ViewHolder holder){
+            switch (i) {
+                case 0:
+                    DatabaseReference databaseReference = firebaseDatabase.getReference(UIDComp[0]);
+                    databaseReference.addValueEventListener(new ValueEventListener() {
+                        final int j = 0;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileComp[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileComp[0].getRound1());
+                            holder.RoundTime2.setText(userProfileComp[0].getRound2());
+                            holder.RoundTime3.setText(userProfileComp[0].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+
+                    break;
+                case 1:
+                    DatabaseReference databaseReference1 = firebaseDatabase.getReference(UIDComp[1]);
+                    databaseReference1.addValueEventListener(new ValueEventListener() {
+                        final int j = 1;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileComp[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileComp[1].getRound1());
+                            holder.RoundTime2.setText(userProfileComp[1].getRound2());
+                            holder.RoundTime3.setText(userProfileComp[1].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+                case 2:
+                    DatabaseReference databaseReference2 = firebaseDatabase.getReference(UIDComp[2]);
+                    databaseReference2.addValueEventListener(new ValueEventListener() {
+                        final int j = 2;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileComp[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileComp[2].getRound1());
+                            holder.RoundTime2.setText(userProfileComp[2].getRound2());
+                            holder.RoundTime3.setText(userProfileComp[2].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+                case 3:
+                    DatabaseReference databaseReference3 = firebaseDatabase.getReference(UIDComp[3]);
+                    databaseReference3.addValueEventListener(new ValueEventListener() {
+                        final int j = 3;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileComp[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileComp[3].getRound1());
+                            holder.RoundTime2.setText(userProfileComp[3].getRound2());
+                            holder.RoundTime3.setText(userProfileComp[3].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+
+                case 4:
+                    DatabaseReference databaseReference4 = firebaseDatabase.getReference(UIDComp[4]);
+                    databaseReference4.addValueEventListener(new ValueEventListener() {
+                        final int j = 4;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileComp[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileComp[4].getRound1());
+                            holder.RoundTime2.setText(userProfileComp[4].getRound2());
+                            holder.RoundTime3.setText(userProfileComp[4].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+            }
+        }
+
+        public void switchEntc(int i, final ViewHolder holder){
+            switch (i){
+                case 0:
+                    DatabaseReference databaseReference = firebaseDatabase.getReference(UIDEntc[0]);
+                    databaseReference.addValueEventListener(new ValueEventListener() {
+                        final int j = 0;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileEntc[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileEntc[0].getRound1());
+                            holder.RoundTime2.setText(userProfileEntc[0].getRound2());
+                            holder.RoundTime3.setText(userProfileEntc[0].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+
+                    break;
+                case 1:
+                    DatabaseReference databaseReference1 = firebaseDatabase.getReference(UIDEntc[1]);
+                    databaseReference1.addValueEventListener(new ValueEventListener() {
+                        final int j = 1;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileEntc[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileEntc[1].getRound1());
+                            holder.RoundTime2.setText(userProfileEntc[1].getRound2());
+                            holder.RoundTime3.setText(userProfileEntc[1].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+                case 2:
+                    DatabaseReference databaseReference2 = firebaseDatabase.getReference(UIDEntc[2]);
+                    databaseReference2.addValueEventListener(new ValueEventListener() {
+                        final int j = 2;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileEntc[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileEntc[2].getRound1());
+                            holder.RoundTime2.setText(userProfileEntc[2].getRound2());
+                            holder.RoundTime3.setText(userProfileEntc[2].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+                case 3:
+                    DatabaseReference databaseReference3 = firebaseDatabase.getReference(UIDEntc[3]);
+                    databaseReference3.addValueEventListener(new ValueEventListener() {
+                        final int j = 3;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileEntc[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileEntc[3].getRound1());
+                            holder.RoundTime2.setText(userProfileEntc[3].getRound2());
+                            holder.RoundTime3.setText(userProfileEntc[3].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+            }
+        }
+
+        public void switchInstru(int i, final ViewHolder holder){
+            switch (i){
+                case 0:
+                    DatabaseReference databaseReference = firebaseDatabase.getReference(UIDInstru[0]);
+                    databaseReference.addValueEventListener(new ValueEventListener() {
+                        final int j = 0;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileInstru[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileInstru[0].getRound1());
+                            holder.RoundTime2.setText(userProfileInstru[0].getRound2());
+                            holder.RoundTime3.setText(userProfileInstru[0].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+
+                    break;
+                case 1:
+                    DatabaseReference databaseReference1 = firebaseDatabase.getReference(UIDInstru[1]);
+                    databaseReference1.addValueEventListener(new ValueEventListener() {
+                        final int j = 1;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileInstru[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileInstru[1].getRound1());
+                            holder.RoundTime2.setText(userProfileInstru[1].getRound2());
+                            holder.RoundTime3.setText(userProfileInstru[1].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+                case 2:
+                    DatabaseReference databaseReference2 = firebaseDatabase.getReference(UIDInstru[2]);
+                    databaseReference2.addValueEventListener(new ValueEventListener() {
+                        final int j = 2;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileInstru[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileInstru[2].getRound1());
+                            holder.RoundTime2.setText(userProfileInstru[2].getRound2());
+                            holder.RoundTime3.setText(userProfileInstru[2].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+                case 3:
+                    DatabaseReference databaseReference3 = firebaseDatabase.getReference(UIDInstru[3]);
+                    databaseReference3.addValueEventListener(new ValueEventListener() {
+                        final int j = 3;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileInstru[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileInstru[3].getRound1());
+                            holder.RoundTime2.setText(userProfileInstru[3].getRound2());
+                            holder.RoundTime3.setText(userProfileInstru[3].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+            }
+        }
+
+        public void switchMech(int i, final ViewHolder holder){
+            switch (i){
+                case 0:
+                    DatabaseReference databaseReference = firebaseDatabase.getReference(UIDMEch[0]);
+                    databaseReference.addValueEventListener(new ValueEventListener() {
+                        final int j = 0;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileMech[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileMech[0].getRound1());
+                            holder.RoundTime2.setText(userProfileMech[0].getRound2());
+                            holder.RoundTime3.setText(userProfileMech[0].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+
+                    break;
+                case 1:
+                    DatabaseReference databaseReference1 = firebaseDatabase.getReference(UIDMEch[1]);
+                    databaseReference1.addValueEventListener(new ValueEventListener() {
+                        final int j = 1;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileMech[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileMech[1].getRound1());
+                            holder.RoundTime2.setText(userProfileMech[1].getRound2());
+                            holder.RoundTime3.setText(userProfileMech[1].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+                case 2:
+                    DatabaseReference databaseReference2 = firebaseDatabase.getReference(UIDMEch[2]);
+                    databaseReference2.addValueEventListener(new ValueEventListener() {
+                        final int j = 2;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileMech[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileMech[2].getRound1());
+                            holder.RoundTime2.setText(userProfileMech[2].getRound2());
+                            holder.RoundTime3.setText(userProfileMech[2].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+                case 3:
+                    DatabaseReference databaseReference3 = firebaseDatabase.getReference(UIDMEch[3]);
+                    databaseReference3.addValueEventListener(new ValueEventListener() {
+                        final int j = 3;
+
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            userProfileMech[j] = dataSnapshot.getValue(UserProfile.class);
+                            holder.RoundTime1.setText(userProfileMech[3].getRound1());
+                            holder.RoundTime2.setText(userProfileMech[3].getRound2());
+                            holder.RoundTime3.setText(userProfileMech[3].getRound3());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                    break;
+            }
         }
 
         public class ViewHolder extends RecyclerView.ViewHolder
         {
             public ImageView imageList;
-            TextView Title,Fees
+            public TextView Title,Fees
                     ,Round1,Round2,Round3,
                     RoundTime1,RoundTime2,RoundTime3;
 
             public ViewHolder(@NonNull View itemView) {
                 super(itemView);
                 imageList=(ImageView)itemView.findViewById(R.id.ivtimetable);
-                Title=(TextView)itemView.findViewById(R.id.tvAutoGames);
-                Fees=(TextView)itemView.findViewById(R.id.tvEntryFee);
+                Title=(TextView)itemView.findViewById(R.id.tvtimetable);
 
                 Round1=(TextView)itemView.findViewById(R.id.tvRound1);
                 Round2=(TextView)itemView.findViewById(R.id.tvRound2);
@@ -230,5 +854,8 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
                 RoundTime3=(TextView)itemView.findViewById(R.id.tvRound3Time);
             }
         }
-    }
+
+
+        }
+
 }
