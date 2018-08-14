@@ -53,15 +53,15 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
     String[] UIDInstru={"oJ4kQ9G5tlXfUpm5i4h6LEHJ0bk1","8ddP488U3Bg830ILueBasnnzdv22","Gzyq6tcv0rNcOP4KN9MmzHXROf33","mT1rgfdWg9WazPu0PnmIUmhawHs1"};
     String[] UIDMEch={"S06tKohHcITdy4ogZxebdyEaNW52","0ZrUvnDtOnWMPf6R7zGOvLU1i8k1","SDOHF70ERhXRshbVRYw30AjTOCs2","40Ew25SN3zZQCqAu9YKKlMiQ2zl1"};
 
-    /*String[] UIDarray = {
-    "l6rtWi2hhMQXkoLohqnmWxnD3kq1","wkeujkUfLAb6DTt9nfp3uJ0nXYt2","CTMfjSf1rQUHZPwx4h5Xz1PUy5t1","GvD5WWyt00UbUgKWl60vzrUM0Wv2",
-    "nsrzV56qcoRBtrvT3TkeGw47rXz1","IW0AOJTLjpYoqPJ2XzngLBCo0o33","pNNVhofKIFXJIuxnMUkS57vnxar2","aTcPY0ufzAbnjhJwtf2f6Wmvaij2",
-    "BoXFB7qBgyaHnu6kW1bJTH46qA22","1HLNVIUl53WqIpe5JvADky8yhES2","pVEwefICKLhnMsBhf8YN2tyLw1n1","GUGdvxGM7qd3DXo6G29UC1stGtM2","TMpKViU2wtZ0uu3XYjJUdsfVTLJ2",
-    "prHN5ZCMTVb3HDPj15Frh7WvkLJ3","dTo29VTUgZTZe4CrIVwU9cupNnF2","3ltheje9OHO84wfKUubONwoebMi1","9XuCuO5JpiTn9lPbeXFKRNmQi5k1",
-    "oJ4kQ9G5tlXfUpm5i4h6LEHJ0bk1","8ddP488U3Bg830ILueBasnnzdv22","Gzyq6tcv0rNcOP4KN9MmzHXROf33","mT1rgfdWg9WazPu0PnmIUmhawHs1",
-    "S06tKohHcITdy4ogZxebdyEaNW52","0ZrUvnDtOnWMPf6R7zGOvLU1i8k1","SDOHF70ERhXRshbVRYw30AjTOCs2","40Ew25SN3zZQCqAu9YKKlMiQ2zl1"};
 
-*/
+    public int[] logosauto ={R.drawable.autologo1,R.drawable.autologo2,R.drawable.autologo3,R.drawable.autologo4};
+    public int[] logoscivil ={R.drawable.civillogo1,R.drawable.civillogo2,R.drawable.civillogo3,R.drawable.cicillogo4};
+    public int[] logoscomp ={R.drawable.complogo1,R.drawable.complogo2,R.drawable.complogo3,R.drawable.complogo4,R.drawable.complogo5};
+    public int[] logosentc ={R.drawable.entclogo1,R.drawable.entclogo2,R.drawable.entclogo3,R.drawable.entclogo4};
+    public int[] logosinstru ={R.drawable.instrulogo1,R.drawable.instrulogo2,R.drawable.instrulogo3,R.drawable.instrulogo4};
+    public int[] logosmech ={R.drawable.mechlogo1,R.drawable.mechlogo2,R.drawable.mechlogo3,R.drawable.mechlogo4};
+
+
     UserProfile[] userProfileAuto = new UserProfile[UIDAuto.length];
     UserProfile[] userProfileCivil = new UserProfile[UIDCivil.length];
     UserProfile[] userProfileComp = new UserProfile[UIDComp.length];
@@ -195,17 +195,17 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
 
 
 
-        RecyclerViewAdapter recyclerViewAdapter =new RecyclerViewAdapter(this,images,Auto_event, "auto");
+        RecyclerViewAdapter recyclerViewAdapter =new RecyclerViewAdapter(this,logosauto,Auto_event, "auto");
         recyclerView.setAdapter(recyclerViewAdapter);
-        RecyclerViewAdapter recyclerViewAdapter1 =new RecyclerViewAdapter(this,images,Civil_event,"civil");
+        RecyclerViewAdapter recyclerViewAdapter1 =new RecyclerViewAdapter(this,logoscivil,Civil_event,"civil");
         recyclerView1.setAdapter(recyclerViewAdapter1);
-        RecyclerViewAdapter recyclerViewAdapter2 =new RecyclerViewAdapter(this,images,Comp_event,"comp");
+        RecyclerViewAdapter recyclerViewAdapter2 =new RecyclerViewAdapter(this,logoscomp,Comp_event,"comp");
         recyclerView2.setAdapter(recyclerViewAdapter2);
-        RecyclerViewAdapter recyclerViewAdapter3 =new RecyclerViewAdapter(this,images,EnTC_event,"entc");
+        RecyclerViewAdapter recyclerViewAdapter3 =new RecyclerViewAdapter(this,logosentc,EnTC_event,"entc");
         recyclerView3.setAdapter(recyclerViewAdapter3);
-        RecyclerViewAdapter recyclerViewAdapter4 =new RecyclerViewAdapter(this,images,Instru_event,"instru");
+        RecyclerViewAdapter recyclerViewAdapter4 =new RecyclerViewAdapter(this,logosinstru,Instru_event,"instru");
         recyclerView4.setAdapter(recyclerViewAdapter4);
-        RecyclerViewAdapter recyclerViewAdapter5 =new RecyclerViewAdapter(this,images,Mech_event,"mech");
+        RecyclerViewAdapter recyclerViewAdapter5 =new RecyclerViewAdapter(this,logosmech,Mech_event,"mech");
         recyclerView5.setAdapter(recyclerViewAdapter5);
 
     }
@@ -215,10 +215,10 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
         Context mcontext;
         String[] EventNames;
         String department;
-        ArrayList<Integer> images ;
+        int[] images ;
         LayoutInflater layoutInflater;
 
-        public RecyclerViewAdapter(Context context,ArrayList<Integer> images, String[] EventNames, String department )
+        public RecyclerViewAdapter(Context context,int[] images, String[] EventNames, String department )
         {
             this.mcontext=context;
             this.images=images;
@@ -238,41 +238,17 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
         @Override
         public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
 
-            holder.imageList.setImageResource(images.get(position));
+            holder.imageList.setImageResource(images[position]);
             holder.Title.setText(EventNames[position]);
 
-            /*for(i=0; i<UIDarray.length; i++) {
-                DatabaseReference databaseReference = firebaseDatabase.getReference(UIDarray[i]);
-                databaseReference.addValueEventListener(new ValueEventListener() {
-                    final int j = i;
-
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        userProfile[j] = dataSnapshot.getValue(UserProfile.class);
-
-                            holder.RoundTime1.setText(userProfile[j].getRound1());
-                            holder.RoundTime2.setText(userProfile[j].getRound2());
-                            holder.RoundTime3.setText(userProfile[j].getRound3());
-
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-                });
-            }*/
-
-            switch (department){
+            switch (department) {
                 case "auto":
-                        switchAuto(position, holder);
+                    switchAuto(position, holder);
                     break;
-
 
                 case "civil":
                     switchCivil(position, holder);
                     break;
-
 
                 case "comp":
                     switchComp(position, holder);
@@ -282,22 +258,17 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
                     switchEntc(position, holder);
                     break;
 
-
                 case "instru":
                     switchInstru(position, holder);
                     break;
-
 
                 case "mech":
                     switchMech(position, holder);
                     break;
 
             }
-
-
-
-
         }
+
 
         @Override
         public int getItemCount() {
@@ -305,22 +276,7 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
         }
 
         public void switchAuto(int i, final ViewHolder holder){
-                /*for(ptrUID=0; i<UIDAuto.length; ptrUID++) {
-                    DatabaseReference databaseReference = firebaseDatabase.getReference(UIDAuto[ptrUID]);
-                    databaseReference.addValueEventListener(new ValueEventListener() {
-                        final int j = ptrUID;
 
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            userProfileAuto[j] = dataSnapshot.getValue(UserProfile.class);
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                        }
-                    });
-                }*/
 
             switch (i){
                 case 0:

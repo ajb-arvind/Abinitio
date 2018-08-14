@@ -86,6 +86,7 @@ public class automobile extends AppCompatActivity  implements NavigationView.OnN
         String[] description = getResources().getStringArray(R.array.auto_descibe);
         String[] department = getResources().getStringArray(R.array.Departments);
 
+
         ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Automobile",logos);
         viewPagerAuto.setAdapter(viewpagerAdapter);
 
