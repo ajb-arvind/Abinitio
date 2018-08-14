@@ -15,11 +15,13 @@ public class FacultyAdapter extends BaseAdapter {
     private Context mcontext;
     private LayoutInflater layoutInflater;
     private TextView Name,Contact;
+    public int[] images;
     private String[] Namearray,Contactarray;
     private ImageView imageView;
 
-    public FacultyAdapter(Context mcontext, String[] namearray, String[] contactarray) {
+    public FacultyAdapter(Context mcontext, String[] namearray, String[] contactarray,int[] images) {
         this.mcontext = mcontext;
+        this.images=images;
         Namearray = namearray;
         Contactarray = contactarray;
         layoutInflater = LayoutInflater.from(mcontext);
@@ -53,7 +55,7 @@ public class FacultyAdapter extends BaseAdapter {
 
         Name.setText(Namearray[i]);
         Contact.setText(Contactarray[i]);
-        imageView.setImageResource(R.drawable.laraib);
+        imageView.setImageResource(images[i]);
 
         /*switch (Namearray[i]) {
             case "Arvind":

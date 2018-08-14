@@ -55,9 +55,9 @@ public class MainActivity extends AppCompatActivity
     private ListView listView;
     public CardView cardView1, cardView2, cardView3, cardView4, cardView5;
     private TextView Day, Hrs, Min, Sec;
-    public FloatingActionButton Float1,Float2,Float3,Float4, Float5;
+    public FloatingActionButton Float1,Float2,Float3,Float4;
     int days = 0, hrss = 0, mins = 0, secs = 0;
-    public static int ABINITIO_DAY = 31 , ABINITIO_HRS = 11, ABINITIO_MIN = 60;
+    public static int ABINITIO_DAY = 28 , ABINITIO_HRS = 10, ABINITIO_MIN = 60;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,13 +89,6 @@ public class MainActivity extends AppCompatActivity
         });
 
         Float4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(openWebsite(MainActivity.this)));
-            }
-        });
-
-        Float5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(openWebsite(MainActivity.this)));
@@ -186,18 +179,12 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
-        getMenuInflater().inflate(R.menu.main, menu);
+
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-
-        if (id == R.id.action_settings) {
-            return true;
-        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -230,7 +217,6 @@ public class MainActivity extends AppCompatActivity
         Float2 = findViewById(R.id.fab2);
         Float3 = findViewById(R.id.fab3);
         Float4 = findViewById(R.id.fab4);
-        Float5 = findViewById(R.id.fab5);
     }
 
     public void newActivity(){
@@ -283,14 +269,12 @@ public class MainActivity extends AppCompatActivity
                     Float2.setVisibility(view.GONE);
                     Float3.setVisibility(view.GONE);
                     Float4.setVisibility(view.GONE);
-                    Float5.setVisibility(view.GONE);
                 }
                 else{
                     Float1.setImageResource(R.drawable.ic_float1_close);
                     Float2.setVisibility(view.VISIBLE);
                     Float3.setVisibility(view.VISIBLE);
                     Float4.setVisibility(view.VISIBLE);
-                    Float5.setVisibility(view.VISIBLE);
                 }
             }
         });

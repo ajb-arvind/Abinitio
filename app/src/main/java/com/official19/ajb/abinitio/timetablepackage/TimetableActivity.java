@@ -123,25 +123,6 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
         return true;
     }
 
-    /*void getUserData(){
-            for(i=0; i<UIDarray.length; i++){
-                DatabaseReference databaseReference = firebaseDatabase.getReference(UIDarray[i]);
-                databaseReference.addValueEventListener(new ValueEventListener() {
-                    final int j = i;
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        userProfile[j] = dataSnapshot.getValue(UserProfile.class);
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-                });
-        }
-    }*/
-
-
     public void addImages()
     {
         images.add(R.drawable.ab1);
@@ -154,6 +135,7 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
 
     public void linearManager()
     {
+
         linearLayoutManager=new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
         linearLayoutManager1=new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
         linearLayoutManager2=new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
@@ -238,31 +220,37 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
         @Override
         public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
 
-            holder.imageList.setImageResource(images[position]);
+
             holder.Title.setText(EventNames[position]);
 
             switch (department) {
                 case "auto":
+                    holder.imageList.setImageResource(images[position]);
                     switchAuto(position, holder);
                     break;
 
                 case "civil":
+                    holder.imageList.setImageResource(images[position]);
                     switchCivil(position, holder);
                     break;
 
                 case "comp":
+                    holder.imageList.setImageResource(images[position]);
                     switchComp(position, holder);
                     break;
 
                 case "entc":
+                    holder.imageList.setImageResource(images[position]);
                     switchEntc(position, holder);
                     break;
 
                 case "instru":
+                    holder.imageList.setImageResource(images[position]);
                     switchInstru(position, holder);
                     break;
 
                 case "mech":
+                    holder.imageList.setImageResource(images[position]);
                     switchMech(position, holder);
                     break;
 
@@ -811,6 +799,5 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
             }
         }
 
-
-        }
+    }
 }
