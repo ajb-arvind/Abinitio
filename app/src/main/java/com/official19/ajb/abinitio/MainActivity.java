@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
     private ListView listView;
     public CardView cardView1, cardView2, cardView3, cardView4, cardView5;
     private TextView Day, Hrs, Min, Sec;
-    public FloatingActionButton Float1,Float2,Float3,Float4;
+    public FloatingActionButton Float1,Float2,Float3,Float4, Float5;
     int days = 0, hrss = 0, mins = 0, secs = 0;
     public static int ABINITIO_DAY = 31 , ABINITIO_HRS = 11, ABINITIO_MIN = 60;
 
@@ -89,6 +89,13 @@ public class MainActivity extends AppCompatActivity
         });
 
         Float4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(openWebsite(MainActivity.this)));
+            }
+        });
+
+        Float5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(openWebsite(MainActivity.this)));
@@ -223,6 +230,7 @@ public class MainActivity extends AppCompatActivity
         Float2 = findViewById(R.id.fab2);
         Float3 = findViewById(R.id.fab3);
         Float4 = findViewById(R.id.fab4);
+        Float5 = findViewById(R.id.fab5);
     }
 
     public void newActivity(){
@@ -243,7 +251,10 @@ public class MainActivity extends AppCompatActivity
         cardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), contact.class));
+                Intent intent1= new Intent(getApplicationContext(), gcoearaActivity.class);
+                intent1.putExtra("Gcoeara","4");
+                startActivity(intent1);
+                //startActivity(new Intent(getApplicationContext(), contact.class));
             }
         });
 
@@ -272,12 +283,14 @@ public class MainActivity extends AppCompatActivity
                     Float2.setVisibility(view.GONE);
                     Float3.setVisibility(view.GONE);
                     Float4.setVisibility(view.GONE);
+                    Float5.setVisibility(view.GONE);
                 }
                 else{
                     Float1.setImageResource(R.drawable.ic_float1_close);
                     Float2.setVisibility(view.VISIBLE);
                     Float3.setVisibility(view.VISIBLE);
                     Float4.setVisibility(view.VISIBLE);
+                    Float5.setVisibility(view.VISIBLE);
                 }
             }
         });
@@ -372,8 +385,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_mech:             activity.startActivity(new Intent(activity, mechanical.class));
                 break;
 
-            case R.id.nav_co_ordinator:             activity.startActivity(new Intent(activity, co_ordinator.class));
-                break;
+
 
             case R.id.nav_gallry:             activity.startActivity(new Intent(activity, gallary.class));
                 break;
@@ -393,11 +405,13 @@ public class MainActivity extends AppCompatActivity
                                                     activity.startActivity(intent2);
                 break;
 
-            case R.id.nav_share:             //activity.startActivity(new Intent(this, automobile.class));
+            case R.id.nav_developer:             activity.startActivity(new Intent(activity, contact.class));
                 break;
 
             case R.id.nav_contact:             activity.startActivity(new Intent(activity, AllContact.class));
                 break;
+
+
         }
     }
 

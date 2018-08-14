@@ -40,7 +40,7 @@ public class WorkshopActivity extends AppCompatActivity implements NavigationVie
         toolbar = (Toolbar)findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Events");
+        getSupportActionBar().setTitle("WorkShop");
 
         cardView1 = (CardView)findViewById(R.id.card1);
         cardView2 = (CardView)findViewById(R.id.card2);

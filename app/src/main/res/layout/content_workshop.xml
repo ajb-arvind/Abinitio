@@ -69,7 +69,7 @@
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@id/ivMainCard1"
                     android:layout_marginLeft="40dp"
-                    android:text="Timetable"
+                    android:text="Workshop 1"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -125,7 +125,7 @@
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@id/ivMaincard2"
                     android:layout_marginLeft="40dp"
-                    android:text="Events"
+                    android:text="Workshop 2"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold" />
