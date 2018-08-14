@@ -59,6 +59,11 @@ public class gcoearaActivity extends AppCompatActivity implements NavigationView
                 CollegeImage.setImageResource(R.drawable.ab);
                 CollegeText.setText("");
                 break;
+
+            case "3":
+                CollegeImage.setImageResource(R.drawable.campusimage);
+                CollegeText.setText("");
+                break;
         }
     }
 

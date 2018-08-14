@@ -12,12 +12,13 @@ import android.widget.ListView;
 
 import com.official19.ajb.abinitio.MainActivity;
 import com.official19.ajb.abinitio.R;
-import com.official19.ajb.abinitio.SimpleAdapter;
-import com.official19.ajb.abinitio.event;
 
-public class contact extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
+public class AllContactList5 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private ListView listView;
+    String[] title={"Dr. Ravi Warkhedkar","Shri. Gajanan Datar"};
+
+    String[] description={"Faculty Co-Ordinator","Faculty Sub Co-Ordinator"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class contact extends AppCompatActivity  implements NavigationView.OnNavi
         setContentView(R.layout.activity_contact);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        setTitle("Developers!");
+        setTitle("Faculty Co-Ordinator");
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -62,9 +63,8 @@ public class contact extends AppCompatActivity  implements NavigationView.OnNavi
     private void setListView()
     {
         listView=(ListView)findViewById(R.id.lvFaculty);
-        String[] title = getResources().getStringArray(R.array.Developer_Name);
-        String[] description = getResources().getStringArray(R.array.Contact);
-        FacultyAdapter facultyAdapter = new FacultyAdapter(contact.this, title,description);
+        FacultyAdapter facultyAdapter = new FacultyAdapter(AllContactList5.this, title,description);
         listView.setAdapter(facultyAdapter);
     }
 }
+

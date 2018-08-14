@@ -813,5 +813,4 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
 
 
         }
-
 }

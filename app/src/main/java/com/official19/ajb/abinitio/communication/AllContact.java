@@ -26,7 +26,7 @@ public class AllContact extends AppCompatActivity implements NavigationView.OnNa
 
     private Toolbar toolbar;
     private ListView listView;
-    String[] title={"Faculty Incharge","Dept Faculty Incharge","Core Team","Web Team"};
+    String[] title={"Faculty Co-Ordinator","Faculty Incharge","Dept Faculty Incharge","Core Team","Web Team", "Accommodation"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,17 +80,23 @@ public class AllContact extends AppCompatActivity implements NavigationView.OnNa
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i) {
-                    case 0:
+                    case 1:
                         startActivity(new Intent(getApplicationContext(), AllContactList.class));
                         break;
-                    case 1:
+                    case 2:
                         startActivity(new Intent(getApplicationContext(), AllContactList2.class));
                         break;
-                    case 2:
+                    case 3:
                         startActivity(new Intent(getApplicationContext(), AllContactList3.class));
                         break;
-                    case 3:
+                    case 4:
                         startActivity(new Intent(getApplicationContext(), AllContactList4.class));
+                        break;
+                    case 0:
+                        startActivity(new Intent(getApplicationContext(), AllContactList5.class));
+                        break;
+                    case 5:
+                        startActivity(new Intent(getApplicationContext(), AllContactList6.class));
                         break;
 
                 }
