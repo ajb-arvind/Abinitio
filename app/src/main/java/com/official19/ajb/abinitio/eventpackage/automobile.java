@@ -32,6 +32,7 @@ public class automobile extends AppCompatActivity  implements NavigationView.OnN
     ViewPager viewPagerAuto;
     LinearLayout sliderDot;
     private int dotscount;
+    public int[] logos ={R.drawable.autologo1,R.drawable.autologo2,R.drawable.autologo3,R.drawable.autologo4};
     private ImageView[] dots;
 
     @Override
@@ -85,7 +86,7 @@ public class automobile extends AppCompatActivity  implements NavigationView.OnN
         String[] description = getResources().getStringArray(R.array.auto_descibe);
         String[] department = getResources().getStringArray(R.array.Departments);
 
-        ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Automobile");
+        ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Automobile",logos);
         viewPagerAuto.setAdapter(viewpagerAdapter);
 
         dotscount=title.length;

@@ -24,6 +24,7 @@ public class civil extends AppCompatActivity   implements NavigationView.OnNavig
     ViewPager viewPagerAuto;
     LinearLayout sliderDot;
     private int dotscount;
+    public int[] logos ={R.drawable.civillogo1,R.drawable.civillogo2,R.drawable.civillogo3,R.drawable.cicillogo4};
     private ImageView[] dots;
 
 
@@ -75,7 +76,7 @@ public class civil extends AppCompatActivity   implements NavigationView.OnNavig
         String[] title = getResources().getStringArray(R.array.Civil_Event);
         String[] description = getResources().getStringArray(R.array.civil_descibe);
 
-        ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Civil");
+        ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Civil",logos);
         viewPagerAuto.setAdapter(viewpagerAdapter);
 
         dotscount=title.length;

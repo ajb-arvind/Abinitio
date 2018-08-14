@@ -24,6 +24,8 @@ public class instru extends AppCompatActivity   implements NavigationView.OnNavi
     ViewPager viewPagerAuto;
     LinearLayout sliderDot;
     private int dotscount;
+    public int[] logos ={R.drawable.instrulogo1,R.drawable.instrulogo2,R.drawable.instrulogo3,R.drawable.instrulogo4};
+
     private ImageView[] dots;
 
 
@@ -76,7 +78,7 @@ public class instru extends AppCompatActivity   implements NavigationView.OnNavi
         String[] description = getResources().getStringArray(R.array.instru_descibe);
         String[] department = getResources().getStringArray(R.array.Departments);
 
-        ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Instrumentation");
+        ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Instrumentation",logos);
         viewPagerAuto.setAdapter(viewpagerAdapter);
 
         dotscount=title.length;

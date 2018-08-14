@@ -27,16 +27,18 @@ public class ViewpagerAdapter extends PagerAdapter {
     public ImageView EventImage;
     public TextView EventName;
     public TextView EventDescribe;
+    public int[] logos;
     public Context mcontext;
     public LayoutInflater layoutInflater;
     public String[] titlearray,descriptionarray;
     public String department;
 
-    public ViewpagerAdapter(Context context,String[] title,String[] description, String department)
+    public ViewpagerAdapter(Context context,String[] title,String[] description, String department,int[] logos)
     {
         this.mcontext = context;
         titlearray = title;
         descriptionarray = description;
+        this.logos=logos;
         this.department = department;
     }
 
@@ -63,7 +65,7 @@ public class ViewpagerAdapter extends PagerAdapter {
 
         EventName.setText(titlearray[i]);
         EventDescribe.setText(descriptionarray[i]);
-        EventImage.setImageResource(R.drawable.automobile);
+        EventImage.setImageResource(logos[i]);
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override

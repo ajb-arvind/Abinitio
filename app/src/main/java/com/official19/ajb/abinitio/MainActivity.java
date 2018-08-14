@@ -30,6 +30,7 @@ import android.widget.Toast;
 
 import com.official19.ajb.abinitio.allevent.GameActivity;
 import com.official19.ajb.abinitio.communication.AllContact;
+import com.official19.ajb.abinitio.communication.WorkshopActivity;
 import com.official19.ajb.abinitio.eventpackage.automobile;
 import com.official19.ajb.abinitio.eventpackage.civil;
 import com.official19.ajb.abinitio.eventpackage.computer;
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private ListView listView;
-    public CardView cardView1, cardView2, cardView3, cardView4;
+    public CardView cardView1, cardView2, cardView3, cardView4, cardView5;
     private TextView Day, Hrs, Min, Sec;
     public FloatingActionButton Float1,Float2,Float3,Float4;
     int days = 0, hrss = 0, mins = 0, secs = 0;
@@ -216,6 +217,7 @@ public class MainActivity extends AppCompatActivity
         cardView2 = (CardView)findViewById(R.id.card2);
         cardView3 = (CardView)findViewById(R.id.card3);
         cardView4 = (CardView)findViewById(R.id.card4);
+        cardView5 = (CardView)findViewById(R.id.card5);
 
         Float1 = findViewById(R.id.fab1);
         Float2 = findViewById(R.id.fab2);
@@ -249,6 +251,13 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), loginScreen.class));
+            }
+        });
+
+        cardView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), WorkshopActivity.class));
             }
         });
     }

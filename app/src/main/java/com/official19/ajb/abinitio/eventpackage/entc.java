@@ -24,6 +24,7 @@ public class entc extends AppCompatActivity   implements NavigationView.OnNaviga
     ViewPager viewPagerAuto;
     LinearLayout sliderDot;
     private int dotscount;
+    public int[] logos ={R.drawable.entclogo1,R.drawable.entclogo2,R.drawable.entclogo3,R.drawable.entclogo4};
     private ImageView[] dots;
 
 
@@ -76,7 +77,7 @@ public class entc extends AppCompatActivity   implements NavigationView.OnNaviga
         String[] description = getResources().getStringArray(R.array.entc_descibe);
         String[] department = getResources().getStringArray(R.array.Departments);
 
-        ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "EnTC");
+        ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "EnTC",logos);
         viewPagerAuto.setAdapter(viewpagerAdapter);
 
         dotscount=title.length;

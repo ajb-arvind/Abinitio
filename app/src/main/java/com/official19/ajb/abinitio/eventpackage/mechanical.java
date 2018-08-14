@@ -24,6 +24,8 @@ public class mechanical extends AppCompatActivity implements NavigationView.OnNa
     ViewPager viewPagerAuto;
     LinearLayout sliderDot;
     private int dotscount;
+    public int[] logos ={R.drawable.mechlogo1,R.drawable.mechlogo2,R.drawable.mechlogo3,R.drawable.mechlogo4};
+
     private ImageView[] dots;
 
     @Override
@@ -75,7 +77,7 @@ public class mechanical extends AppCompatActivity implements NavigationView.OnNa
         String[] description = getResources().getStringArray(R.array.mech_descibe);
         String[] department = getResources().getStringArray(R.array.Departments);
 
-        ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Mechanical");
+        ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Mechanical",logos);
         viewPagerAuto.setAdapter(viewpagerAdapter);
 
         dotscount=title.length;

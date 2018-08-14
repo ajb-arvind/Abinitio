@@ -24,6 +24,7 @@ public class computer extends AppCompatActivity implements NavigationView.OnNavi
     ViewPager viewPagerAuto;
     LinearLayout sliderDot;
     private int dotscount;
+    public int[] logos ={R.drawable.complogo1,R.drawable.complogo2,R.drawable.complogo3,R.drawable.complogo4,R.drawable.complogo5};
     private ImageView[] dots;
 
 
@@ -76,7 +77,7 @@ public class computer extends AppCompatActivity implements NavigationView.OnNavi
         String[] description = getResources().getStringArray(R.array.comp_descibe);
         String[] department = getResources().getStringArray(R.array.Departments);
 
-        ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Computer");
+        ViewpagerAdapter viewpagerAdapter = new ViewpagerAdapter(this, title, description, "Computer",logos);
         viewPagerAuto.setAdapter(viewpagerAdapter);
 
         dotscount=title.length;
