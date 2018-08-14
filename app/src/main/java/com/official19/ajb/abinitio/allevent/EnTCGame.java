@@ -37,6 +37,9 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
             co_OrdinatorCardHidden0, co_OrdinatorCardHidden1, co_OrdinatorCardHidden2, co_OrdinatorCardHidden3;
     ImageView event_logo;
 
+    public int[] logos ={R.drawable.entclogo1,R.drawable.entclogo2,R.drawable.entclogo3,R.drawable.entclogo4};
+
+
     private static final int REQUEST_PHONE_CALL = 1;
 
     @Override
@@ -59,6 +62,7 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
         {
             case "Spechien Sie Matlab":
                 Description.setText(descb0);
+                event_logo.setImageResource(logos[0]);
                 RulesCardHidden.setText(rulesCardHidden0);
                 PrizeCardHidden.setText(prizeCardHidden0);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden0);
@@ -67,6 +71,7 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
 
             case "Electro-Spark":
                 Description.setText(descb1);
+                event_logo.setImageResource(logos[1]);
                 RulesCardHidden.setText(rulesCardHidden1);
                 PrizeCardHidden.setText(prizeCardHidden1);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden1);
@@ -75,6 +80,7 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
 
             case "Utrix":
                 Description.setText(descb2);
+                event_logo.setImageResource(logos[2]);
                 RulesCardHidden.setText(rulesCardHidden2);
                 PrizeCardHidden.setText(prizeCardHidden2);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden2);
@@ -83,6 +89,7 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
 
             case "Robox":
                 Description.setText(descb3);
+                event_logo.setImageResource(logos[3]);
                 RulesCardHidden.setText(rulesCardHidden3);
                 PrizeCardHidden.setText(prizeCardHidden3);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden3);

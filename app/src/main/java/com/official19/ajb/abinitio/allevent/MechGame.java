@@ -37,8 +37,9 @@ public class MechGame extends AppCompatActivity implements NavigationView.OnNavi
             co_OrdinatorCardHidden0, co_OrdinatorCardHidden1, co_OrdinatorCardHidden2, co_OrdinatorCardHidden3;
     ImageView event_logo;
 
-    private static final int REQUEST_PHONE_CALL = 1;
+    public int[] logos ={R.drawable.mechlogo1,R.drawable.mechlogo2,R.drawable.mechlogo3,R.drawable.mechlogo4};
 
+    private static final int REQUEST_PHONE_CALL = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,15 +60,18 @@ public class MechGame extends AppCompatActivity implements NavigationView.OnNavi
         switch (event)
         {
             case "RC Nitro Racing":
+                event_logo.setImageResource(logos[0]);
                 Description.setText(descb0);
                 RulesCardHidden.setText(rulesCardHidden0);
                 PrizeCardHidden.setText(prizeCardHidden0);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden0);
+
                 cordintor_no="tel:9139461465";
                 break;
 
             case "Consilio":
                 Description.setText(descb1);
+                event_logo.setImageResource(logos[1]);
                 RulesCardHidden.setText(rulesCardHidden1);
                 PrizeCardHidden.setText(prizeCardHidden1);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden1);
@@ -76,6 +80,7 @@ public class MechGame extends AppCompatActivity implements NavigationView.OnNavi
 
             case "The Catapult":
                 Description.setText(descb2);
+                event_logo.setImageResource(logos[2]);
                 RulesCardHidden.setText(rulesCardHidden2);
                 PrizeCardHidden.setText(prizeCardHidden2);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden2);
@@ -84,12 +89,12 @@ public class MechGame extends AppCompatActivity implements NavigationView.OnNavi
 
             case "Linkage and Gear":
                 Description.setText(descb3);
+                event_logo.setImageResource(logos[3]);
                 RulesCardHidden.setText(rulesCardHidden3);
                 PrizeCardHidden.setText(prizeCardHidden3);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden3);
                 cordintor_no="tel:8888052448r";
                 break;
-
         }
 
 

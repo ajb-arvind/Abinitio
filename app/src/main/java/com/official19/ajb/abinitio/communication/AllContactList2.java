@@ -18,6 +18,8 @@ public class AllContactList2 extends AppCompatActivity implements NavigationView
     private ListView listView;
     String[] title={"Shri. D.J. Pereira","Dr. N.V.Futane","Dr. R.V.Thanedar","Shri. S.R.Patil","Shri. A.J.Bhosale",
             "Shri. A.S.Kaushal"};
+    int[] images={R.drawable.parera,R.drawable.futane,R.drawable.laraib,R.drawable.laraib,R.drawable.bhosale1,
+            R.drawable.kaushal1};
 
     String[] description={"Computer Department","EnTC Department","Civil Department","Instrumentation Department",
     "Automobile Department","Mechanical Department"};
@@ -65,7 +67,7 @@ public class AllContactList2 extends AppCompatActivity implements NavigationView
     private void setListView()
     {
         listView=(ListView)findViewById(R.id.lvFaculty);
-        FacultyAdapter facultyAdapter = new FacultyAdapter(AllContactList2.this, title,description);
+        FacultyAdapter facultyAdapter = new FacultyAdapter(AllContactList2.this, title,description,images);
         listView.setAdapter(facultyAdapter);
     }
 }

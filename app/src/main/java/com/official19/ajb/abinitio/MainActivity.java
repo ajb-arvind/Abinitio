@@ -55,9 +55,9 @@ public class MainActivity extends AppCompatActivity
     private ListView listView;
     public CardView cardView1, cardView2, cardView3, cardView4, cardView5;
     private TextView Day, Hrs, Min, Sec;
-    public FloatingActionButton Float1,Float2,Float3,Float4, Float5;
+    public FloatingActionButton Float1,Float2,Float3,Float4;
     int days = 0, hrss = 0, mins = 0, secs = 0;
-    public static int ABINITIO_DAY = 31 , ABINITIO_HRS = 11, ABINITIO_MIN = 60;
+    public static int ABINITIO_DAY = 28 , ABINITIO_HRS = 10, ABINITIO_MIN = 60;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,7 +94,6 @@ public class MainActivity extends AppCompatActivity
                 startActivity(new Intent(openWebsite(MainActivity.this)));
             }
         });
-
 
         //setupListView();
 
@@ -179,12 +178,13 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
+
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
 
         return super.onOptionsItemSelected(item);
     }
@@ -217,7 +217,6 @@ public class MainActivity extends AppCompatActivity
         Float2 = findViewById(R.id.fab2);
         Float3 = findViewById(R.id.fab3);
         Float4 = findViewById(R.id.fab4);
-        Float5 = findViewById(R.id.fab5);
     }
 
     public void newActivity(){
@@ -375,10 +374,10 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_gallry:             activity.startActivity(new Intent(activity, gallary.class));
                 break;
 
-            /*case R.id.nav_principal_desk:           Intent intent0= new Intent(activity, gcoearaActivity.class);
+            case R.id.nav_principal_desk:           Intent intent0= new Intent(activity, gcoearaActivity.class);
                                                     intent0.putExtra("Gcoeara","0");
                                                     activity.startActivity(intent0);
-                break;*/
+                break;
 
             case R.id.nav_about_gcoeara:            Intent intent1= new Intent(activity, gcoearaActivity.class);
                                                     intent1.putExtra("Gcoeara","1");

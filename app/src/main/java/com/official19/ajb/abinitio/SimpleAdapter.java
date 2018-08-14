@@ -76,7 +76,7 @@ public class SimpleAdapter extends BaseAdapter {
 
         switch (titlearray[i]) {
             case "Automobile":
-                title.setText("Aftokinitio");
+                title.setText("Aftokinito");
                 imageView.setImageResource(R.drawable.automobile);
                 break;
 

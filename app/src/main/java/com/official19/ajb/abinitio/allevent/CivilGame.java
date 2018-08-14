@@ -36,6 +36,8 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
             prizeCardHidden0, prizeCardHidden1, prizeCardHidden2, prizeCardHidden3,
             co_OrdinatorCardHidden0, co_OrdinatorCardHidden1, co_OrdinatorCardHidden2, co_OrdinatorCardHidden3;
     ImageView event_logo;
+    public int[] logos ={R.drawable.civillogo1,R.drawable.civillogo2,R.drawable.civillogo3,R.drawable.cicillogo4};
+
 
     private static final int REQUEST_PHONE_CALL = 1;
 
@@ -61,12 +63,14 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
                 Description.setText(descb0);
                 RulesCardHidden.setText(rulesCardHidden0);
                 PrizeCardHidden.setText(prizeCardHidden0);
+                event_logo.setImageResource(logos[0]);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden0);
                 cordintor_no="tel:9860449876";
                 break;
 
             case "Poster Presentation":
                 Description.setText(descb1);
+                event_logo.setImageResource(logos[1]);
                 RulesCardHidden.setText(rulesCardHidden1);
                 PrizeCardHidden.setText(prizeCardHidden1);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden1);
@@ -75,6 +79,7 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
 
             case "Clad Clash":
                 Description.setText(descb2);
+                event_logo.setImageResource(logos[2]);
                 RulesCardHidden.setText(rulesCardHidden2);
                 PrizeCardHidden.setText(prizeCardHidden2);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden2);
@@ -83,6 +88,7 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
 
             case "Treasure Hunt":
                 Description.setText(descb3);
+                event_logo.setImageResource(logos[3]);
                 RulesCardHidden.setText(rulesCardHidden3);
                 PrizeCardHidden.setText(prizeCardHidden3);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden3);

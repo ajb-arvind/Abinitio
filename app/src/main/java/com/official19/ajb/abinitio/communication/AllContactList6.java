@@ -16,7 +16,9 @@ import com.official19.ajb.abinitio.R;
 public class AllContactList6 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private ListView listView;
-    String[] title={"Atul Gadhe","Dipti Pawar"};
+    String[] title={"Atul Gade","Dipti Pawar"};
+
+    int[] images={R.drawable.atul,R.drawable.sanjana1};
 
     String[] description={"For Boy's\nContact:","For Girls\nContact:"};
 
@@ -63,7 +65,7 @@ public class AllContactList6 extends AppCompatActivity implements NavigationView
     private void setListView()
     {
         listView=(ListView)findViewById(R.id.lvFaculty);
-        FacultyAdapter facultyAdapter = new FacultyAdapter(AllContactList6.this, title,description);
+        FacultyAdapter facultyAdapter = new FacultyAdapter(AllContactList6.this, title,description,images);
         listView.setAdapter(facultyAdapter);
     }
 }

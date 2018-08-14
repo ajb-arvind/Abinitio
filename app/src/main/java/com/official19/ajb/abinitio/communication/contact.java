@@ -18,6 +18,9 @@ import com.official19.ajb.abinitio.event;
 public class contact extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
 
     private ListView listView;
+    int[] images={R.drawable.arvind,R.drawable.imran,R.drawable.laraib,R.drawable.dheeraj,R.drawable.dhanaji};
+    String[] title={"Arvind","Imran","Laraib","Dheeraj","Dhanshri"};
+    String[] description={"Contact:9370088262","Contact:9730844820","Contact:7889592130","Contact:9284705198","Contact:9702905883"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,9 +65,7 @@ public class contact extends AppCompatActivity  implements NavigationView.OnNavi
     private void setListView()
     {
         listView=(ListView)findViewById(R.id.lvFaculty);
-        String[] title = getResources().getStringArray(R.array.Developer_Name);
-        String[] description = getResources().getStringArray(R.array.Contact);
-        FacultyAdapter facultyAdapter = new FacultyAdapter(contact.this, title,description);
+        FacultyAdapter facultyAdapter = new FacultyAdapter(contact.this, title,description,images);
         listView.setAdapter(facultyAdapter);
     }
 }

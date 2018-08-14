@@ -12,7 +12,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Government College of Engineering and Reseach Awasri"
+        android:text="Government College of Engineering and Reseach Avasari Pune"
         android:textColor="@color/white"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"

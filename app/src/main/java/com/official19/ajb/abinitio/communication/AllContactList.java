@@ -19,6 +19,9 @@ public class AllContactList extends AppCompatActivity implements NavigationView.
     String[] title={"Dr. N.V.Futane","Shri. N.D.Padwale ","Shri. G.R.Phule","Shri. N.M.Karajanagi","Shri. A.J.Bhosale","Shri. M.D.Panchal",
     "Shri. A.S.Mane"};
 
+    int[] images={R.drawable.futane,R.drawable.padawale,R.drawable.phule1,R.drawable.karajanagi,R.drawable.bhosale1,R.drawable.panchal1,
+            R.drawable.mane1};
+
     String[] description={"Guest and Event Management","Design,Printing and Sponsorship","Registration and Publicity","Material Procurement",
     "Prize Distribution and Accounting","Accomodation","Sound,Lighting and Electric Supply"};
 
@@ -65,7 +68,7 @@ public class AllContactList extends AppCompatActivity implements NavigationView.
     private void setListView()
     {
         listView=(ListView)findViewById(R.id.lvFaculty);
-        FacultyAdapter facultyAdapter = new FacultyAdapter(AllContactList.this, title,description);
+        FacultyAdapter facultyAdapter = new FacultyAdapter(AllContactList.this, title,description,images);
         listView.setAdapter(facultyAdapter);
     }
 }

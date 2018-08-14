@@ -18,6 +18,8 @@ public class AllContactList4 extends AppCompatActivity implements NavigationView
     private ListView listView;
     String[] title={"Akash Gudhade","Ganesh Chincholkar"};
 
+    int[] images={R.drawable.akash,R.drawable.laraib};
+
     String[] description={"Web Design Team\nContact:+91 9130708570","Web Design Team\nContact:+91 7798122874"};
 
     @Override
@@ -63,7 +65,7 @@ public class AllContactList4 extends AppCompatActivity implements NavigationView
     private void setListView()
     {
         listView=(ListView)findViewById(R.id.lvFaculty);
-        FacultyAdapter facultyAdapter = new FacultyAdapter(AllContactList4.this, title,description);
+        FacultyAdapter facultyAdapter = new FacultyAdapter(AllContactList4.this, title,description,images);
         listView.setAdapter(facultyAdapter);
     }
 }
