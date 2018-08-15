@@ -25,12 +25,13 @@ import com.google.firebase.auth.FirebaseUser;
 import com.official19.ajb.abinitio.MainActivity;
 import com.official19.ajb.abinitio.R;
 import com.official19.ajb.abinitio.event;
+import com.official19.ajb.abinitio.other.gcoearaActivity;
 
 public class loginScreen extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private EditText Email,Password;
     private ImageView Logo;
-    private TextView SignUp,Login;
+    private TextView SignUp,Login, ForgotPassword;
     private CardView Card;
     private FirebaseAuth firebaseAuth;
 
@@ -51,18 +52,27 @@ public class loginScreen extends AppCompatActivity implements NavigationView.OnN
             startActivity(new Intent(loginScreen.this,Co_OrdinatorProfileActivity.class));
         }
 
-        /*SignUp.setOnClickListener(new View.OnClickListener() {
+        SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(loginScreen.this,RegistrationActivity.class));
             }
-        });*/
+        });
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 validate(Email.getText().toString(),Password.getText().toString());
 
+            }
+        });
+
+        ForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(getApplicationContext(), passwordActivity.class);
+                intent.putExtra("Gcoeara","1");
+                startActivity(intent);
             }
         });
 
@@ -105,6 +115,8 @@ public class loginScreen extends AppCompatActivity implements NavigationView.OnN
         Logo=findViewById(R.id.ivLogo);
         Card=findViewById(R.id.card);
         Login=findViewById(R.id.tvLogin);
+        SignUp = findViewById(R.id.tvSignUp);
+        ForgotPassword = findViewById(R.id.tvForgotPassword);
 
 
     }

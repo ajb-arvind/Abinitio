@@ -1,5 +1,6 @@
 package com.official19.ajb.abinitio.co_ordinatorlogin;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
@@ -16,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -33,7 +35,7 @@ public class Co_OrdinatorProfileActivity extends AppCompatActivity implements Na
 
     private TextView Coordinator;
     private Button Logout, save;
-    public CardView round1, round2, round3;
+    public CardView round1, round2, round3, changePassword;
     public TextView round1Text, round2Text, round3Text, Profile;
     static final int DIALOG_ID =0;
     int minute_x, hour_x, roundNo;
@@ -75,6 +77,15 @@ public class Co_OrdinatorProfileActivity extends AppCompatActivity implements Na
 
            saveTimerDataFire();
 
+           changePassword.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View view) {
+                   Intent intent= new Intent(getApplicationContext(), passwordActivity.class);
+                   intent.putExtra("Gcoeara","0");
+                   startActivity(intent);
+               }
+           });
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -94,6 +105,7 @@ public class Co_OrdinatorProfileActivity extends AppCompatActivity implements Na
         round2Text = (TextView)findViewById(R.id.round2TV);
         round3Text = (TextView)findViewById(R.id.round3TV);
         Profile = (TextView)findViewById(R.id.profileTV);
+        changePassword = (CardView)findViewById(R.id.changePasswordCV);
     }
 
     @Override

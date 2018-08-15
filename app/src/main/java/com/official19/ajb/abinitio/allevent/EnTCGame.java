@@ -221,22 +221,10 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
 
     void completeMechanical(){
         //
-        descb0 = " 'MATLAB AND SIMULINK’ is a platform to create" +
-                " a real world and time responses virtually. It is a" +
-                " great tool for engineers as there is need to" +
-                " solve problems that require complex" +
-                " computation." +
-                " Here is an opportunity to show and upgrade your skills through" +
-                " competition.";
+        descb0 = "‘MATLAB AND SIMULINK’ is a platform to create a real world and time responses virtually. It is a great tool for engineers as there is need to solve problems that require complex computation.\n" +
+                "Here is an opportunity to show and upgrade your skills through competition.\n";
 
-        descb1 = "If Electronics lives in you, then" +
-                " ABINITIO 2K18-19 is inviting you to" +
-                " release your potentials in the way of" +
-                " battle ground. Put down your brain to" +
-                " design and implement the circuits" +
-                " which are simple & effective" +
-                ". Complete the given task within time" +
-                " limitation and the victory is yours.";
+        descb1 = "If Electronics lives in you, then ABINITIO 2K18-19 is inviting you to release your potentials in the way of battle ground. Put down your brain to design and implement the circuits which are simple & effective. Complete the given task within time limitation and the victory is yours.";
 
         descb2= "Microcontroller acts as brain of any" +
                 " embedded system. In this participants will" +
@@ -255,43 +243,47 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
                 " competition.";
 
         //
-        rulesCardHidden0 = "SOFTWARE VERSIONS:\n" +
-                "1. MATLAB R2017a or above\n" +
+        rulesCardHidden0 = "\n" +
+                "    • All participants are requested to reach the place at least one hour before the event starts\n" +
+                "    • Registration can be done on the spot\n" +
+                "    • Unlimited entries from any colleges are allowed\n" +
+                "    • Participants must carry their college ID cards and payment receipt\n" +
+                "    • Based on the student’s registrations the rules may have a small change\n" +
+                "    • Participants disobeying the instructions given will be disqualified and judge’s decision will be final\n" +
+                "    • Organizing Committee has reserved all rights to make any modification in rules, schedule\n" +
+                "    • For any other information, please contact the event coordinators\n" +
+                "\n" +
+                "SOFTWARE VERSIONS:\n" +
+                "    • MATLAB R2017a or above\n" +
+                "\n" +
                 "Round 1: MCQ Test\n" +
-                "\uF076 The first round includes the Test which consists of 30 multiple\n" +
-                "choice questions based on MATLAB.\n" +
-                "\uF076 Each question will be for one point.\n" +
-                "\uF076 Number of Teams selected for Second Round will be based upon\n" +
-                "total number of teams registered.\n" +
-                "\uF076 If the two teams have same points then Test completion time will\n" +
-                "be considered.\n" +
+                "    • The first round includes the Test which consists of 30 multiple choice questions based on MATLAB\n" +
+                "    • Each question will be for one point\n" +
+                "    • Number of Teams selected for Second Round will be based upon total number of teams registered\n" +
+                "    • If the two teams have same points then Test completion time will be considered\n" +
+                "\n" +
                 "Round 2: ALT MATLAB (Arithmetic and Logical test)\n" +
-                "\uF076 Here each participant team will be given a mathematical equation\n" +
-                "or logical expression.\n" +
-                "\uF076 If the two teams have same points then Task completion time will\n" +
-                "be considered.\n" +
-                "\uF076 5-7 teams will be shortlisted on the basis of correctness and time.\n" +
+                "    • Here each participant team will be given a mathematical equation or logical expression\n" +
+                "    • If the two teams have same points then Task completion time will be considered\n" +
+                "    • 5-7 teams will be shortlisted on the basis of correctness and time\n" +
+                "\n" +
                 "Round 3: DEEP ALT\n" +
-                "\uF076 In this round complicated mathematical equation will be asked.\n" +
-                "E.g.:- summation of sin(2*pi*t) etc. Winners will be decided on the\n" +
-                "basis of speed and accuracy of the team.NOTE:\n" +
-                "Based on the performance in all the three rounds the winner will\n" +
-                "be decided.\n" +
-                "Check the MATLAB Onramp Course.\n" +
+                "    • In this round complicated mathematical equation will be asked. E.g.: - summation of sin(2*pi*t) etc. Winners will be decided on the basis of speed and accuracy of the team.\n" +
+                "\n" +
+                "NOTE:\n" +
+                "Based on the performance in all the three rounds the winner will be decided\n" +
+                "Check the MATLAB Onramp Course\n" +
+                "\n" +
                 "SYLLABUS:\n" +
-                "1. Basic Commands\n" +
-                "2. Array creation and its operations\n" +
-                "3. Plotting vectors\n" +
-                "4. Logical operations and conditioning\n" +
-                "5. Decision branching and looping\n" +
-                "6. Mathematical operations\n" +
+                "    • Basic Commands\n" +
+                "    • Array creation and its operations\n" +
+                "    • Plotting vectors\n" +
+                "    • Logical operations and conditioning\n" +
+                "    • Decision branching and looping\n" +
+                "    • Mathematical operations\n" +
+                "\n" +
                 "ELIGIBILITY:\n" +
-                "All students with a valid identity card of their respective\n" +
-                "educational institutes are eligible to participate in the event. Team\n" +
-                "Specification: A team may consist of a maximum of 2 members. Students\n" +
-                "from different educational institutes can form a team.\n" +
-                "ENTRY FEE:\n" +
-                "₹ 100 per Team (Max. 2 members)";
+                "All students with a valid identity card of their respective educational institutes are eligible to participate in the event. Team Specification: A team may consist of a maximum of 2 members. Students from different educational institutes can form a team.";
 
         rulesCardHidden1 = "Round 1:\n" +
                 "\uF076 The first round includes the Test which consists of 30 multiple\n" +
@@ -338,28 +330,37 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
                 "ENTRY FEE:\n" +
                 "₹ 100 per Team (Max. 2 members)";
 
-        rulesCardHidden2 = "SOFTWARE VERSIONS:\n" +
-                "1. Keil uVision4 or above\n" +
-                "2. Proteus 8.4 or aboveRound 1:\n" +
-                "\uF076 The first round includes the Test which consists of 30 multiple\n" +
-                "choice questions based on microcontroller and embedded system.\n" +
-                "\uF076 Each question will be for one point.\n" +
-                "\uF076 Number of Teams selected for Second Round will be based upon\n" +
-                "total number of teams registered.\n" +
-                "\uF076 If the two teams have same points then Test completion time will\n" +
-                "be considered.\n" +
+        rulesCardHidden2 = "\n" +
+                "    • All participants are requested to reach the place at least one hour before the event starts\n" +
+                "    • Registration can be done on the spot\n" +
+                "    • Unlimited entries from any colleges are allowed\n" +
+                "    • Participants must carry their college ID cards and payment receipt\n" +
+                "    • Based on the student’s registrations the rules may have a small change\n" +
+                "    • Participants disobeying the instructions given will be disqualified and judge’s decision will be final\n" +
+                "    • Organizing Committee has reserved all rights to make any modification in rules, schedule\n" +
+                "    • For any other information, please contact the event coordinators\n" +
+                "\n" +
+                "SOFTWARE VERSIONS:\n" +
+                "    • Keil uVision4 or above\n" +
+                "    • Proteus 8.4 or above\n" +
+                "\n" +
+                "Round 1:\n" +
+                "    • The first round includes the Test which consists of 30 multiple choice questions based on microcontroller and embedded system\n" +
+                "    • Each question will be for one point\n" +
+                "    • Number of Teams selected for Second Round will be based upon total number of teams registered\n" +
+                "    • If the two teams have same points then Test completion time will be considered\n" +
+                "\n" +
                 "Round 2:\n" +
-                "\uF076 It will include the visualization and identification of electronics\n" +
-                "components.\n" +
-                "\uF076 If the two teams have same points then Task completion time will\n" +
-                "be considered.\n" +
-                "\uF076 The team which completes the task will be eligible for Final Round.\n" +
+                "    • It will include the visualization and identification of electronics components\n" +
+                "    • If the two teams have same points then Task completion time will be considered\n" +
+                "    • The team which completes the task will be eligible for Final Round\n" +
+                "\n" +
                 "Round 3:\n" +
-                "\uF076 In this round finalists have to solve a problem statement on Keil\n" +
-                "and simulating it on Proteus software.\n" +
+                "    • In this round, finalist have to solve a problem statement on Keil and simulating it on Proteus software\n" +
+                "\n" +
                 "NOTE:\n" +
-                "Based on the performance in all the three rounds the winner will\n" +
-                "be decided.\n" +
+                "Based on the performance in all the three rounds the winner will be decided\n" +
+                "\n" +
                 "SYLLABUS:\n" +
                 "1. 8051 family\n" +
                 "2. Instruction Set\n" +
@@ -367,14 +368,11 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
                 "4. Memory Organization\n" +
                 "5. Software development tools\n" +
                 "6. Communication protocols\n" +
-                "7.RTOS\n" +
+                "7. RTOS\n" +
+                "\n" +
                 "ELIGIBILITY:\n" +
-                "All students with a valid identity card of their respective\n" +
-                "educational institutes are eligible to participate in the event. Team\n" +
-                "Specification: A team may consist of a maximum of 2 members. Students\n" +
-                "from different educational institutes can form a team.\n" +
-                "ENTRY FEE:\n" +
-                "₹ 100 per Team (Max. 2 members)";
+                "All students with a valid identity card of their respective educational institutes are eligible to participate in the event.\n" +
+                "Team Specification: A team may consist of a maximum of 2 members. Students from different educational institutes can form a team.";
 
         rulesCardHidden3 = "\uF076 Represent your robot in the best way you can.\n" +
                 "\uF076 No dimensions limitation.\n" +
@@ -395,10 +393,10 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
                 "ENTRY FEE:\n" +
                 "₹ 200 per Team (Max. 4 members)";
 
-        prizeCardHidden0 = "";
-        prizeCardHidden1 = "";
-        prizeCardHidden2 = "";
-        prizeCardHidden3 = "";
+        prizeCardHidden0 = "₹ 100 per Team (Max. 2 members)";
+        prizeCardHidden1 = "₹ 100 per Team (Max. 2 members)";
+        prizeCardHidden2 = "₹ 100 per Team (Max. 2 members)";
+        prizeCardHidden3 = " 200 per Team (Max. 4 members)";
 
         co_OrdinatorCardHidden0 = "AJABE CHAITANYA SANJAY\n" +
                 "\tcak00798@gmail.com\n"+

@@ -220,16 +220,14 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
 
     void completeMechanical(){
         //
-        descb0 = "Participants are required to perform set of operations on the job using lathe machine. Problem statement for which will be declared on the spot. There will be two rounds.";
 
-        descb1 = "Overall technical and practical knowledge of a participant will be check in this event, which will be carried away in three rounds as follows.";
+        descb0 = "Participants are required to perform set of operations on the job using lathe machine. Problem statement for which will be declared on the spot. There will be two rounds:";
 
-        descb2= "This event is specially design to improve communication skills as well as personality of the participants. This event gives guidelines, how to prepare for the mock placement. This event consist of three rounds as follows:";
+        descb1 = "Overall technical and practical knowledge of a participant will be tested in this event, which will be carried out in three rounds as follows:";
 
-        descb3= "In this event, participants have to make a vehicle model from given material in given time period. \n" +
-                "The principle behind this event is the significance of hydraulics in automobile Industry.\n" +
-                "The participants have to use the given material to make a selfsustained load carrying vehicle using hydraulic power.";
+        descb2= "This event is specially designed to improve communication skills as well as personality of the participants. This event gives guidelines about how to face for the campus interview, also checking reasoning ability of the participants. This event consist of three rounds as follows:";
 
+        descb3= "In this event, participants have to make a vehicle model from given material in given time period. The principle behind this event is “the significance of hydraulics in automobile Industry.” The participants have to use the given material to make a selfsustained load carrying vehicle using hydraulic power.";
         //
         rulesCardHidden0 = "Round 1:\n" +
                 "This Round will be of dimension marking and profile cutting, which is to be completed in 40-45 mins. (If the no of participants will be more than 30 then the Aptitude round will be taken.)\n" +
@@ -248,121 +246,119 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
                 "    •   Judge’s decision will be final\n" +
                 "    •   No extra work piece will be provided and carrying of any extra material is banned\n" +
                 "    •   After the completion of the task all the accessories must be returned\n" +
-                "    •   For any query, contact the event coordinator\n" +
-                "\n" +
-                "Entry Fee: Rs. 100/-";
+                "    •   For any query, contact the event coordinator\n";
 
         rulesCardHidden1 = "Round 1:\n" +
-                "\n" +
                 "Aptitude test regarding vehicles and new technology in automotive field.\n" +
                 "Participants will be shortlisted after round 1.\n" +
-                "\n" +
                 "Round 2:\n" +
-                "\n" +
-                "Recognize parts of vehicles in given time.\n" +
+                "Recognize parts of vehicles in Short Interval of time.\n" +
                 "Participants will be shortlisted after round 2.\n" +
-                "\n" +
                 "Round 3:\n" +
-                "\n" +
-                "Viva and troubleshooting, Participants should recognize the problems in vehicles.\n" +
-                "Final 3 winners will be selected by Judges after third round. \n" +
-                "\n" +
-                "\n" +
+                "Viva and troubleshooting. Participants should recognize the problems in vehicles.\n" +
+                "Final 2 winners will be selected by Judges after third round.\n" +
                 "Rules:\n" +
-                "\n" +
-                "    • Participants should come on time for Apti. round.\n" +
-                "    • The use of mobile phone, calculator or any electronic devices is not allowed.\n" +
-                "    • Carry a blue or black pen with you, if necessary you may also carry a writing pad with you.\n" +
-                "    • College ID-card and entry fee receipt is compulsory.\n" +
-                "    • There should not be any argument or violation of rules, otherwise the participant will be disqualified.\n" +
+                "    • Each group consist of maximum two participants\n" +
+                "    • Participants should come on time for Aptitude round\n" +
+                "    • The use of mobile phone, calculator or any electronic devices is not allowed\n" +
+                "    • Carry a blue or black pen with you, if necessary you may also carry a writing pad with you\n" +
+                "    • College ID-card and entry fee receipt is compulsory\n" +
+                "    • There should not be any argument or violation of rules, otherwise the participant will be disqualified\n" +
                 "    • Any additional rules or modifications which exist will be communicated on the spot.\n" +
-                "    • Judge’s decision will be final.\n" +
-                "    • For any query, contact the event co-ordinator.\n" +
-                " \n" +
-                "\n" +
-                "\n" +
-                "Entry Fee: Rs. 50";
+                "    • Judge’s decision will be final\n" +
+                "    • For any query, contact the event co-ordinator\n";
 
         rulesCardHidden2 = "Round 1:\n" +
-                "\n" +
-                "Aptitude test regarding general and technical based will be taken.\n" +
+                "Aptitude test regarding general and technical Awareness.\n" +
                 "Participants will be shortlisted for round 2.\n" +
-                "\n" +
                 "Round 2:\n" +
-                "\n" +
                 "This round is called as ‘Picture Perception and Discussion Round (PPDR)’\n" +
-                "In this round some pictures will be shown to the participants for 10sec.\n" +
-                "The task is to write a short story about 10-15 lines according to condition given in picture.\n" +
-                "In this round the reasoning ability of participant will be check \n" +
-                "And selected participants will send for the final round.\n" +
-                "\n" +
+                "In this round some pictures will be shown to the participants for 1 min.\n" +
+                "The task is to write a short story about 10-15 lines according to situation given in picture.\n" +
+                "In this round the reasoning ability of participant will be checked\n" +
                 "Round 3:\n" +
-                "\n" +
-                "This is the final round which is ‘Face to Face Interview’\n" +
-                "The level of interview if of placement type so participants should prepare for that.\n" +
-                "Judges will select final 3 winners.\n" +
-                "\n" +
-                "\n" +
+                "This will be the final round which is ‘Face to Face Interview’\n" +
+                "In this round, the interviews taken by an experienced panel of industrialists working in MNCs.\n" +
+                "Top 2 students overall will get cash prizes.\n" +
                 "Rules:\n" +
-                "    • Participants should come on time for Apti. round.\n" +
+                "    • Participants should come on time for Aptitude round.\n" +
                 "    • The use of mobile phone, calculator or any electronic devices is not allowed.\n" +
-                "    • Carry a blue or black pen with you, if necessary you may also carry a writing pad with you.\n" +
+                "    • Carry a blue or black pen and writing pad with you.\n" +
                 "    • College ID-card and entry fee receipt is compulsory.\n" +
                 "    • There should not be any argument or violation of rules, otherwise the participant will be disqualified.\n" +
                 "    • Any additional rules or modifications which exist will be communicated on the spot.\n" +
                 "    • Judge’s decision will be final.\n" +
-                "    • For any query, contact the event co-ordinator\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "Entry Fee: Rs. 50";
+                "    • For any query, contact the event coordinator";
 
         rulesCardHidden3 = "Rounds:\n" +
-                "\n" +
-                "Their will be not specific rounds for this event.\n" +
-                "On the first day participants have to make their model using material provided. \n" +
+                "There will be not specific rounds for this event.\n" +
+                "On the first day participants have to make their model using material provided.\n" +
                 "On the second day any modification in the vehicle is not allowed, only the execution of the model will be tested.\n" +
-                "\n" +
-                "\n" +
                 "Rules:\n" +
+                "    •   Maximum 2 participants are allowed in a team\n" +
+                "    •   First day will be allotted for preparing of model within 4 hours only\n" +
+                "    •   On second day, model should execute the load bearing task\n" +
+                "    •   Use of mobile phones, laptop or any other electronic devices is prohibited\n" +
+                "    •   No extra material will be provided and carrying of any extra material is banned\n" +
+                "    •   Vehicle should be solely designed for carrying load and should dump the same\n" +
+                "    •   The size of vehicle must be in given size limit\n" +
+                "    •   The aesthetic of vehicle will also be taken under consideration while marking\n" +
+                "    •   Judges design will be final\n" +
+                "Material Provided:\n" +
                 "\n" +
-                "    • Maximum 2 participants are allowed in a team.\n" +
-                "    • First day will be allotted for preparing of model within 4 hours only.\n" +
-                "    • On second day, model should execute the load bearing task.\n" +
-                "    • Use of mobile phones, laptop or any other electronic devices is prohibited.\n" +
-                "    • No extra material will be provided and carrying of any extra material is banned.\n" +
-                "    • Vehicle should be solely designed for carrying load and should dumped the same.\n" +
-                "    • The size of vehicle must be in given size limit.\n" +
-                "    • Vehicle design will also be taken under consideration while marking.\n" +
-                "(It should look like a vehicle.)\n" +
-                "    • Judges design will be final.\n" +
-                "    • For any query, contact event co-ordinator.\n" +
-                "\n" +
-                "\n" +
-                "Entry Fee: Rs. 300 /- ";
+                "Sr. No.\t\t" +
+                "Material provided \t\t" +
+                "Quantity\n" +
+                "1.\t\t" +
+                "Cardboard\t\t\t" +
+                "1\n" +
+                "2.\t\t" +
+                "Syringes\t\t\t" +
+                "6\n" +
+                "3.\t\t" +
+                "Pipe\t\t\t" +
+                "1.5m long\n" +
+                "4.\t\t" +
+                "Glue gun with one glue stick\t\t\t" +
+                "1\n" +
+                "5.\t\t" +
+                "Fevicol\t\t\t" +
+                "250gm\n" +
+                "6.\t\t" +
+                "Stick\t\t\t" +
+                "20cm long\n" +
+                "7.\t\t" +
+                "Office pins\t\t\t" +
+                "As per required\n" +
+                "8.\t\t" +
+                "Scale (6inch)\t\t\t" +
+                "1\n" +
+                "9.\t\t" +
+                "Cutter\t\t\t" +
+                "1\n" ;
 
-        prizeCardHidden0 = "";
+        prizeCardHidden0 = "Rs. 100/- ";
 
-        prizeCardHidden1 = "";
+        prizeCardHidden1 = "Rs. 100/- (per group) ";
 
-        prizeCardHidden2 = "";
+        prizeCardHidden2 = "Rs. 50 ";
 
-        prizeCardHidden3 = "";
+        prizeCardHidden3 = "Rs. 300 /-";
 
         co_OrdinatorCardHidden0 = "LALIT CHAUDHARI\n" +
                     "\tlalitchaudhari1898@gmail.com\n" +
-                    "\tMobile no:-\n";
+                    "\tMobile no:- 7276245808\n";
 
         co_OrdinatorCardHidden1 = "Omkar Pure\n" +
                 "\tomkarnarayanpure005@gmail.com\n" +
-                "\tMobile no:-\n";
+                "\tMobile no:- 8482908318\n";
 
         co_OrdinatorCardHidden2 ="Prasad Bugade\n" +
                 "\tprasad.bugade.1@gmail.com\n" +
-                "\tMobile no:-\n";
+                "\tMobile no:- 9423564172\n";
 
         co_OrdinatorCardHidden3 = "Vinita Bhansali\n" +
                 "\tbhansalivinita22@gmail.com\n" +
-                "\tMobile no:-\n";
+                "\tMobile no:- 7841945241\n";
     }
 }

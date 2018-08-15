@@ -72,7 +72,9 @@
         <activity android:name=".communication.AllContactList5" />
         <activity android:name=".communication.AllContactList6" />
         <activity android:name=".communication.WorkshopActivity" />
-        <activity android:name=".communication.AllContactList7"></activity>
+        <activity android:name=".communication.AllContactList7" />
+        <activity android:name=".co_ordinatorlogin.changepasswordActivity"></activity>
+        <activity android:name=".co_ordinatorlogin.passwordActivity"></activity>
     </application>
 
 </manifest>

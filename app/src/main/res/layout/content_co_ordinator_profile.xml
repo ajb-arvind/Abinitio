@@ -28,8 +28,6 @@
         tools:context=".CoordinatorProfile">
 
 
-
-
         <android.support.v7.widget.CardView
             android:id="@+id/round1CV"
             android:layout_width="wrap_content"
@@ -37,10 +35,10 @@
             app:cardBackgroundColor="@color/dheeraj_foreground"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintHorizontal_bias="0.20"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.200">
+            app:layout_constraintVertical_bias="0.20">
 
             <TextView
                 android:id="@+id/round1TV"
@@ -63,10 +61,10 @@
             app:cardBackgroundColor="@color/dheeraj_foreground"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintHorizontal_bias="0.8"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.400">
+            app:layout_constraintVertical_bias="0.20">
 
             <TextView
                 android:id="@+id/round2TV"
@@ -89,10 +87,9 @@
             app:cardBackgroundColor="@color/dheeraj_foreground"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.50"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.600">
+            app:layout_constraintVertical_bias="0.35">
 
             <TextView
                 android:id="@+id/round3TV"
@@ -113,17 +110,18 @@
             android:id="@+id/btnSave"
             android:layout_width="wrap_content"
             android:layout_height="52dp"
-            android:padding="5dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/dheeraj_foreground"
+            android:padding="5dp"
+            android:textColor="@color/white"
             android:text="Save The Data"
             android:textSize="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/round3CV" />
+            app:layout_constraintTop_toBottomOf="@+id/round3CV"
+            app:layout_constraintVertical_bias="0.2" />
 
         <TextView
             android:id="@+id/profileTV"
@@ -141,6 +139,31 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/changePasswordCV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/dheeraj_foreground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.759">
+
+            <TextView
+                android:id="@+id/changePasswordTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="casual"
+                android:text="Change Password"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
     </android.support.constraint.ConstraintLayout>
 
 
