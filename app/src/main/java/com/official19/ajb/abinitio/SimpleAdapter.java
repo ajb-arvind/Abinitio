@@ -53,7 +53,7 @@ public class SimpleAdapter extends BaseAdapter {
         //click=(TextView)view.findViewById(R.id.tvClick);
 
         title.setText(titlearray[i]);
-        imageView.setImageResource(R.drawable.campuslogo);
+
 
         if (titlearray[i].equalsIgnoreCase("Timetable")){
             title.setText("Timetable");
