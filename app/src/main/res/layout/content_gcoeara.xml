@@ -54,8 +54,9 @@
             android:layout_centerVertical="true"
             android:text="Timetable"
             android:textSize="17dp"
+            android:padding="10dp"
             android:textStyle="bold"
-            android:layout_margin="10dp"
+            android:layout_margin="20dp"
             android:textColor="@color/white"
             android:layout_toRightOf="@+id/ivMain" />
         </ScrollView>

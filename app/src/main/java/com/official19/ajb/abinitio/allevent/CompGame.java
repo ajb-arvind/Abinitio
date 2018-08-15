@@ -368,11 +368,11 @@ public class CompGame extends AppCompatActivity implements NavigationView.OnNavi
                 "\n" +
                 "REGISTRATION FEE:- 250 Rs /- (PER TEAM)\n";
 
-        prizeCardHidden0 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden1 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden2 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden3 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden4 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden0 = "";
+        prizeCardHidden1 = "";
+        prizeCardHidden2 = "";
+        prizeCardHidden3 = "";
+        prizeCardHidden4 = "";
 
 
         co_OrdinatorCardHidden0 = "Shrutika Karande\n" +

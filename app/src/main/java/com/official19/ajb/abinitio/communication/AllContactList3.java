@@ -17,14 +17,16 @@ public class AllContactList3 extends AppCompatActivity implements NavigationView
 
     private ListView listView;
     String[] title={"Sanjana Jadhav","Prathamesh Pathak","Mukul Kadaskar","Pravin Nikure","Chinmay Patwari","Girish Deshpande",
-            "Pooja Chavan","Dipti Pawar"};
+            "Pooja Chavan","Dipti Pawar","Sonal More","Akash Mule","Mujahid Attar","Deepali Bagul"
+    ,"Atul Gade"};
 
     int[] images={R.drawable.sanjana1,R.drawable.prathamesh,R.drawable.mukul1,R.drawable.pravin1,R.drawable.chinmay,R.drawable.laraib,
-            R.drawable.sanjana1,R.drawable.sanjana1};
+            R.drawable.sanjana1,R.drawable.sanjana1,R.drawable.sanjana1,R.drawable.laraib,R.drawable.laraib,R.drawable.sanjana1,R.drawable.atul};
 
-    String[] description={"Event Head\nContact:","Digital Head\nContact:","Documentation Head\nContact:","Sponsorship Head\nContact:","Treasurer\nContact:",
-            "Publicity Head\nContact:",
-    "Publicity Head\nContact:","Ladies Representative\nContact:"};
+    String[] description={"Student Co-ordinator\nContact:9404137191","Digital Head\nContact:8668704471","Documentation Head\nContact:9850067211","Sponsorship Head\nContact:8975588243","Treasurer\nContact:8007993570",
+            "Publicity Head(boy)\nContact:8793887580",
+    "Publicity Head(girl)\nContact:7028777972","Ladies Representative\nContact:7448215471",
+    "Decoration Head\nContact:9067067272","Decoration Co-Head\nContact:7038620991","Management Team\nContact:9096689230","Management Team\nContact:9850140874","Management Team\nContact:9130716452"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

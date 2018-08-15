@@ -71,7 +71,8 @@
         <activity android:name=".communication.AllContactList4" />
         <activity android:name=".communication.AllContactList5" />
         <activity android:name=".communication.AllContactList6" />
-        <activity android:name=".communication.WorkshopActivity"></activity>
+        <activity android:name=".communication.WorkshopActivity" />
+        <activity android:name=".communication.AllContactList7"></activity>
     </application>
 
 </manifest>

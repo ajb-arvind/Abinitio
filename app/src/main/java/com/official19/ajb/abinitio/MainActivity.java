@@ -30,6 +30,7 @@ import android.widget.Toast;
 
 import com.official19.ajb.abinitio.allevent.GameActivity;
 import com.official19.ajb.abinitio.communication.AllContact;
+import com.official19.ajb.abinitio.communication.AllContactList6;
 import com.official19.ajb.abinitio.communication.WorkshopActivity;
 import com.official19.ajb.abinitio.eventpackage.automobile;
 import com.official19.ajb.abinitio.eventpackage.civil;
@@ -393,6 +394,9 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_contact:             activity.startActivity(new Intent(activity, AllContact.class));
+                break;
+
+            case R.id.nav_accommodation:         activity.startActivity(new Intent(activity, AllContactList6.class));
                 break;
 
 

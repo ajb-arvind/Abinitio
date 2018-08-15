@@ -107,7 +107,7 @@
                 android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:text="Instrumentation"
+                android:text="Instrumentation and Control"
                 android:textColor="@color/white"/>
 
             <android.support.v7.widget.RecyclerView
@@ -125,7 +125,7 @@
                 android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:text="Mechnical"
+                android:text="Mechanical"
                 android:textColor="@color/white"/>
 
             <android.support.v7.widget.RecyclerView

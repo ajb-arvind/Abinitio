@@ -345,10 +345,10 @@ public class InstruGame extends AppCompatActivity implements NavigationView.OnNa
                 "ENTRY FEE:\n" +
                 "₹ 100 Per Team(Max 2 members)";
 
-        prizeCardHidden0 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden1 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden2 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden3 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden0 = "";
+        prizeCardHidden1 = "";
+        prizeCardHidden2 = "";
+        prizeCardHidden3 = "";
 
         co_OrdinatorCardHidden0 = "Rohit Sirsat\n" +
                 "\trohitshirsat29@gmail.com\n" +

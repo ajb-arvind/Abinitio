@@ -373,10 +373,10 @@ public class MechGame extends AppCompatActivity implements NavigationView.OnNavi
                 "\t-Round 2 will be judged on the basis of accuracy, optimization and space utilization. Judgement will not take place on the basis of time.\n" +
                 "\t-Round 3 will be judged on the basis of the end result of the three rounds and the time taken by teams to complete the round 3 problem statement.\n";
 
-        prizeCardHidden0 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden1 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden2 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden3 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden0 = "";
+        prizeCardHidden1 = "";
+        prizeCardHidden2 = "";
+        prizeCardHidden3 = "";
 
         co_OrdinatorCardHidden0 = "Samruddhi Kamble\n" +
                 "\tsamukamble0610@gmail.com\n" +

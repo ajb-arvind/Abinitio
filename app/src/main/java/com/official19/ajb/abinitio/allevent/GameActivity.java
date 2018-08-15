@@ -341,21 +341,13 @@ public class GameActivity extends AppCompatActivity implements NavigationView.On
                 "\n" +
                 "Entry Fee: Rs. 300 /- ";
 
-        prizeCardHidden0 = "1st     -Rs. 2500/-\n" +
-                "2nd   -Rs. 1500/-\n" +
-                "3rd   -Rs. 1000/-";
+        prizeCardHidden0 = "";
 
-        prizeCardHidden1 = "1st    -Rs. 2500/-\n" +
-                "2nd   -Rs. 1500/-\n" +
-                "3rd    -Rs. 1000/-";
+        prizeCardHidden1 = "";
 
-        prizeCardHidden2 = "1st    -Rs. 1500/-\n" +
-                "2nd   -Rs. 1000/-\n" +
-                "3rd    -Rs. 500/-";
+        prizeCardHidden2 = "";
 
-        prizeCardHidden3 = "1st    -Rs. 2500/-\n" +
-                "2nd   -Rs. 1500/-\n" +
-                "3rd    -Rs. 1000/-";
+        prizeCardHidden3 = "";
 
         co_OrdinatorCardHidden0 = "LALIT CHAUDHARI\n" +
                     "\tlalitchaudhari1898@gmail.com\n" +

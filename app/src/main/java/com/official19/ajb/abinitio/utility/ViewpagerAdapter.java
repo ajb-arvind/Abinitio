@@ -154,7 +154,7 @@ public class ViewpagerAdapter extends PagerAdapter {
 
             case 2:
                 Intent intent2= new Intent(mcontext, CivilGame.class);
-                intent2.putExtra("Civil_Event","Clad Clash");
+                intent2.putExtra("Civil_Event","Cad Clash");
                 mcontext.startActivity(intent2);
                 break;
 
@@ -204,7 +204,7 @@ public class ViewpagerAdapter extends PagerAdapter {
         switch (i){
             case 0:
                 Intent intent0= new Intent(mcontext, EnTCGame.class);
-                intent0.putExtra("EnTC_Event","Spechien Sie Matlab");
+                intent0.putExtra("EnTC_Event","Spechien Sie Matlab?");
                 mcontext.startActivity(intent0);
                 break;
 
@@ -222,7 +222,7 @@ public class ViewpagerAdapter extends PagerAdapter {
 
             case 3:
                 Intent intent3= new Intent(mcontext, EnTCGame.class);
-                intent3.putExtra("EnTC_Event","Robox");
+                intent3.putExtra("EnTC_Event","RoboX");
                 mcontext.startActivity(intent3);
                 break;
         }

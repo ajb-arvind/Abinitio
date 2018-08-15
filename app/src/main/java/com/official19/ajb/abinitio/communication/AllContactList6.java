@@ -20,7 +20,7 @@ public class AllContactList6 extends AppCompatActivity implements NavigationView
 
     int[] images={R.drawable.atul,R.drawable.sanjana1};
 
-    String[] description={"For Boy's\nContact:","For Girls\nContact:"};
+    String[] description={"For Boy's\nContact:9130716452","For Girls\nContact:7448215471"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class AllContactList6 extends AppCompatActivity implements NavigationView
         setContentView(R.layout.activity_contact);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        setTitle("Faculty Co-Ordinator");
+        setTitle("Accommodation");
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

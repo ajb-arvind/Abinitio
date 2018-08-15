@@ -20,7 +20,7 @@ public class AllContactList5 extends AppCompatActivity implements NavigationView
 
     int[] images={R.drawable.warkhedkar,R.drawable.datar};
 
-    String[] description={"Faculty Co-Ordinator","Faculty Sub Co-Ordinator"};
+    String[] description={"Faculty Co-Ordinator","Faculty Co-coordinator"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

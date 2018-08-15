@@ -77,7 +77,7 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
                 cordintor_no="tel:7038519854";
                 break;
 
-            case "Clad Clash":
+            case "Cad Clash":
                 Description.setText(descb2);
                 event_logo.setImageResource(logos[2]);
                 RulesCardHidden.setText(rulesCardHidden2);
@@ -336,10 +336,10 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
                 "\n" +
                 "    • All the puzzles/clues included in this event will be totally based on the basic engineering knowledge of students of all branches.";
 
-        prizeCardHidden0 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden1 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden2 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden3 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden0 = "";
+        prizeCardHidden1 = "";
+        prizeCardHidden2 = "";
+        prizeCardHidden3 = "";
 
         co_OrdinatorCardHidden0 = "Akshay Kandle\n" +
                 "\tkandleakshay751@gmail.com\n" +

@@ -21,7 +21,7 @@ public class AllContactList2 extends AppCompatActivity implements NavigationView
     int[] images={R.drawable.parera,R.drawable.futane,R.drawable.laraib,R.drawable.laraib,R.drawable.bhosale1,
             R.drawable.kaushal1};
 
-    String[] description={"Computer Department","EnTC Department","Civil Department","Instrumentation Department",
+    String[] description={"Computer Department","EnTC Department","Civil Department","Instrumentation & Control Department",
     "Automobile Department","Mechanical Department"};
 
     @Override

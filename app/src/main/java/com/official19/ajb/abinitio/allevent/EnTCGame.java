@@ -60,7 +60,7 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
 
         switch (event)
         {
-            case "Spechien Sie Matlab":
+            case "Spechien Sie Matlab?":
                 Description.setText(descb0);
                 event_logo.setImageResource(logos[0]);
                 RulesCardHidden.setText(rulesCardHidden0);
@@ -87,7 +87,7 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
                 cordintor_no="tel:7218552510";
                 break;
 
-            case "Robox":
+            case "RoboX":
                 Description.setText(descb3);
                 event_logo.setImageResource(logos[3]);
                 RulesCardHidden.setText(rulesCardHidden3);
@@ -395,10 +395,10 @@ public class EnTCGame extends AppCompatActivity implements NavigationView.OnNavi
                 "ENTRY FEE:\n" +
                 "₹ 200 per Team (Max. 4 members)";
 
-        prizeCardHidden0 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden1 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden2 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
-        prizeCardHidden3 = "1st Prize\t:\n2nd Prize\t:\n3rd Prize\t:";
+        prizeCardHidden0 = "";
+        prizeCardHidden1 = "";
+        prizeCardHidden2 = "";
+        prizeCardHidden3 = "";
 
         co_OrdinatorCardHidden0 = "AJABE CHAITANYA SANJAY\n" +
                 "\tcak00798@gmail.com\n"+

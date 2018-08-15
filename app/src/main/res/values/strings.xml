@@ -45,7 +45,7 @@
     <string-array name="Civil_Event">
         <item>Spaco Frame</item>
         <item>Poster Presentation</item>
-        <item>Clad Clash</item>
+        <item>Cad Clash</item>
         <item>Treasure Hunt</item>
     </string-array>
 
@@ -58,10 +58,10 @@
     </string-array>
 
     <string-array name="Entc_Event">
-        <item>Spechien Sie Matlab</item>
+        <item>Spechien Sie Matlab?</item>
         <item>Electro-Spark</item>
         <item>Utrix</item>
-        <item>Robox</item>
+        <item>RoboX</item>
     </string-array>
 
     <string-array name="Instru_Event">
@@ -206,7 +206,6 @@
         <item>The catapult is a ballistic device used to launch a projectile to a great distance.</item>
         <item>The event aims to test the knowledge and understanding of participants about gears and linkages and their interrelationship.</item>
     </string-array>
-
 
 
 </resources>
