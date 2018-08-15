@@ -19,8 +19,8 @@ public class AllContactList7 extends AppCompatActivity implements NavigationView
     String[] title={"Karansinh Gaherwar","Dhiraj Patil","Akash Gudadhe","Hemant Ghuge","Rushikesh Salunke",
     "Kaustubh Sankpal"};
 
-    int[] images={R.drawable.laraib,R.drawable.laraib,R.drawable.akash,R.drawable.laraib,
-            R.drawable.laraib,R.drawable.laraib};
+    int[] images={R.drawable.karansinh,R.drawable.dheerajpatil,R.drawable.akash,R.drawable.hemant,
+            R.drawable.salunke,R.drawable.kaustubh};
 
     String[] description={"Automobile Dept","Civil Dept","Computer Dept","EnTC Dept","Instrumentation & Control Dept",
     "Mechanical Dept"};

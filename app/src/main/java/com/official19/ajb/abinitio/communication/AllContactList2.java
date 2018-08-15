@@ -16,9 +16,9 @@ import com.official19.ajb.abinitio.R;
 public class AllContactList2 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private ListView listView;
-    String[] title={"Shri. D.J. Pereira","Dr. N.V.Futane","Dr. R.V.Thanedar","Shri. S.R.Patil","Shri. A.J.Bhosale",
+    String[] title={"Shri. D.J. Pereira","Dr. N.P.Futane","Dr. R.V.Thanedar","Shri. S.R.Patil","Shri. A.J.Bhosale",
             "Shri. A.S.Kaushal"};
-    int[] images={R.drawable.parera,R.drawable.futane,R.drawable.laraib,R.drawable.laraib,R.drawable.bhosale1,
+    int[] images={R.drawable.parera,R.drawable.futane,R.drawable.thanedar,R.drawable.patilsr,R.drawable.bhosale1,
             R.drawable.kaushal1};
 
     String[] description={"Computer Department","EnTC Department","Civil Department","Instrumentation & Control Department",
