@@ -4,10 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -17,7 +14,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.view.ContextThemeWrapper;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -49,10 +45,6 @@ import com.official19.ajb.abinitio.communication.contact;
 import com.official19.ajb.abinitio.co_ordinatorlogin.loginScreen;
 import com.official19.ajb.abinitio.timetablepackage.TimetableActivity;
 
-import org.json.JSONObject;
-import org.jsoup.Jsoup;
-
-import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -66,7 +58,7 @@ public class MainActivity extends AppCompatActivity
     private TextView Day, Hrs, Min, Sec;
     public FloatingActionButton Float1,Float2,Float3,Float4;
     int days = 0, hrss = 0, mins = 0, secs = 0;
-    public static int ABINITIO_DAY = 28 , ABINITIO_HRS = 10, ABINITIO_MIN = 60;
+    public static int ABINITIO_DAY = 28 , ABINITIO_HRS = 24, ABINITIO_MIN = 60;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +66,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         listView=(ListView)findViewById(R.id.lvMain);
-
 
         setUIViews();
         newActivity();
@@ -118,7 +109,7 @@ public class MainActivity extends AppCompatActivity
                             public void run() {
 
                                 DateFormat dd = new SimpleDateFormat("dd");
-                                DateFormat hh = new SimpleDateFormat("hh");
+                                DateFormat hh = new SimpleDateFormat("HH");
                                 DateFormat mm = new SimpleDateFormat("mm");
                                 DateFormat ss = new SimpleDateFormat("ss");
 
@@ -127,21 +118,31 @@ public class MainActivity extends AppCompatActivity
                                 String min = mm.format(Calendar.getInstance().getTime());
                                 String sec = ss.format(Calendar.getInstance().getTime());
 
-                                days = ABINITIO_DAY - Integer.parseInt(day);
+                                days = Integer.parseInt(day);; //- Integer.parseInt(day);
 
-                                if(Integer.parseInt(hrs) < 24 && Integer.parseInt(hrs) >= 11){
-                                    hrss = 23 - Integer.parseInt(hrs) + ABINITIO_HRS -1;   //pm
-                                }
-                                else
-                                    hrss = ABINITIO_HRS - Integer.parseInt(hrs) - 1;        //am
 
-                                mins = ABINITIO_MIN - Integer.parseInt(min);
+                               //if(Integer.parseInt(hrs) >= 0 && Integer.parseInt(hrs) <= 12){
+                                    days = ABINITIO_DAY - Integer.parseInt(day) -1; //Integer.parseInt(hrs);   //pm
+                                //}
+                                //else
+                                  //  hrss = 123; //ABINITIO_HRS - Integer.parseInt(hrs) - 1;        //am
+                                hrss = ABINITIO_HRS - Integer.parseInt(hrs) -1;
+                                mins = ABINITIO_MIN - Integer.parseInt(min) -1;
                                 secs = ABINITIO_MIN - Integer.parseInt(sec);
 
-                                Day.setText(String.valueOf(days));
-                                Hrs.setText(String.valueOf(hrss));
-                                Min.setText(String.valueOf(mins));
-                                Sec.setText(String.valueOf(secs));
+                                if(days <0 ){
+                                    Day.setText("ABI");
+                                    Hrs.setText("NI");
+                                    Min.setText("TIO");
+                                    Sec.setText("DAY");
+                                }
+                                else {
+                                    Day.setText(String.valueOf(days));
+                                    Hrs.setText(String.valueOf(hrss));
+                                    Min.setText(String.valueOf(mins));
+                                    Sec.setText(String.valueOf(secs));
+                                }
+
                             }
                         });
                     }

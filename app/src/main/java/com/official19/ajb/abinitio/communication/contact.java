@@ -18,9 +18,9 @@ import com.official19.ajb.abinitio.event;
 public class contact extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
 
     private ListView listView;
-    int[] images={R.drawable.arvind,R.drawable.imran,R.drawable.laraib,R.drawable.dheeraj,R.drawable.dhanaji, R.drawable.laraib};
-    String[] title={"Arvind Badwar","Imran Khan","Laraib Bhat","DheerajKumar","Dhanshree Jadhav", "Devesh Purushottam"};
-    String[] description={"Contact:9370088262","Contact:8830678511","Contact:7889592130","Contact:9284705198","Contact:9702905883", "Contact:9850316611"};
+    int[] images={R.drawable.arvind,R.drawable.imran,R.drawable.laraib,R.drawable.dheeraj,R.drawable.dhanaji};
+    String[] title={"Arvind","Imran","Laraib","Dheeraj","Dhanshri"};
+    String[] description={"Contact:9370088262","Contact:9730844820","Contact:7889592130","Contact:9284705198","Contact:9702905883"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

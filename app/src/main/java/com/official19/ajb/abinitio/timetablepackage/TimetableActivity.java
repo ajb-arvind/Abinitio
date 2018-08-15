@@ -54,12 +54,12 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
     String[] UIDMEch={"S06tKohHcITdy4ogZxebdyEaNW52","0ZrUvnDtOnWMPf6R7zGOvLU1i8k1","QKMo8FCqukQeevVJfxDEkJiQcXf1","40Ew25SN3zZQCqAu9YKKlMiQ2zl1"};
 
 
-    public int[] logosauto ={R.drawable.autologo1,R.drawable.autologo2,R.drawable.autologo3,R.drawable.autologo4};
-    public int[] logoscivil ={R.drawable.civillogo1,R.drawable.civillogo2,R.drawable.civillogo3,R.drawable.cicillogo4};
-    public int[] logoscomp ={R.drawable.complogo1,R.drawable.complogo2,R.drawable.complogo3,R.drawable.complogo4,R.drawable.complogo5};
-    public int[] logosentc ={R.drawable.entclogo1,R.drawable.entclogo2,R.drawable.entclogo3,R.drawable.entclogo4};
-    public int[] logosinstru ={R.drawable.instrulogo1,R.drawable.instrulogo2,R.drawable.instrulogo3,R.drawable.instrulogo4};
-    public int[] logosmech ={R.drawable.mechlogo1,R.drawable.mechlogo2,R.drawable.mechlogo3,R.drawable.mechlogo4};
+    public int[] logosauto ={R.drawable.auto01,R.drawable.auto02,R.drawable.auto03,R.drawable.auto04};
+    public int[] logoscivil ={R.drawable.civil001,R.drawable.civil002,R.drawable.civil003,R.drawable.civil004};
+    public int[] logoscomp ={R.drawable.comp01,R.drawable.comp02,R.drawable.comp03,R.drawable.comp04,R.drawable.comp05};
+    public int[] logosentc ={R.drawable.entc01,R.drawable.entc02,R.drawable.entc03,R.drawable.entc04};
+    public int[] logosinstru ={R.drawable.instru01,R.drawable.instru02,R.drawable.instru03,R.drawable.instru04};
+    public int[] logosmech ={R.drawable.mech10,R.drawable.mech20,R.drawable.mech30,R.drawable.mech40};
 
 
     UserProfile[] userProfileAuto = new UserProfile[UIDAuto.length];
@@ -125,11 +125,6 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
 
     public void addImages()
     {
-        images.add(R.drawable.ab1);
-        images.add(R.drawable.ab2);
-        images.add(R.drawable.ab3);
-        images.add(R.drawable.ab4);
-        images.add(R.drawable.ab5);
 
     }
 

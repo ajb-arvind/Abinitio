@@ -20,8 +20,8 @@ public class AllContactList3 extends AppCompatActivity implements NavigationView
             "Pooja Chavan","Dipti Pawar","Sonal More","Akash Mule","Mujahid Attar","Deepali Bagul"
     ,"Atul Gade"};
 
-    int[] images={R.drawable.sanjana1,R.drawable.prathamesh,R.drawable.mukul1,R.drawable.pravin1,R.drawable.chinmay,R.drawable.laraib,
-            R.drawable.sanjana1,R.drawable.sanjana1,R.drawable.sanjana1,R.drawable.laraib,R.drawable.laraib,R.drawable.sanjana1,R.drawable.atul};
+    int[] images={R.drawable.sanjana1,R.drawable.prathamesh,R.drawable.mukul1,R.drawable.pravin1,R.drawable.chinmay,R.drawable.girish,
+            R.drawable.pooja,R.drawable.dipti,R.drawable.sonal,R.drawable.akashmule,R.drawable.mujahid,R.drawable.dipali,R.drawable.atul};
 
     String[] description={"Student Co-ordinator\nContact:9404137191","Digital Head\nContact:8668704471","Documentation Head\nContact:9850067211","Sponsorship Head\nContact:8975588243","Treasurer\nContact:8007993570",
             "Publicity Head(boy)\nContact:8793887580",

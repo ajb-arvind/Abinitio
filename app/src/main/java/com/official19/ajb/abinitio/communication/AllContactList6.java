@@ -18,7 +18,7 @@ public class AllContactList6 extends AppCompatActivity implements NavigationView
     private ListView listView;
     String[] title={"Atul Gade","Dipti Pawar"};
 
-    int[] images={R.drawable.atul,R.drawable.sanjana1};
+    int[] images={R.drawable.atul,R.drawable.dipti};
 
     String[] description={"For Boy's\nContact:9130716452","For Girls\nContact:7448215471"};
 
