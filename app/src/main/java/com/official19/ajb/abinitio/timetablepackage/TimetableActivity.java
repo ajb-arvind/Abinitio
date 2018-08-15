@@ -47,11 +47,11 @@ public class TimetableActivity extends AppCompatActivity implements NavigationVi
     FirebaseDatabase firebaseDatabase;
 
     String[] UIDAuto={"l6rtWi2hhMQXkoLohqnmWxnD3kq1","wkeujkUfLAb6DTt9nfp3uJ0nXYt2","CTMfjSf1rQUHZPwx4h5Xz1PUy5t1","GvD5WWyt00UbUgKWl60vzrUM0Wv2"};
-    String[] UIDCivil={"nsrzV56qcoRBtrvT3TkeGw47rXz1","IW0AOJTLjpYoqPJ2XzngLBCo0o33","pNNVhofKIFXJIuxnMUkS57vnxar2","aTcPY0ufzAbnjhJwtf2f6Wmvaij2"};
-    String[] UIDComp={"BoXFB7qBgyaHnu6kW1bJTH46qA22","1HLNVIUl53WqIpe5JvADky8yhES2","pVEwefICKLhnMsBhf8YN2tyLw1n1","GUGdvxGM7qd3DXo6G29UC1stGtM2","TMpKViU2wtZ0uu3XYjJUdsfVTLJ2"};
+    String[] UIDCivil={"nsrzV56qcoRBtrvT3TkeGw47rXz1","IW0AOJTLjpYoqPJ2XzngLBCo0o33","pNNVhofKIFXJIuxnMUkS57vnxar2","gVO92yfZg4WiHPGWHrHHnS75cLb2"};
+    String[] UIDComp={"BoXFB7qBgyaHnu6kW1bJTH46qA22","1HLNVIUl53WqIpe5JvADky8yhES2","Gex2OH6Ou7ND6dZg3GiNRJfq6fo2","GUGdvxGM7qd3DXo6G29UC1stGtM2","TMpKViU2wtZ0uu3XYjJUdsfVTLJ2"};
     String[] UIDEntc={"prHN5ZCMTVb3HDPj15Frh7WvkLJ3","dTo29VTUgZTZe4CrIVwU9cupNnF2","3ltheje9OHO84wfKUubONwoebMi1","9XuCuO5JpiTn9lPbeXFKRNmQi5k1"};
     String[] UIDInstru={"oJ4kQ9G5tlXfUpm5i4h6LEHJ0bk1","8ddP488U3Bg830ILueBasnnzdv22","Gzyq6tcv0rNcOP4KN9MmzHXROf33","mT1rgfdWg9WazPu0PnmIUmhawHs1"};
-    String[] UIDMEch={"S06tKohHcITdy4ogZxebdyEaNW52","0ZrUvnDtOnWMPf6R7zGOvLU1i8k1","SDOHF70ERhXRshbVRYw30AjTOCs2","40Ew25SN3zZQCqAu9YKKlMiQ2zl1"};
+    String[] UIDMEch={"S06tKohHcITdy4ogZxebdyEaNW52","0ZrUvnDtOnWMPf6R7zGOvLU1i8k1","QKMo8FCqukQeevVJfxDEkJiQcXf1","40Ew25SN3zZQCqAu9YKKlMiQ2zl1"};
 
 
     public int[] logosauto ={R.drawable.auto01,R.drawable.auto02,R.drawable.auto03,R.drawable.auto04};

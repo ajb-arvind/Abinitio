@@ -63,8 +63,6 @@
         </menu>
     </item>
 
-
-    <group>
         <item android:title="Communicate">
             <menu>
                 <item
@@ -73,17 +71,14 @@
                     android:title="Contact Us" />
                 <item
                     android:id="@+id/nav_accommodation"
-                    android:icon="@drawable/ic_phone_contact_us"
+                    android:icon="@drawable/ic_accomadation"
                     android:title="Accommodation" />
                 </menu>
         </item>
-    </group>
 
-    <group>
-            <item
+               <item
                 android:id="@+id/nav_developer"
                 android:icon="@drawable/ic_developer"
                 android:title="Developers" />
-    </group>
 
 </menu>

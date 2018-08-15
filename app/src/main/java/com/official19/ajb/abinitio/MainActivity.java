@@ -348,7 +348,7 @@ public class MainActivity extends AppCompatActivity
 
     public static Intent openWebsite(Context context){
         return  new Intent(Intent.ACTION_VIEW,
-                Uri.parse("http://gcoeara.ac.in"));
+                Uri.parse("http://abinitio.org.in"));
     }
 
 

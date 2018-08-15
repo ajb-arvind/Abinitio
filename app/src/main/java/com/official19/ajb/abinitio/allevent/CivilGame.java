@@ -92,7 +92,7 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
                 RulesCardHidden.setText(rulesCardHidden3);
                 PrizeCardHidden.setText(prizeCardHidden3);
                 Co_OrdinatorCardHidden.setText(co_OrdinatorCardHidden3);
-                cordintor_no="tel:7028777972";
+                cordintor_no="tel:9763171089";
                 break;
 
         }
@@ -220,12 +220,9 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
 
     void completeMechanical(){
         //
-        descb0 = "Speco frame is one of the new topic in civil engineering. This year Participant's will have to design and fabricate their own frames and test them for maximum load.";
+        descb0 = "Spaco frame is one of the new topics in civil engineering. This year Participant’s will have to design and fabricate their own frames and test them for maximum load.";
 
-        descb1 = "If you are innovative and want to change INDIA , then ABINITIO  2K18-19 is inviting you to release your potentials in the way of battle ground. Put down your brain and present something innovative ideas which are simple and effective. Complete the given task within time and the victory is yours.\n" +
-                "\n" +
-                "TOP  THREE  POSTERS  WILL  BE  SENT  TO  TOWN  PLANNING\n\n" +
-                "TOPIC OF EVENT: - Poster making for smart village.";
+        descb1 = "If you are innovative and want to change INDIA, then ABINITIO 2K18-19 is inviting you to release your potentials in the way of battle ground. Put down your brain and present something innovative ideas which are simple and effective. Complete the given task within time and the victory is yours.";
 
         descb2= "This event will test participants designing abilities and civil and AutoCAD based knowledge.";
 
@@ -233,52 +230,50 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
 
         //
         rulesCardHidden0 =
-                "    •  Participants should complete their frame with all the guidelines and limitations provided by the management team.\n" +
-                "    • Sticks and glue will be provided in limited quantity.\n" +
-                "    • The frame will be tested on next day after making.\n" +
-                "    • Time provided for frame making is 2 hrs.\n" +
-                "    • Using material of other participants is also strictly prohibited.\n" +
-                "    • The team should use only that material which is provided by organizer.\n" +
-                "    • If other material is used rather than provided, then the team will be disqualified immediately.\n" +
-                "    • The decision of the judges will be final depending upon the judging criteria.\n" +
-                "\n" +
-                "JUDGING CRITERIA:-\n" +
-                "Frame will be judge by applying the load over plywood kept on top of frame.\n" +
-                "The best estimated loaded capacity will be calculated i.e. Load/Self-weight.\n" +
-                "The frame with maximum load to self weight ratio will be the winner.\n" +
-                "[i.e. maximum load carrying capacity for minimum self weight.]\n" +
-                "It should be according to problem statement.\n" +
-                "\n" +
-                "Note:-\n" +
-                "On the spot registration will be accepted.\n" +
-                "\n" +
-                "\n" +
-                "NO. OF PARTICIPANTS:-\n" +
-                "    • Minimun 3 &Maximum 4 members per group.\n" +
-                "    • Cost per group:- 150₹/-. ";
+                "RULES: -\n" +
+                        "    • Participants should complete their frame with all the guidelines and limitations provided by the management team.\n" +
+                        "    • Sticks and glue will be provided in limited quantity\n" +
+                        "    • The frame will be tested on next day after making\n" +
+                        "    • Time provided for frame making is 2 hrs.\n" +
+                        "    • Using material of other participants is also strictly prohibited\n" +
+                        "    • The team should use only that material which is provided by organizer\n" +
+                        "    • If other material is used other than provided, then the team will be disqualified immediately\n" +
+                        "    • The decision of the judges will be final depending upon the judging criteria\n" +
+                        "\n" +
+                        "JUDGING CRITERIA: -\n" +
+                        "    • Frame will be judge by applying the load over plywood kept on top of frame\n" +
+                        "    • The best estimated loaded capacity will be calculated i.e. Load/Self-weight\n" +
+                        "    • The frame with maximum load to self-weight ratio will be the winner (i.e. maximum load carrying capacity for minimum self-weight.)\n" +
+                        "    • It should be according to problem statement.\n" +
+                        "Note: -On the spot registration will be accepted.\n" +
+                        "Eligibility: All students with a valid identity card of their respective educational institutes are eligible to participate in the event\n\n" +
+                        "NO. OF PARTICIPANTS: -\n" +
+                        " Minimum 3 & Maximum 4 members per group.";
 
-        rulesCardHidden1 = "(Maximum: - 2 participants) \n" +
-                "THEME OF EVENT:- Identifying the problems and presenting innovative ideas and solution regarding smart village.\n" +
-                "Example: waste management, rainwater harvesting, consumption of renewable sources, traffic management, health, welfare, food security, local business, electrification, education, etc.\n" +
-                "RULES AND GUIDELINES:-\n" +
+        rulesCardHidden1 = "TOP THREE POSTERS WILL BE SENT TO TOWN PLANNING DEPARTMENT\n" +
+                "TOPIC OF EVENT: - Poster making for smart village\n" +
+                "(Maximum: - 2 participants)\n" +
+                "THEME OF EVENT: - Identifying the problems and presenting innovative ideas and solution regarding smart village.\n" +
+                "Example: waste management, rainwater harvesting, consumption of renewable\n" +
+                "sources, traffic management, health, welfare, food security, local business,\n" +
+                "electrification, education, etc.\n" +
+                "RULES AND GUIDELINES: -\n" +
                 "The competition will be conducted in two rounds:\n" +
-                "ROUND 1:- \n" +
-                "    1. Each poster should be of size A1, A2 or A3 only.\n" +
-                "    2. The content of the poster should be appropriate to the theme.\n" +
-                "    3. Every point to be conveyed by the student must be on a single poster.\n" +
-                "    4.  Poster can be handmade or computerized.\n" +
-                "    5. Paper/Print used should be of good quality.\n" +
-                "    6. The best posters will be selected for the next round.\n" +
-                "    7. The judgement will be based on following criteria:\n" +
+                "ROUND 1: -\n" +
+                "    • Each poster should be of size A1, A2 or A3 only.\n" +
+                "    • The content of the poster should be appropriate to the theme.\n" +
+                "    • Every point to be conveyed by the student must be on a single poster.\n" +
+                "    • Poster can be handmade or computerized.\n" +
+                "    • Paper/Print used should be of good quality.\n" +
+                "    • The best posters will be selected for the next round.\n" +
+                "    • The judgement will be based on following criteria:\n" +
                 "-Originality of the concept\n" +
                 "-Significance\n" +
                 "-Presentation of the poster\n" +
                 "-Visual appearance.\n" +
-                " ROUND 2:-\n" +
-                "    1. In this round the selected students should elaborate their ideas through power point presentation [time limit for presentation will be 10 min] or models.\n" +
-                "    2. The decision made by the judges will be final.                                                                                 \n" +
-                "\n" +
-                "ENTRY FEES:- 100/- per group.";
+                "ROUND 2: -\n" +
+                "    • In this round the selected students should elaborate their ideas through PowerPoint presentation [time limit for presentation will be 10 min] or models.\n" +
+                "    • The decision made by the judges will be final.";
 
         rulesCardHidden2 = "The competition will take place in 2 rounds.\n" +
                 "    • 1st Round:\n" +
@@ -303,47 +298,43 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
                 "    • On the spot registration will be accepted.\n" +
                 "    • All  students  with  a  valid  identity  card  of their  respective educational  institutes  are  eligible  to  participate  in  the event\n" +
                 "NO. OF PARTICIPANTS:\n" +
-                "    • This is an individual competition.\n" +
-                "    • Cost per individual :-50/-";
+                "    • This is an individual competition.\n";
 
-        rulesCardHidden3 = "DAY 1:\n" +
+        rulesCardHidden3 = "No. of participants: - 3 or max 4 participants per group.\n" +
+                "RULES AND REGULATIONS/GUIDELINES: -\n" +
+                "DAY 1:\n" +
                 "ELIMINATION ROUND: MOSAIC TILES.\n" +
-                "\n" +
-                "    • Each group will be given pieces of a mosaic puzzle which they have to solve.\n" +
-                "    • Initially the picture will be shown to the groups for a limited amount of time;                         they have to memorize the picture to solve the puzzle\n" +
-                "    • In the middle of the game , the groups will have two chances to \n" +
-                "View the image for about 30 seconds.\n" +
-                "    • The four groups that will complete the puzzle in the fastest amount of time will be qualified to the next round.\n" +
+                "    • Each group will be given pieces of a mosaic puzzle which they have to solve\n" +
+                "    • Initially the picture will be shown to the groups for a limited amount of time; they have to memorize the picture to solve the puzzle\n" +
+                "    • In the middle of the game, the groups will have two chances to View the image for about 30 seconds\n" +
+                "    • The four groups that will complete the puzzle in the fastest amount of time will be qualified to the next round\n" +
                 "DAY 2:\n" +
                 "ROUND 1: ANGRY BIRDS\n" +
-                "\n" +
                 "    • A setup of angry bird game will be arranged for the qualified four teams.\n" +
                 "    • In this stage, all the four teams will perform simultaneously.\n" +
                 "    • Any three teams who will qualify this stage first will qualify to the next round.\n" +
-                "\n" +
                 "ROUND 2:\n" +
                 "    • The puzzle solved by the three teams will lead them to their respective destinations.\n" +
                 "    • They will get a new clue/key at their destinations which they have to solve to reach the black hole i.e. round 3\n" +
                 "    • The first two teams to reach the black hole will be qualified for the next round.\n" +
-                "\n" +
                 "ROUND 3:\n" +
-                "    • In this round, the teams will go to a classroom with a small torch.\n" +
-                "    • The classroom will be completely darkened by hanging black curtains and card sheets.\n" +
-                "    • There will be maize of strings in the classroom which has to be followed by the team member of each team to know the final clue.\n" +
-                "    • The clue has to be solved by the member who is stuck in the classroom.\n" +
-                "    • The first one solving the clue will be declared as the winner and the doors will be opened.\n" +
-                "\n" +
+                "    • In this round, the teams will go to a classroom with a small torch\n" +
+                "    • The classroom will be completely darkened by hanging black curtains and card sheets\n" +
+                "    • There will be maize of strings in the classroom which has to be followed by the team member of each team to know the final clue\n" +
+                "    • The clue has to be solved by the member who is stuck in the classroom\n" +
+                "    • The first one solving the clue will be declared as the winner and the doors will be opened\n" +
                 "\n" +
                 "    • All the puzzles/clues included in this event will be totally based on the basic engineering knowledge of students of all branches.";
 
-        prizeCardHidden0 = "";
-        prizeCardHidden1 = "";
-        prizeCardHidden2 = "";
-        prizeCardHidden3 = "";
+        prizeCardHidden0 = "₹ 150/-";
+        prizeCardHidden1 = "100/- per group.";
+        prizeCardHidden2 = "Rs. 50/-";
+        prizeCardHidden3 = "200/- each group.";
 
         co_OrdinatorCardHidden0 = "Akshay Kandle\n" +
                 "\tkandleakshay751@gmail.com\n" +
-                "\tMobile no:-9860449876\n" ;
+                "\tMobile no:-986044987\n" +
+                "         9284066582\n" ;
 
         co_OrdinatorCardHidden1 = "RAJTILAK  PRAMOD  RAUT\n" +
                 "\trajtilakraut@gmail.com\n"+
@@ -353,8 +344,8 @@ public class CivilGame extends AppCompatActivity implements NavigationView.OnNav
                 "\tkaleakashada@gmail.com\n" +
                 "\tMobile No:-7038034377\n";
 
-        co_OrdinatorCardHidden3 = "Pooja Hariram Chauhan\n" +
-                "\tpooja28chavan@gmail.com\n"+
-                "\tMobile No:-7028777972\n";
+        co_OrdinatorCardHidden3 = "Divya Waghmare\n" +
+                "CONTACT NO.: 9763171089\n" +
+                "EMAIL ADDRESS:  diyawagh765@gmail.com";
     }
 }

@@ -221,134 +221,134 @@ public class InstruGame extends AppCompatActivity implements NavigationView.OnNa
 
     void completeMechanical(){
         //
-        descb0 = "-You might have created your own player when you play FIFA. \n" +
-                "-Now try this out in the real world by creating your own robot and score as much as you can. \n" +
-                "-In Robo-soccer, two teams will play a match of football against each other using a manual bot. ";
+        descb0 = "You might have created your own player when you play FIFA. Now try this out in the real world by creating your own robot and score as much as you can. In Robo-soccer, two teams will play a match of football against each other using a manual bot.";
 
-        descb2 = "• Quiz competition is a pursuit of trivial knowledge, encourage students to improve their knowledge and their awareness of the world around them. Welcome to the Engineers quiz. ";
+        descb2 = "Quiz competition is a pursuit of trivial knowledge, encourage students to improve their knowledge and their awareness of the world around them. Welcome to the Engineers quiz. ";
 
-        descb3= "• Terms have to make manual bot.\n" +
-                "• Manual bot has to clear the way by transferring the block into specific zone. But need to tackle other obstacle.";
+        descb3= "Task: \n" +
+                "    • Terms have to make manual bot\n" +
+                "    • Manual bot has to clear the way by transferring the block into specific zone. But need to tackle another obstacle\n";
 
-        descb1= "• PLC is the main controller in process industries in the participants will gain in-depth knowledge and experience in programming &application of PLC.";
+        descb1= "PLC is the main controller in process industries in the participants will gain in-depth knowledge and experience in programming &application of PLC.";
 
         //
-        rulesCardHidden0 = "-7 min match with 3 min half and 1minbreak. \n" +
-                "-Each Goal will carry 10points. \n" +
-                "-Each bot has to score goals from his opponents half or the goal will not be counted. \n" +
-                "\n" +
-                "\n" +
-                "ROUNDS:  \n" +
-                "                1 Elimination Round \n" +
-                "                2 Quarterfinal \n" +
-                "                3 Semi-final \n" +
-                "                4 Final \n" +
-                "\n" +
-                "\n" +
+        rulesCardHidden0 = "\n" +
+                "    • 7 min match with 3 min half and 1 min break.\n" +
+                "    • Each Goal will carry 10 points. \n" +
+                "    • Each bot has to score goals from his opponent’s half or the goal will not be counted\n" +
+                " \n" +
+                "ROUNDS:  \n" +
+                "    • Elimination Round\n" +
+                "    • Quarter Final Round\n" +
+                "    • Semi-Final Round\n" +
+                "    • Final Round\n" +
                 "RULES: \n" +
                 "    • Max. 16 top scorer teams will be selected from first round. \n" +
-                "    • Max. 12 volt dc power supply will be provided. \n" +
+                "    • Max. 12-volt dc power supply will be provided. \n" +
                 "    • If any technical fault occurs, then that team will be given maximum of 2 min for recovery. There are no other timeouts in the game. \n" +
                 "    • A bot having dimensions more than the specified dimensions will be disqualified. \n" +
                 "    • During the match if there is any type of interruption, then match will be started from neutral points as given in arena (there are 4 neutral points). \n" +
                 "    • In case of tie, the game will be played by golden goal. Golden goal – time limit 1min. bot scoring first goal will be winner. (All rules will be considered strictly) \n" +
                 " \n" +
-                "VIOLATION:- \n" +
-                "    -2 points will be deducted any kind of damage to the Arena. \n" +
-                "    -3 points will be deducted for grabbing or lifting the ball. \n" +
-                "    -5 points will be deducted for any intentional damage to the opponent’s bot. \n" +
+                "VIOLATION: - \n" +
+                "    • 2 points will be deducted for any kind of damage to the Arena\n" +
+                "    • 3 points will be deducted for grabbing or lifting the ball\n" +
+                "    • 5 points will be deducted for any intentional damage to the opponent’s bot\n" +
                 " \n" +
                 "DIMENSIONS: \n" +
-                "    • Bot-25×25×25 cm (initial) \uF0B7\n Weight- up to 5 kg. \n" +
-                "   \n" +
-                "NOTE: \n" +
-                "Decision taken by the coordinator will be final. \n" +
+                "    • Bot-25×25×25 cm (initial) \n" +
+                "    • Weight- up to 5 kg\n" +
                 " \n" +
-                "TEAM MEMBERS- Max. 3 \n" +
-                " \n" +
+                "Arena: (It is not website)"+
                 "\n" +
-                "ENTRY FEE:  RS.200/ team ";
+                "NOTE: Decision taken by the coordinator will be final. \n" +
+                " \n" +
+                "TEAM MEMBERS: - Max. 3 ";
 
         rulesCardHidden2 = "\n" +
-                "    • There will be 3 rounds. \n" +
-                "    • Round 1: MCQ test – 50 questions based on historic, geographic, general science, basic mathematics and English have to be solve in 30 minutes. \n" +
-                "    • Round2: Aptitude – 25 questions based on intelligence and grammar & Engineering has to be solved in 30 minutes. \n" +
-                "    • Round3: Rapid Fire Round \n" +
-                "    • No mobile phones or calculator will be allowed. \n" +
-                "    • Changes may be there with respect to the subjects. \n" +
-                "NOTE: \n" +
-                "Decision taken by the coordinator will be final. \n" +
-                "TEAM MEMBERS- Max. 2 \n" +
-                " \n" +
-                "ENTRY FEE: \n" +
-                "Team of 1 = Rs.100  \n" +
-                "Team of 2 -Rs.150";
-
-        rulesCardHidden3 = "Rules:\n" +
-                "1. It is an task completion race on arena\n" +
-                "2. weight of bot must be 5kg.\n" +
-                "3. 12 volt power supply will be provided.\n" +
-                "4. A team should contain only two members.\n" +
-                "    • Operator\n" +
-                "    • Instructor\n" +
-                "5. Any technical fault during the match will not be accepted and that team has to continue the game.\n" +
-                "6. A bot having dimension more than the specified dimension will not be allowed to play.\n" +
+                "    • There will be 3 rounds\n" +
+                "    • Round 1: MCQ test – 50 questions based on general science, basic mathematics and English have to be solve in 30 minutes\n" +
+                "    • Round 2: Aptitude – 25 questions based on intelligence & Engineering has to be solved in 30 minutes\n" +
+                "    • Round 3: Rapid Fire Round \n" +
+                "    • No mobile phones or calculator will be allowed\n" +
+                "    • Changes may be there with respect to the subjects\n" +
                 "\n" +
-                "Dimensions:\n" +
-                "1. Bot: 25cmX25cmX25cm (lxbxh)\n" +
-                "2. Block: 12cmX12cmX12cm (lxbxh)\n" +
+                "NOTE: Decision taken by the coordinator will be final. \n" +
+                "\n" +
+                "TEAM MEMBERS: - Max. 2 ";
+
+        rulesCardHidden3 = "Dimensions:\n" +
+                "    • Bot: 25cmX25cmX25cm (lxbxh)\n" +
+                "    • Block: 12cmX12cmX12cm (lxbxh)\n" +
                 "\n" +
                 "Arena:\n" +
                 "Arena will be displayed on spot.\n" +
                 "\n" +
-                "Judging criteria :\n" +
+                "Rules:\n" +
+                "    • It is a task completion race on arena\n" +
+                "    • weight of bot must be 5kg\n" +
+                "    • 12-volt power supply will be provided\n" +
+                "    • A team should contain only two members\n" +
+                "    • Operator\n" +
+                "    • Instructor\n" +
+                "    • Any technical fault during the match will not be accepted and that team has to continue the game\n" +
+                "    • A bot having dimension more than the specified dimension will not be allowed to play\n" +
+                "\n" +
+                "Judging criteria:\n" +
                 "Instruction about judging criteria will be given on spot\n" +
                 "\n" +
                 "NOTE: Team Member-max 2.";
 
-        rulesCardHidden1 = "ROUND 1:\n" +
-                "    • the first round includes the test which consists of 30 multiple choice questions based on microcontrollers and embedded systems.\n" +
-                "    • Each question will be for one point.\n" +
-                "    • Number of teams selected for the second round will be based upon total number of teams registered.\n" +
-                "\n" +
-                "ROUND 2:\n" +
-                "    • In this round we will give a 5 basic problem statement for programme solving.\n" +
-                "    • If the two teams have same points then the task completion time will be considered.\n" +
-                "    • The team which complete the task will be eligible for final Round.\n" +
-                "\n" +
-                "\n" +
-                "ROUND 3:\n" +
-                "    • In this round the finalist has to solve a problem statement on WPL software and simulate it on this application.\n" +
-                "    • Based on the performance the winner will be selected.\n" +
-                "\n" +
-                "SYLLABUS:\n" +
-                "    1. PLC Basics.\n" +
-                "    2. Instruction set.\n" +
-                "    3. I/O power ratings.\n" +
-                "    4. Relay logic.\n" +
-                "    5. Real time applications.\n" +
+        rulesCardHidden1 = "\n" +
+                "    • All participants are requested to reach the place at least one hour before the event starts.\n" +
+                "    • Registration can be done on the spot.\n" +
+                "    • Unlimited entries from any colleges are allowed.\n" +
+                "    • Participants must carry their college ID card & payment receipt.\n" +
+                "    • Based on the student’s registration the rules may have some small changes.\n" +
+                "    • Participants disobeying the instructions given will be disqualified and judge’s decision will be final.\n" +
+                "    • Organizing Committee has all rights to make any modification in rules, schedule.\n" +
+                "    • For any other Information, please contact the event co-ordinator.\n" +
                 "\n" +
                 "SOFTWARE VERSIONS:\n" +
-                "    1. WPL Soft (Delta PLC)\n" +
-                "    2. Allen Bradley software (If it is available)\n" +
-                "(Rx logix 500)\n" +
+                "    • WPL Soft (Delta PLC)\n" +
+                "    • Allen Bradley software (If it is available) (Rx Logix 500)\n" +
                 "\n" +
                 "NOTE: If you have any query regarding software then our volunteer will help you.\n" +
                 "\n" +
-                "ELLIGIBILITY:\n" +
+                "ROUND 1:\n" +
+                "    • the first round includes the test which consists of 30 multiple choice questions based on PLC\n" +
+                "    • Each question will be for one point\n" +
+                "    • Number of teams selected for the second round will be based upon total number of teams registered\n" +
+                "\n" +
+                "ROUND 2:\n" +
+                "    • In this round we will give a 5 basic problem statement for programme solving\n" +
+                "    • If the two teams have same points then the task completion time will be considered\n" +
+                "    • The team which complete the task will be eligible for final Round\n" +
+                "\n" +
+                "ROUND 3:\n" +
+                "    • In this round the finalist has to solve a problem statement on WPL software and simulate it on this application\n" +
+                "    • Based on the performance the winner will be selected\n" +
+                "\n" +
+                "\n" +
+                "SYLLABUS:\n" +
+                "    • PLC Basics\n" +
+                "    • Instruction set\n" +
+                "    • I/O power ratings\n" +
+                "    • Relay logic\n" +
+                "    • Real time applications\n" +
+                "\n" +
+                "ELIGIBILITY:\n" +
                 "All students with a valid identity card of their respective educational Institutes are eligible to participate in the event.\n" +
                 "\n" +
-                "\n" +
                 "TEAM SPECIFICATIONS:\n" +
-                "A team may consist of 2 members students from different educational institutions can form a team.\n" +
-                "\n" +
-                "ENTRY FEE:\n" +
-                "₹ 100 Per Team(Max 2 members)";
+                "A team may consist of 2 members students from different educational institutions can form a team.";
 
-        prizeCardHidden0 = "";
-        prizeCardHidden1 = "";
-        prizeCardHidden2 = "";
-        prizeCardHidden3 = "";
+        prizeCardHidden0 = "RS.200/ team ";
+        prizeCardHidden1 = "₹ 100 Per Team (Max 2 members)";
+        prizeCardHidden2 = "Team of 1 = Rs.50 \n" +
+                "Team of 2 = Rs.100";
+        prizeCardHidden3 = "150/-\n" +
+                "RE-ENTRY: Rs. 150/-";
 
         co_OrdinatorCardHidden0 = "Rohit Sirsat\n" +
                 "\trohitshirsat29@gmail.com\n" +
