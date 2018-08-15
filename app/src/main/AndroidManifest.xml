@@ -3,7 +3,6 @@
     package="com.official19.ajb.abinitio">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"

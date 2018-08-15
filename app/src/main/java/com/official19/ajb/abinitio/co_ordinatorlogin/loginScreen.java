@@ -51,12 +51,12 @@ public class loginScreen extends AppCompatActivity implements NavigationView.OnN
             startActivity(new Intent(loginScreen.this,Co_OrdinatorProfileActivity.class));
         }
 
-        SignUp.setOnClickListener(new View.OnClickListener() {
+        /*SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(loginScreen.this,RegistrationActivity.class));
             }
-        });
+        });*/
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,7 +104,6 @@ public class loginScreen extends AppCompatActivity implements NavigationView.OnN
         Password=findViewById(R.id.etPassword);
         Logo=findViewById(R.id.ivLogo);
         Card=findViewById(R.id.card);
-        SignUp=findViewById(R.id.tvSignUp);
         Login=findViewById(R.id.tvLogin);
 
 

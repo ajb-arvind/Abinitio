@@ -60,7 +60,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginLeft="10dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/calender"/>
+                    android:src="@drawable/entclogo1"/>
 
                 <TextView
                     android:id="@+id/tvTitleCard1"
@@ -116,7 +116,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginLeft="10dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/book"/>
+                    android:src="@drawable/autologo4"/>
 
                 <TextView
                     android:id="@+id/tvTitlecard2"

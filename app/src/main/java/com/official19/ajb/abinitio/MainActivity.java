@@ -237,9 +237,9 @@ public class MainActivity extends AppCompatActivity
         cardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1= new Intent(getApplicationContext(), gcoearaActivity.class);
-                intent1.putExtra("Gcoeara","4");
-                startActivity(intent1);
+                Intent intent3= new Intent(getApplicationContext(), gcoearaActivity.class);
+                intent3.putExtra("Gcoeara","3");
+                startActivity(intent3);
                 //startActivity(new Intent(getApplicationContext(), contact.class));
             }
         });
@@ -374,10 +374,10 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_gallry:             activity.startActivity(new Intent(activity, gallary.class));
                 break;
 
-            case R.id.nav_principal_desk:           Intent intent0= new Intent(activity, gcoearaActivity.class);
+            /*case R.id.nav_principal_desk:           Intent intent0= new Intent(activity, gcoearaActivity.class);
                                                     intent0.putExtra("Gcoeara","0");
                                                     activity.startActivity(intent0);
-                break;
+                break;*/
 
             case R.id.nav_about_gcoeara:            Intent intent1= new Intent(activity, gcoearaActivity.class);
                                                     intent1.putExtra("Gcoeara","1");
