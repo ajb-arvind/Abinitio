@@ -292,7 +292,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginEnd="20dp"
         app:backgroundTint="@color/min_color"
-        app:srcCompat="@android:drawable/stat_sys_speakerphone" />
+        app:srcCompat="@android:drawable/ic_menu_call" />
 
 
 
