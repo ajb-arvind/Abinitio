@@ -94,7 +94,7 @@ public class gcoearaActivity extends AppCompatActivity implements NavigationView
 
 
             case "1":
-                CollegeImage.setImageResource(R.drawable.college);
+                CollegeImage.setImageResource(R.drawable.new_bldg);
                 CollegeText.setText(aboutCollege);
                 getSupportActionBar().setTitle("About College");
                 break;
@@ -102,7 +102,7 @@ public class gcoearaActivity extends AppCompatActivity implements NavigationView
             case "2":
                 CollegeImage.setImageResource(R.drawable.ab);
                 CollegeText.setText(aboutAbinito);
-                getSupportActionBar().setTitle("Abinitio");
+                getSupportActionBar().setTitle("Abinitio 2k18");
                 break;
 
             case "3":

@@ -358,7 +358,7 @@ public class CompGame extends AppCompatActivity implements NavigationView.OnNavi
                 "\tMobile no :- 7889592130\n";
 
         co_OrdinatorCardHidden3 = "Pratik Patil\n" +
-                "\tspkarande98@gmail.com\n"+
+                "\tpratikp204@gmail.com\n"+
                 "\tMobile no :- 9767189564\n";
 
         co_OrdinatorCardHidden4 = "Sofia Shaikh\n" +
